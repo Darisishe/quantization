@@ -1,6 +1,8 @@
 import torch
 import torch.nn as nn
 
+AVAILABLE_ACTIVATIONS = ["relu", "hardtanh", "relu6"]
+
 def get_activation_function(activation: str, quantize=False):
     if activation == 'relu6':
         # ReLU6 is already quantizable
