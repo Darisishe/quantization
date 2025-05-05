@@ -18,7 +18,7 @@ import sys
 import os
 
 import atexit
-
+import queue
 
 def terminate_children():
     for p in mp.active_children():
@@ -29,27 +29,26 @@ atexit.register(terminate_children)
 
 
 NUM_EPOCHS = 120
-BATCH_SIZE = 128
+BATCH_SIZE = 256
 LR = 1e-3
 NUM_CLASSES = 10
 QAT_EPOCHS = 60
 QAT_LR = 1e-3
 
-normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-
-train_transform = transforms.Compose(
-    [
-        transforms.Pad(4),
-        transforms.RandomRotation(10),
-        transforms.RandomHorizontalFlip(),
-        transforms.RandomCrop(32),
-        transforms.ToTensor(),
-        normalize,
-    ]
-)
-
-
 def prepare_dataloader():
+    normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+
+    train_transform = transforms.Compose(
+        [
+            transforms.Pad(4),
+            transforms.RandomRotation(10),
+            transforms.RandomHorizontalFlip(),
+            transforms.RandomCrop(32),
+            transforms.ToTensor(),
+            normalize,
+        ]
+    )
+
     test_transform = transforms.Compose([transforms.ToTensor(), normalize])
 
     train_dataset = datasets.CIFAR10(
@@ -59,17 +58,25 @@ def prepare_dataloader():
     test_dataset = datasets.CIFAR10(root="data", train=False, transform=test_transform)
 
     train_loader = DataLoader(
-        dataset=train_dataset, batch_size=BATCH_SIZE, num_workers=8, shuffle=True
+        dataset=train_dataset,
+        batch_size=BATCH_SIZE,
+        num_workers=2,
+        shuffle=True,
+        pin_memory=True,
     )
 
     test_loader = DataLoader(
-        dataset=test_dataset, batch_size=BATCH_SIZE, num_workers=8, shuffle=False
+        dataset=test_dataset,
+        batch_size=BATCH_SIZE,
+        num_workers=2,
+        shuffle=False,
+        pin_memory=True,
     )
 
     return (train_loader, test_loader)
 
 
-def print_model_with_weights(model, sample_size=16):
+def print_model_with_weights(model, max_sample_size=16):
     # Print the model architecture
     print("Model Architecture:")
     print(model)
@@ -81,12 +88,19 @@ def print_model_with_weights(model, sample_size=16):
             print(f"\nParameter: {name}")
             print(f"Shape: {param.shape}")
 
+            if hasattr(param, 'qscheme'):
+                param = param.dequantize()
+
+            channel = param
+            if param.dim() > 1:
+                channel = param[0]
+
             # Flatten the parameter tensor for sampling
-            flat_param = param.flatten()
+            flat_param = channel.flatten()
             total_elements = flat_param.numel()
 
             # Adjust sample_size to not exceed total elements
-            sample_size = min(sample_size, total_elements)
+            sample_size = min(max_sample_size, total_elements)
 
             # Randomly sample indices and values
             sample_indices = torch.randperm(total_elements)[:sample_size]
@@ -96,10 +110,9 @@ def print_model_with_weights(model, sample_size=16):
             print(f"Sample Values ({sample_size} elements): {sample_values}")
 
             # Print summary statistics
-            print(f"Mean: {param.mean().item():.4f}")
-            print(f"Std: {param.std().item():.4f}")
-            print(f"Min: {param.min().item():.4f}")
-            print(f"Max: {param.max().item():.4f}")
+            print(f"Mean: {channel.mean().item():.4f}")
+            print(f"Min: {channel.min().item():.4f}")
+            print(f"Max: {channel.max().item():.4f}")
 
 
 def evaluate_model(model, device, test_loader, criterion=None):
@@ -145,8 +158,6 @@ def train_model(
     writer=None,
     model_name="model",
 ):
-    patience = 15
-    cur_idle = 0
     criterion = nn.CrossEntropyLoss()
 
     model.to(device)
@@ -154,14 +165,12 @@ def train_model(
         model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=1e-4
     )
 
-    if "quantized" in model_name:
-        scheduler = torch.optim.lr_scheduler.MultiStepLR(
-            optimizer, milestones=[30, 45], gamma=0.25, last_epoch=-1
-        )
-    else:
-        scheduler = torch.optim.lr_scheduler.MultiStepLR(
-            optimizer, milestones=[70, 100, 130], gamma=0.1, last_epoch=-1
-        )
+    scheduler = torch.optim.lr_scheduler.MultiStepLR(
+        optimizer,
+        milestones=[30, 45] if "quantized" in model_name else [70, 100, 130],
+        gamma=0.25 if "quantized" in model_name else 0.1,
+        last_epoch=-1,
+    )
 
     best_eval_acc = 0
     for epoch in range(num_epochs):
@@ -213,14 +222,16 @@ def train_model(
             )
         )
 
-        cur_idle += 1
         if eval_accuracy > best_eval_acc:
             best_eval_acc = eval_accuracy
             torch.save(model.state_dict(), f"checkpoint/best_{model_name}.ckpt")
-            cur_idle = 0
-        elif cur_idle >= patience:
-            print("Early stopping was triggered!")
-            break
+
+    print(
+        "[{}] Best Eval Accuracy: {:.4f}".format(
+            model_name,
+            best_eval_acc,
+        )
+    )
 
 
 def train_orig_model(model_class, activation, device, train_loader, test_loader):
@@ -392,7 +403,7 @@ def run_task(task_queue):
         try:
             model_class, activation = task_queue.get_nowait()
             parallel_train(model_class, activation)
-        except mp.queues.Empty:
+        except queue.Empty:
             break
 
 
@@ -408,7 +419,7 @@ if __name__ == "__main__":
 
     tasks = [(model, act) for model in models for act in activations]
 
-    num_processes = min(len(tasks), 6)  # Limit processes to manage GPU memory
+    num_processes = min(len(tasks), 4)  # Limit processes to manage GPU memory
 
     task_queue = mp.Queue()
     for task in tasks:

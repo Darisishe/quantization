@@ -1,125 +1,11 @@
-[2025-05-04 05:28:33,790]: 
+[2025-05-05 07:11:41,212]: 
 Training LeNet5 with relu
-[2025-05-04 05:28:52,707]: [LeNet5_relu] Epoch: 001 Train Loss: 2.2971 Train Acc: 0.1163 Eval Loss: 2.2798 Eval Acc: 0.1604 (LR: 0.001000)
-[2025-05-04 05:29:09,286]: [LeNet5_relu] Epoch: 002 Train Loss: 2.2089 Train Acc: 0.1758 Eval Loss: 2.0729 Eval Acc: 0.2554 (LR: 0.001000)
-[2025-05-04 05:29:27,411]: [LeNet5_relu] Epoch: 003 Train Loss: 2.0211 Train Acc: 0.2637 Eval Loss: 1.9537 Eval Acc: 0.2959 (LR: 0.001000)
-[2025-05-04 05:29:45,229]: [LeNet5_relu] Epoch: 004 Train Loss: 1.9347 Train Acc: 0.2961 Eval Loss: 1.8334 Eval Acc: 0.3381 (LR: 0.001000)
-[2025-05-04 05:30:03,105]: [LeNet5_relu] Epoch: 005 Train Loss: 1.8312 Train Acc: 0.3302 Eval Loss: 1.7266 Eval Acc: 0.3678 (LR: 0.001000)
-[2025-05-04 05:30:20,505]: [LeNet5_relu] Epoch: 006 Train Loss: 1.7604 Train Acc: 0.3465 Eval Loss: 1.6636 Eval Acc: 0.3924 (LR: 0.001000)
-[2025-05-04 05:30:37,582]: [LeNet5_relu] Epoch: 007 Train Loss: 1.7120 Train Acc: 0.3641 Eval Loss: 1.6215 Eval Acc: 0.3996 (LR: 0.001000)
-[2025-05-04 05:30:55,475]: [LeNet5_relu] Epoch: 008 Train Loss: 1.6754 Train Acc: 0.3773 Eval Loss: 1.5649 Eval Acc: 0.4195 (LR: 0.001000)
-[2025-05-04 05:31:12,871]: [LeNet5_relu] Epoch: 009 Train Loss: 1.6456 Train Acc: 0.3929 Eval Loss: 1.5342 Eval Acc: 0.4369 (LR: 0.001000)
-[2025-05-04 05:31:30,766]: [LeNet5_relu] Epoch: 010 Train Loss: 1.6154 Train Acc: 0.4049 Eval Loss: 1.5000 Eval Acc: 0.4472 (LR: 0.001000)
-[2025-05-04 05:31:48,979]: [LeNet5_relu] Epoch: 011 Train Loss: 1.5947 Train Acc: 0.4173 Eval Loss: 1.4767 Eval Acc: 0.4623 (LR: 0.001000)
-[2025-05-04 05:32:09,419]: [LeNet5_relu] Epoch: 012 Train Loss: 1.5632 Train Acc: 0.4238 Eval Loss: 1.4663 Eval Acc: 0.4617 (LR: 0.001000)
-[2025-05-04 05:32:28,096]: [LeNet5_relu] Epoch: 013 Train Loss: 1.5381 Train Acc: 0.4396 Eval Loss: 1.4255 Eval Acc: 0.4772 (LR: 0.001000)
-[2025-05-04 05:32:46,029]: [LeNet5_relu] Epoch: 014 Train Loss: 1.5089 Train Acc: 0.4496 Eval Loss: 1.3911 Eval Acc: 0.5004 (LR: 0.001000)
-[2025-05-04 05:33:04,273]: [LeNet5_relu] Epoch: 015 Train Loss: 1.4847 Train Acc: 0.4608 Eval Loss: 1.3705 Eval Acc: 0.5057 (LR: 0.001000)
-[2025-05-04 05:33:22,641]: [LeNet5_relu] Epoch: 016 Train Loss: 1.4594 Train Acc: 0.4701 Eval Loss: 1.3628 Eval Acc: 0.5085 (LR: 0.001000)
-[2025-05-04 05:33:40,352]: [LeNet5_relu] Epoch: 017 Train Loss: 1.4459 Train Acc: 0.4763 Eval Loss: 1.3562 Eval Acc: 0.5106 (LR: 0.001000)
-[2025-05-04 05:33:58,750]: [LeNet5_relu] Epoch: 018 Train Loss: 1.4250 Train Acc: 0.4852 Eval Loss: 1.3329 Eval Acc: 0.5258 (LR: 0.001000)
-[2025-05-04 05:34:16,922]: [LeNet5_relu] Epoch: 019 Train Loss: 1.4091 Train Acc: 0.4921 Eval Loss: 1.3082 Eval Acc: 0.5313 (LR: 0.001000)
-[2025-05-04 05:34:34,651]: [LeNet5_relu] Epoch: 020 Train Loss: 1.3918 Train Acc: 0.4993 Eval Loss: 1.2954 Eval Acc: 0.5377 (LR: 0.001000)
-[2025-05-04 05:34:51,680]: [LeNet5_relu] Epoch: 021 Train Loss: 1.3785 Train Acc: 0.5042 Eval Loss: 1.2767 Eval Acc: 0.5420 (LR: 0.001000)
-[2025-05-04 05:35:10,100]: [LeNet5_relu] Epoch: 022 Train Loss: 1.3683 Train Acc: 0.5078 Eval Loss: 1.2652 Eval Acc: 0.5440 (LR: 0.001000)
-[2025-05-04 05:35:28,842]: [LeNet5_relu] Epoch: 023 Train Loss: 1.3534 Train Acc: 0.5154 Eval Loss: 1.2644 Eval Acc: 0.5432 (LR: 0.001000)
-[2025-05-04 05:35:47,033]: [LeNet5_relu] Epoch: 024 Train Loss: 1.3385 Train Acc: 0.5205 Eval Loss: 1.2345 Eval Acc: 0.5602 (LR: 0.001000)
-[2025-05-04 05:36:05,050]: [LeNet5_relu] Epoch: 025 Train Loss: 1.3265 Train Acc: 0.5262 Eval Loss: 1.2238 Eval Acc: 0.5593 (LR: 0.001000)
-[2025-05-04 05:36:23,185]: [LeNet5_relu] Epoch: 026 Train Loss: 1.3114 Train Acc: 0.5309 Eval Loss: 1.2091 Eval Acc: 0.5677 (LR: 0.001000)
-[2025-05-04 05:36:41,106]: [LeNet5_relu] Epoch: 027 Train Loss: 1.3090 Train Acc: 0.5332 Eval Loss: 1.1974 Eval Acc: 0.5751 (LR: 0.001000)
-[2025-05-04 05:36:58,936]: [LeNet5_relu] Epoch: 028 Train Loss: 1.2912 Train Acc: 0.5382 Eval Loss: 1.1883 Eval Acc: 0.5772 (LR: 0.001000)
-[2025-05-04 05:37:17,857]: [LeNet5_relu] Epoch: 029 Train Loss: 1.2840 Train Acc: 0.5420 Eval Loss: 1.1825 Eval Acc: 0.5798 (LR: 0.001000)
-[2025-05-04 05:37:35,778]: [LeNet5_relu] Epoch: 030 Train Loss: 1.2694 Train Acc: 0.5483 Eval Loss: 1.1818 Eval Acc: 0.5811 (LR: 0.001000)
-[2025-05-04 05:37:54,105]: [LeNet5_relu] Epoch: 031 Train Loss: 1.2609 Train Acc: 0.5503 Eval Loss: 1.1580 Eval Acc: 0.5901 (LR: 0.001000)
-[2025-05-04 05:38:12,020]: [LeNet5_relu] Epoch: 032 Train Loss: 1.2585 Train Acc: 0.5544 Eval Loss: 1.1652 Eval Acc: 0.5795 (LR: 0.001000)
-[2025-05-04 05:38:29,776]: [LeNet5_relu] Epoch: 033 Train Loss: 1.2434 Train Acc: 0.5568 Eval Loss: 1.1682 Eval Acc: 0.5869 (LR: 0.001000)
-[2025-05-04 05:38:48,302]: [LeNet5_relu] Epoch: 034 Train Loss: 1.2400 Train Acc: 0.5593 Eval Loss: 1.1705 Eval Acc: 0.5881 (LR: 0.001000)
-[2025-05-04 05:39:05,825]: [LeNet5_relu] Epoch: 035 Train Loss: 1.2336 Train Acc: 0.5599 Eval Loss: 1.1321 Eval Acc: 0.5997 (LR: 0.001000)
-[2025-05-04 05:39:23,551]: [LeNet5_relu] Epoch: 036 Train Loss: 1.2220 Train Acc: 0.5670 Eval Loss: 1.1183 Eval Acc: 0.6053 (LR: 0.001000)
-[2025-05-04 05:39:40,711]: [LeNet5_relu] Epoch: 037 Train Loss: 1.2173 Train Acc: 0.5672 Eval Loss: 1.1187 Eval Acc: 0.6072 (LR: 0.001000)
-[2025-05-04 05:39:58,725]: [LeNet5_relu] Epoch: 038 Train Loss: 1.2125 Train Acc: 0.5715 Eval Loss: 1.0990 Eval Acc: 0.6155 (LR: 0.001000)
-[2025-05-04 05:40:17,050]: [LeNet5_relu] Epoch: 039 Train Loss: 1.2024 Train Acc: 0.5736 Eval Loss: 1.0974 Eval Acc: 0.6155 (LR: 0.001000)
-[2025-05-04 05:40:34,605]: [LeNet5_relu] Epoch: 040 Train Loss: 1.1922 Train Acc: 0.5777 Eval Loss: 1.1070 Eval Acc: 0.6135 (LR: 0.001000)
-[2025-05-04 05:40:52,923]: [LeNet5_relu] Epoch: 041 Train Loss: 1.1906 Train Acc: 0.5753 Eval Loss: 1.1349 Eval Acc: 0.6018 (LR: 0.001000)
-[2025-05-04 05:41:10,542]: [LeNet5_relu] Epoch: 042 Train Loss: 1.1793 Train Acc: 0.5821 Eval Loss: 1.0827 Eval Acc: 0.6210 (LR: 0.001000)
-[2025-05-04 05:41:28,648]: [LeNet5_relu] Epoch: 043 Train Loss: 1.1771 Train Acc: 0.5823 Eval Loss: 1.0808 Eval Acc: 0.6184 (LR: 0.001000)
-[2025-05-04 05:41:47,260]: [LeNet5_relu] Epoch: 044 Train Loss: 1.1716 Train Acc: 0.5839 Eval Loss: 1.1061 Eval Acc: 0.6094 (LR: 0.001000)
-[2025-05-04 05:42:05,583]: [LeNet5_relu] Epoch: 045 Train Loss: 1.1688 Train Acc: 0.5869 Eval Loss: 1.0654 Eval Acc: 0.6249 (LR: 0.001000)
-[2025-05-04 05:42:23,474]: [LeNet5_relu] Epoch: 046 Train Loss: 1.1588 Train Acc: 0.5881 Eval Loss: 1.0837 Eval Acc: 0.6159 (LR: 0.001000)
-[2025-05-04 05:42:42,141]: [LeNet5_relu] Epoch: 047 Train Loss: 1.1559 Train Acc: 0.5888 Eval Loss: 1.0580 Eval Acc: 0.6332 (LR: 0.001000)
-[2025-05-04 05:43:00,681]: [LeNet5_relu] Epoch: 048 Train Loss: 1.1513 Train Acc: 0.5935 Eval Loss: 1.0620 Eval Acc: 0.6262 (LR: 0.001000)
-[2025-05-04 05:43:19,329]: [LeNet5_relu] Epoch: 049 Train Loss: 1.1411 Train Acc: 0.5967 Eval Loss: 1.0417 Eval Acc: 0.6376 (LR: 0.001000)
-[2025-05-04 05:43:37,931]: [LeNet5_relu] Epoch: 050 Train Loss: 1.1399 Train Acc: 0.5950 Eval Loss: 1.0442 Eval Acc: 0.6338 (LR: 0.001000)
-[2025-05-04 05:43:57,075]: [LeNet5_relu] Epoch: 051 Train Loss: 1.1335 Train Acc: 0.5992 Eval Loss: 1.0363 Eval Acc: 0.6378 (LR: 0.001000)
-[2025-05-04 05:44:15,089]: [LeNet5_relu] Epoch: 052 Train Loss: 1.1328 Train Acc: 0.5981 Eval Loss: 1.0303 Eval Acc: 0.6396 (LR: 0.001000)
-[2025-05-04 05:44:32,308]: [LeNet5_relu] Epoch: 053 Train Loss: 1.1215 Train Acc: 0.6024 Eval Loss: 1.0409 Eval Acc: 0.6359 (LR: 0.001000)
-[2025-05-04 05:44:51,489]: [LeNet5_relu] Epoch: 054 Train Loss: 1.1186 Train Acc: 0.6072 Eval Loss: 1.0196 Eval Acc: 0.6421 (LR: 0.001000)
-[2025-05-04 05:45:10,079]: [LeNet5_relu] Epoch: 055 Train Loss: 1.1202 Train Acc: 0.6050 Eval Loss: 1.0280 Eval Acc: 0.6405 (LR: 0.001000)
-[2025-05-04 05:45:27,685]: [LeNet5_relu] Epoch: 056 Train Loss: 1.1154 Train Acc: 0.6047 Eval Loss: 1.0274 Eval Acc: 0.6378 (LR: 0.001000)
-[2025-05-04 05:45:45,520]: [LeNet5_relu] Epoch: 057 Train Loss: 1.1101 Train Acc: 0.6051 Eval Loss: 1.0023 Eval Acc: 0.6464 (LR: 0.001000)
-[2025-05-04 05:46:03,707]: [LeNet5_relu] Epoch: 058 Train Loss: 1.1071 Train Acc: 0.6097 Eval Loss: 1.0128 Eval Acc: 0.6437 (LR: 0.001000)
-[2025-05-04 05:46:21,958]: [LeNet5_relu] Epoch: 059 Train Loss: 1.1013 Train Acc: 0.6107 Eval Loss: 0.9929 Eval Acc: 0.6530 (LR: 0.001000)
-[2025-05-04 05:46:41,648]: [LeNet5_relu] Epoch: 060 Train Loss: 1.0930 Train Acc: 0.6139 Eval Loss: 0.9981 Eval Acc: 0.6479 (LR: 0.001000)
-[2025-05-04 05:46:59,450]: [LeNet5_relu] Epoch: 061 Train Loss: 1.0919 Train Acc: 0.6143 Eval Loss: 0.9881 Eval Acc: 0.6543 (LR: 0.001000)
-[2025-05-04 05:47:17,405]: [LeNet5_relu] Epoch: 062 Train Loss: 1.0909 Train Acc: 0.6137 Eval Loss: 0.9929 Eval Acc: 0.6485 (LR: 0.001000)
-[2025-05-04 05:47:35,270]: [LeNet5_relu] Epoch: 063 Train Loss: 1.0878 Train Acc: 0.6157 Eval Loss: 1.0042 Eval Acc: 0.6497 (LR: 0.001000)
-[2025-05-04 05:47:53,172]: [LeNet5_relu] Epoch: 064 Train Loss: 1.0805 Train Acc: 0.6181 Eval Loss: 0.9807 Eval Acc: 0.6581 (LR: 0.001000)
-[2025-05-04 05:48:10,654]: [LeNet5_relu] Epoch: 065 Train Loss: 1.0842 Train Acc: 0.6157 Eval Loss: 0.9866 Eval Acc: 0.6557 (LR: 0.001000)
-[2025-05-04 05:48:29,200]: [LeNet5_relu] Epoch: 066 Train Loss: 1.0737 Train Acc: 0.6198 Eval Loss: 0.9714 Eval Acc: 0.6621 (LR: 0.001000)
-[2025-05-04 05:48:46,921]: [LeNet5_relu] Epoch: 067 Train Loss: 1.0747 Train Acc: 0.6187 Eval Loss: 0.9825 Eval Acc: 0.6501 (LR: 0.001000)
-[2025-05-04 05:49:05,152]: [LeNet5_relu] Epoch: 068 Train Loss: 1.0710 Train Acc: 0.6224 Eval Loss: 0.9825 Eval Acc: 0.6535 (LR: 0.001000)
-[2025-05-04 05:49:23,160]: [LeNet5_relu] Epoch: 069 Train Loss: 1.0657 Train Acc: 0.6241 Eval Loss: 0.9840 Eval Acc: 0.6556 (LR: 0.001000)
-[2025-05-04 05:49:41,975]: [LeNet5_relu] Epoch: 070 Train Loss: 1.0698 Train Acc: 0.6215 Eval Loss: 0.9726 Eval Acc: 0.6587 (LR: 0.000100)
-[2025-05-04 05:49:59,824]: [LeNet5_relu] Epoch: 071 Train Loss: 1.0366 Train Acc: 0.6347 Eval Loss: 0.9510 Eval Acc: 0.6674 (LR: 0.000100)
-[2025-05-04 05:50:18,220]: [LeNet5_relu] Epoch: 072 Train Loss: 1.0307 Train Acc: 0.6354 Eval Loss: 0.9476 Eval Acc: 0.6666 (LR: 0.000100)
-[2025-05-04 05:50:36,695]: [LeNet5_relu] Epoch: 073 Train Loss: 1.0276 Train Acc: 0.6382 Eval Loss: 0.9464 Eval Acc: 0.6680 (LR: 0.000100)
-[2025-05-04 05:50:54,832]: [LeNet5_relu] Epoch: 074 Train Loss: 1.0271 Train Acc: 0.6360 Eval Loss: 0.9472 Eval Acc: 0.6668 (LR: 0.000100)
-[2025-05-04 05:51:12,296]: [LeNet5_relu] Epoch: 075 Train Loss: 1.0277 Train Acc: 0.6379 Eval Loss: 0.9468 Eval Acc: 0.6699 (LR: 0.000100)
-[2025-05-04 05:51:31,032]: [LeNet5_relu] Epoch: 076 Train Loss: 1.0283 Train Acc: 0.6369 Eval Loss: 0.9488 Eval Acc: 0.6674 (LR: 0.000100)
-[2025-05-04 05:51:50,218]: [LeNet5_relu] Epoch: 077 Train Loss: 1.0282 Train Acc: 0.6367 Eval Loss: 0.9499 Eval Acc: 0.6693 (LR: 0.000100)
-[2025-05-04 05:52:09,732]: [LeNet5_relu] Epoch: 078 Train Loss: 1.0301 Train Acc: 0.6368 Eval Loss: 0.9462 Eval Acc: 0.6686 (LR: 0.000100)
-[2025-05-04 05:52:28,041]: [LeNet5_relu] Epoch: 079 Train Loss: 1.0237 Train Acc: 0.6382 Eval Loss: 0.9414 Eval Acc: 0.6703 (LR: 0.000100)
-[2025-05-04 05:52:47,182]: [LeNet5_relu] Epoch: 080 Train Loss: 1.0289 Train Acc: 0.6373 Eval Loss: 0.9421 Eval Acc: 0.6688 (LR: 0.000100)
-[2025-05-04 05:53:05,986]: [LeNet5_relu] Epoch: 081 Train Loss: 1.0237 Train Acc: 0.6395 Eval Loss: 0.9461 Eval Acc: 0.6699 (LR: 0.000100)
-[2025-05-04 05:53:25,024]: [LeNet5_relu] Epoch: 082 Train Loss: 1.0236 Train Acc: 0.6422 Eval Loss: 0.9504 Eval Acc: 0.6653 (LR: 0.000100)
-[2025-05-04 05:53:44,518]: [LeNet5_relu] Epoch: 083 Train Loss: 1.0232 Train Acc: 0.6388 Eval Loss: 0.9427 Eval Acc: 0.6700 (LR: 0.000100)
-[2025-05-04 05:54:03,426]: [LeNet5_relu] Epoch: 084 Train Loss: 1.0243 Train Acc: 0.6389 Eval Loss: 0.9420 Eval Acc: 0.6701 (LR: 0.000100)
-[2025-05-04 05:54:24,686]: [LeNet5_relu] Epoch: 085 Train Loss: 1.0223 Train Acc: 0.6400 Eval Loss: 0.9417 Eval Acc: 0.6663 (LR: 0.000100)
-[2025-05-04 05:54:44,614]: [LeNet5_relu] Epoch: 086 Train Loss: 1.0207 Train Acc: 0.6399 Eval Loss: 0.9417 Eval Acc: 0.6703 (LR: 0.000100)
-[2025-05-04 05:55:04,814]: [LeNet5_relu] Epoch: 087 Train Loss: 1.0206 Train Acc: 0.6409 Eval Loss: 0.9428 Eval Acc: 0.6696 (LR: 0.000100)
-[2025-05-04 05:55:23,966]: [LeNet5_relu] Epoch: 088 Train Loss: 1.0193 Train Acc: 0.6424 Eval Loss: 0.9434 Eval Acc: 0.6690 (LR: 0.000100)
-[2025-05-04 05:55:42,859]: [LeNet5_relu] Epoch: 089 Train Loss: 1.0223 Train Acc: 0.6405 Eval Loss: 0.9426 Eval Acc: 0.6703 (LR: 0.000100)
-[2025-05-04 05:56:02,547]: [LeNet5_relu] Epoch: 090 Train Loss: 1.0216 Train Acc: 0.6404 Eval Loss: 0.9404 Eval Acc: 0.6676 (LR: 0.000100)
-[2025-05-04 05:56:20,530]: [LeNet5_relu] Epoch: 091 Train Loss: 1.0192 Train Acc: 0.6424 Eval Loss: 0.9374 Eval Acc: 0.6704 (LR: 0.000100)
-[2025-05-04 05:56:39,748]: [LeNet5_relu] Epoch: 092 Train Loss: 1.0197 Train Acc: 0.6409 Eval Loss: 0.9422 Eval Acc: 0.6697 (LR: 0.000100)
-[2025-05-04 05:56:58,996]: [LeNet5_relu] Epoch: 093 Train Loss: 1.0162 Train Acc: 0.6410 Eval Loss: 0.9385 Eval Acc: 0.6696 (LR: 0.000100)
-[2025-05-04 05:57:17,966]: [LeNet5_relu] Epoch: 094 Train Loss: 1.0205 Train Acc: 0.6420 Eval Loss: 0.9358 Eval Acc: 0.6722 (LR: 0.000100)
-[2025-05-04 05:57:37,246]: [LeNet5_relu] Epoch: 095 Train Loss: 1.0175 Train Acc: 0.6428 Eval Loss: 0.9395 Eval Acc: 0.6704 (LR: 0.000100)
-[2025-05-04 05:57:57,581]: [LeNet5_relu] Epoch: 096 Train Loss: 1.0158 Train Acc: 0.6422 Eval Loss: 0.9392 Eval Acc: 0.6706 (LR: 0.000100)
-[2025-05-04 05:58:17,128]: [LeNet5_relu] Epoch: 097 Train Loss: 1.0134 Train Acc: 0.6431 Eval Loss: 0.9408 Eval Acc: 0.6693 (LR: 0.000100)
-[2025-05-04 05:58:36,901]: [LeNet5_relu] Epoch: 098 Train Loss: 1.0177 Train Acc: 0.6426 Eval Loss: 0.9373 Eval Acc: 0.6721 (LR: 0.000100)
-[2025-05-04 05:58:58,849]: [LeNet5_relu] Epoch: 099 Train Loss: 1.0202 Train Acc: 0.6396 Eval Loss: 0.9376 Eval Acc: 0.6699 (LR: 0.000100)
-[2025-05-04 05:59:19,273]: [LeNet5_relu] Epoch: 100 Train Loss: 1.0174 Train Acc: 0.6412 Eval Loss: 0.9375 Eval Acc: 0.6725 (LR: 0.000010)
-[2025-05-04 05:59:37,738]: [LeNet5_relu] Epoch: 101 Train Loss: 1.0121 Train Acc: 0.6441 Eval Loss: 0.9350 Eval Acc: 0.6706 (LR: 0.000010)
-[2025-05-04 05:59:56,454]: [LeNet5_relu] Epoch: 102 Train Loss: 1.0081 Train Acc: 0.6428 Eval Loss: 0.9348 Eval Acc: 0.6715 (LR: 0.000010)
-[2025-05-04 06:00:17,051]: [LeNet5_relu] Epoch: 103 Train Loss: 1.0126 Train Acc: 0.6427 Eval Loss: 0.9337 Eval Acc: 0.6724 (LR: 0.000010)
-[2025-05-04 06:00:36,088]: [LeNet5_relu] Epoch: 104 Train Loss: 1.0124 Train Acc: 0.6445 Eval Loss: 0.9343 Eval Acc: 0.6718 (LR: 0.000010)
-[2025-05-04 06:00:53,992]: [LeNet5_relu] Epoch: 105 Train Loss: 1.0081 Train Acc: 0.6442 Eval Loss: 0.9345 Eval Acc: 0.6712 (LR: 0.000010)
-[2025-05-04 06:01:13,235]: [LeNet5_relu] Epoch: 106 Train Loss: 1.0129 Train Acc: 0.6431 Eval Loss: 0.9351 Eval Acc: 0.6714 (LR: 0.000010)
-[2025-05-04 06:01:32,167]: [LeNet5_relu] Epoch: 107 Train Loss: 1.0130 Train Acc: 0.6445 Eval Loss: 0.9335 Eval Acc: 0.6717 (LR: 0.000010)
-[2025-05-04 06:01:51,312]: [LeNet5_relu] Epoch: 108 Train Loss: 1.0130 Train Acc: 0.6410 Eval Loss: 0.9339 Eval Acc: 0.6715 (LR: 0.000010)
-[2025-05-04 06:02:10,321]: [LeNet5_relu] Epoch: 109 Train Loss: 1.0098 Train Acc: 0.6463 Eval Loss: 0.9349 Eval Acc: 0.6712 (LR: 0.000010)
-[2025-05-04 06:02:29,267]: [LeNet5_relu] Epoch: 110 Train Loss: 1.0124 Train Acc: 0.6424 Eval Loss: 0.9337 Eval Acc: 0.6714 (LR: 0.000010)
-[2025-05-04 06:02:48,096]: [LeNet5_relu] Epoch: 111 Train Loss: 1.0146 Train Acc: 0.6410 Eval Loss: 0.9352 Eval Acc: 0.6707 (LR: 0.000010)
-[2025-05-04 06:03:04,670]: [LeNet5_relu] Epoch: 112 Train Loss: 1.0123 Train Acc: 0.6436 Eval Loss: 0.9341 Eval Acc: 0.6707 (LR: 0.000010)
-[2025-05-04 06:03:20,717]: [LeNet5_relu] Epoch: 113 Train Loss: 1.0129 Train Acc: 0.6439 Eval Loss: 0.9346 Eval Acc: 0.6702 (LR: 0.000010)
-[2025-05-04 06:03:36,592]: [LeNet5_relu] Epoch: 114 Train Loss: 1.0107 Train Acc: 0.6442 Eval Loss: 0.9349 Eval Acc: 0.6708 (LR: 0.000010)
-[2025-05-04 06:03:52,861]: [LeNet5_relu] Epoch: 115 Train Loss: 1.0108 Train Acc: 0.6453 Eval Loss: 0.9345 Eval Acc: 0.6713 (LR: 0.000010)
-[2025-05-04 06:03:52,864]: Early stopping was triggered!
-[2025-05-04 06:03:52,869]: 
+[2025-05-05 07:12:14,389]: [LeNet5_relu] Epoch: 001 Train Loss: 2.2995 Train Acc: 0.1039 Eval Loss: 2.2940 Eval Acc: 0.1273 (LR: 0.001000)
+[2025-05-05 07:12:14,408]: [LeNet5_relu] Best Eval Accuracy: 0.1273
+[2025-05-05 07:12:14,411]: 
 Training of full-precision model finished!
-[2025-05-04 06:03:52,869]: Model Architecture:
-[2025-05-04 06:03:52,869]: LeNet5(
+[2025-05-05 07:12:14,411]: Model Architecture:
+[2025-05-05 07:12:14,411]: LeNet5(
   (conv1): Sequential(
     (0): Conv2d(3, 6, kernel_size=(5, 5), stride=(1, 1))
     (1): ReLU(inplace=True)
@@ -140,94 +26,84 @@ Training of full-precision model finished!
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 06:03:52,869]: 
+[2025-05-05 07:12:14,411]: 
 Model Parameters with Weights:
-[2025-05-04 06:03:52,869]: 
+[2025-05-05 07:12:14,411]: 
 Parameter: conv1.0.weight
-[2025-05-04 06:03:52,869]: Shape: torch.Size([6, 3, 5, 5])
-[2025-05-04 06:03:52,910]: Sample Values (16 elements): [0.12761126458644867, -0.10736838728189468, 0.06578069925308228, 0.05927375331521034, 0.04295101389288902, -0.11992598325014114, -0.02481859177350998, 0.2354588359594345, 0.029566636309027672, -0.13707846403121948, -0.13731451332569122, 0.03465786203742027, -0.22484815120697021, 0.03159533068537712, 0.015188909135758877, 0.16093212366104126]
-[2025-05-04 06:03:52,922]: Mean: 0.0003
-[2025-05-04 06:03:52,937]: Std: 0.1758
-[2025-05-04 06:03:52,949]: Min: -0.8095
-[2025-05-04 06:03:52,951]: Max: 0.8359
-[2025-05-04 06:03:52,951]: 
+[2025-05-05 07:12:14,411]: Shape: torch.Size([6, 3, 5, 5])
+[2025-05-05 07:12:14,433]: Sample Values (16 elements): [0.06947404891252518, -0.02629719115793705, -0.07548290491104126, 0.026297738775610924, 0.035239703953266144, 0.04373392090201378, -0.000490376609377563, 0.10057307034730911, -0.029403936117887497, 0.033644478768110275, 0.10771737992763519, -0.06292934715747833, -0.0314582884311676, 0.10473185032606125, 0.060349322855472565, -0.08346466720104218]
+[2025-05-05 07:12:14,445]: Mean: 0.0008
+[2025-05-05 07:12:14,457]: Min: -0.1133
+[2025-05-05 07:12:14,458]: Max: 0.1132
+[2025-05-05 07:12:14,458]: 
 Parameter: conv1.0.bias
-[2025-05-04 06:03:52,951]: Shape: torch.Size([6])
-[2025-05-04 06:03:52,969]: Sample Values (6 elements): [-0.018668193370103836, 0.6954758763313293, 0.3982889950275421, -0.055154524743556976, 0.25423455238342285, -0.14794360101222992]
-[2025-05-04 06:03:52,978]: Mean: 0.1877
-[2025-05-04 06:03:52,985]: Std: 0.3227
-[2025-05-04 06:03:52,987]: Min: -0.1479
-[2025-05-04 06:03:52,989]: Max: 0.6955
-[2025-05-04 06:03:52,989]: 
+[2025-05-05 07:12:14,458]: Shape: torch.Size([6])
+[2025-05-05 07:12:14,459]: Sample Values (6 elements): [-0.09233514219522476, 0.034118060022592545, -0.08082395792007446, 0.07548855245113373, -0.10102088749408722, 0.03585809841752052]
+[2025-05-05 07:12:14,459]: Mean: -0.0215
+[2025-05-05 07:12:14,460]: Min: -0.1010
+[2025-05-05 07:12:14,460]: Max: 0.0755
+[2025-05-05 07:12:14,460]: 
 Parameter: conv2.0.weight
-[2025-05-04 06:03:52,989]: Shape: torch.Size([16, 6, 5, 5])
-[2025-05-04 06:03:52,992]: Sample Values (6 elements): [0.05428742244839668, -0.028328174725174904, 0.10437527298927307, -0.04693254455924034, -0.06951895356178284, -0.06322608888149261]
-[2025-05-04 06:03:52,994]: Mean: 0.0045
-[2025-05-04 06:03:53,006]: Std: 0.0928
-[2025-05-04 06:03:53,012]: Min: -0.4065
-[2025-05-04 06:03:53,015]: Max: 0.4102
-[2025-05-04 06:03:53,015]: 
+[2025-05-05 07:12:14,460]: Shape: torch.Size([16, 6, 5, 5])
+[2025-05-05 07:12:14,461]: Sample Values (16 elements): [-0.01880386844277382, 0.0012152832932770252, 0.07341255992650986, -0.055870797485113144, -0.019383493810892105, -0.05774068832397461, -0.027713611721992493, -0.0214917603880167, -0.021059582009911537, 0.0589807853102684, 0.034715063869953156, 0.05300593003630638, -0.009175390005111694, -0.030880959704518318, -0.0482243113219738, -0.04618966206908226]
+[2025-05-05 07:12:14,461]: Mean: -0.0051
+[2025-05-05 07:12:14,461]: Min: -0.0812
+[2025-05-05 07:12:14,461]: Max: 0.0795
+[2025-05-05 07:12:14,461]: 
 Parameter: conv2.0.bias
-[2025-05-04 06:03:53,015]: Shape: torch.Size([16])
-[2025-05-04 06:03:53,030]: Sample Values (6 elements): [-0.10815218836069107, -0.202191561460495, 0.17768923938274384, 0.08385636657476425, 1.017608404159546, -0.29941532015800476]
-[2025-05-04 06:03:53,039]: Mean: 0.0623
-[2025-05-04 06:03:53,060]: Std: 0.4234
-[2025-05-04 06:03:53,062]: Min: -0.4970
-[2025-05-04 06:03:53,063]: Max: 1.0176
-[2025-05-04 06:03:53,063]: 
+[2025-05-05 07:12:14,461]: Shape: torch.Size([16])
+[2025-05-05 07:12:14,462]: Sample Values (16 elements): [0.008912303484976292, 0.0006635385216213763, -0.007578214164823294, 0.03423852100968361, -0.05562780052423477, -0.006845213007181883, 0.06735050678253174, -0.011944535188376904, -0.029908286407589912, -0.027664827182888985, 0.0610063336789608, 0.02971441112458706, 0.03448915854096413, -0.029160229489207268, -0.07016687840223312, -0.05414628982543945]
+[2025-05-05 07:12:14,462]: Mean: -0.0035
+[2025-05-05 07:12:14,462]: Min: -0.0702
+[2025-05-05 07:12:14,463]: Max: 0.0674
+[2025-05-05 07:12:14,463]: 
 Parameter: fc1.0.weight
-[2025-05-04 06:03:53,063]: Shape: torch.Size([120, 400])
-[2025-05-04 06:03:53,086]: Sample Values (6 elements): [-0.0024743734393268824, -0.05865442007780075, -0.016572901979088783, 0.015633627772331238, 0.007144395262002945, 0.039755929261446]
-[2025-05-04 06:03:53,089]: Mean: 0.0001
-[2025-05-04 06:03:53,091]: Std: 0.0366
-[2025-05-04 06:03:53,096]: Min: -0.2052
-[2025-05-04 06:03:53,107]: Max: 0.1879
-[2025-05-04 06:03:53,108]: 
+[2025-05-05 07:12:14,463]: Shape: torch.Size([120, 400])
+[2025-05-05 07:12:14,463]: Sample Values (16 elements): [0.023515479639172554, -0.03766195476055145, -0.021305739879608154, 0.011399375274777412, -0.04976799711585045, -0.03323942422866821, 0.03326733782887459, -0.030840106308460236, -0.04934864863753319, -0.01671622507274151, 0.019335057586431503, -0.03186002001166344, 0.027207359671592712, 0.017618682235479355, -0.013282503932714462, -0.009500395506620407]
+[2025-05-05 07:12:14,464]: Mean: -0.0020
+[2025-05-05 07:12:14,464]: Min: -0.0499
+[2025-05-05 07:12:14,464]: Max: 0.0498
+[2025-05-05 07:12:14,464]: 
 Parameter: fc1.0.bias
-[2025-05-04 06:03:53,108]: Shape: torch.Size([120])
-[2025-05-04 06:03:53,111]: Sample Values (6 elements): [-0.011724314652383327, 0.03528602421283722, 0.04232129082083702, -0.0011558264959603548, 0.032534874975681305, 0.0005865555722266436]
-[2025-05-04 06:03:53,114]: Mean: 0.0090
-[2025-05-04 06:03:53,118]: Std: 0.0597
-[2025-05-04 06:03:53,141]: Min: -0.1439
-[2025-05-04 06:03:53,152]: Max: 0.1621
-[2025-05-04 06:03:53,152]: 
+[2025-05-05 07:12:14,464]: Shape: torch.Size([120])
+[2025-05-05 07:12:14,465]: Sample Values (16 elements): [-0.016202639788389206, 0.02859973907470703, 0.041777078062295914, -0.023976348340511322, 0.014314022846519947, 0.040280427783727646, 0.03552486374974251, -0.03518039733171463, -0.04908169433474541, -0.01202334463596344, 0.017446007579565048, 0.022517438977956772, 0.004272692371159792, -0.01733561046421528, -0.043229978531599045, 0.014146402478218079]
+[2025-05-05 07:12:14,465]: Mean: -0.0011
+[2025-05-05 07:12:14,465]: Min: -0.0496
+[2025-05-05 07:12:14,466]: Max: 0.0504
+[2025-05-05 07:12:14,466]: 
 Parameter: fc2.0.weight
-[2025-05-04 06:03:53,152]: Shape: torch.Size([84, 120])
-[2025-05-04 06:03:53,155]: Sample Values (6 elements): [-0.020068330690264702, -0.07827302813529968, 0.00734676793217659, -0.0030542153399437666, 0.048689570277929306, -0.14041586220264435]
-[2025-05-04 06:03:53,158]: Mean: 0.0025
-[2025-05-04 06:03:53,160]: Std: 0.0639
-[2025-05-04 06:03:53,187]: Min: -0.2115
-[2025-05-04 06:03:53,188]: Max: 0.2130
-[2025-05-04 06:03:53,188]: 
+[2025-05-05 07:12:14,466]: Shape: torch.Size([84, 120])
+[2025-05-05 07:12:14,466]: Sample Values (16 elements): [0.031763698905706406, 0.06782741099596024, -0.020064769312739372, 0.06861472874879837, 0.06730508804321289, 0.04615067318081856, 0.0021426209714263678, 0.08567450195550919, 0.035130567848682404, -0.08078651875257492, 0.05773133412003517, -0.049597419798374176, -0.03136624023318291, 0.060275476425886154, 0.08948535472154617, -0.08994432538747787]
+[2025-05-05 07:12:14,466]: Mean: 0.0056
+[2025-05-05 07:12:14,466]: Min: -0.0902
+[2025-05-05 07:12:14,467]: Max: 0.0895
+[2025-05-05 07:12:14,467]: 
 Parameter: fc2.0.bias
-[2025-05-04 06:03:53,188]: Shape: torch.Size([84])
-[2025-05-04 06:03:53,192]: Sample Values (6 elements): [0.013811477459967136, 0.0489443875849247, -0.037092067301273346, -0.008857019245624542, 0.01250795740634203, 0.10806962847709656]
-[2025-05-04 06:03:53,193]: Mean: 0.0290
-[2025-05-04 06:03:53,195]: Std: 0.1019
-[2025-05-04 06:03:53,216]: Min: -0.2249
-[2025-05-04 06:03:53,219]: Max: 0.2673
-[2025-05-04 06:03:53,220]: 
+[2025-05-05 07:12:14,467]: Shape: torch.Size([84])
+[2025-05-05 07:12:14,467]: Sample Values (16 elements): [-0.05155060440301895, -0.014713644050061703, 0.08121947199106216, 0.02609221078455448, -0.008398439735174179, -0.012229803018271923, -0.007104918826371431, -0.053741056472063065, 0.04036284610629082, -0.04349846765398979, 0.05535394698381424, -0.047956936061382294, 0.034820541739463806, 0.09058216959238052, 0.048613399267196655, 0.02571137808263302]
+[2025-05-05 07:12:14,468]: Mean: -0.0026
+[2025-05-05 07:12:14,468]: Min: -0.0906
+[2025-05-05 07:12:14,468]: Max: 0.0949
+[2025-05-05 07:12:14,468]: 
 Parameter: fc3.weight
-[2025-05-04 06:03:53,220]: Shape: torch.Size([10, 84])
-[2025-05-04 06:03:53,229]: Sample Values (6 elements): [-0.01712675765156746, 0.026914330199360847, -0.12306979298591614, 0.00950536783784628, -0.00144421576987952, -0.24695958197116852]
-[2025-05-04 06:03:53,230]: Mean: 0.0010
-[2025-05-04 06:03:53,232]: Std: 0.1426
-[2025-05-04 06:03:53,232]: Min: -0.3755
-[2025-05-04 06:03:53,233]: Max: 0.4861
-[2025-05-04 06:03:53,233]: 
+[2025-05-05 07:12:14,468]: Shape: torch.Size([10, 84])
+[2025-05-05 07:12:14,469]: Sample Values (16 elements): [0.011958523653447628, -0.00037760924897156656, 0.09542782604694366, 0.06190257892012596, 0.043705739080905914, -0.09594236314296722, -0.035841573029756546, 0.08506208658218384, 0.08924807608127594, -0.06265229731798172, -0.09709769487380981, 0.06555657088756561, -0.10236934572458267, -0.03999911993741989, -0.0034649737644940615, -0.04335127770900726]
+[2025-05-05 07:12:14,469]: Mean: 0.0057
+[2025-05-05 07:12:14,469]: Min: -0.1083
+[2025-05-05 07:12:14,469]: Max: 0.1065
+[2025-05-05 07:12:14,469]: 
 Parameter: fc3.bias
-[2025-05-04 06:03:53,233]: Shape: torch.Size([10])
-[2025-05-04 06:03:53,248]: Sample Values (6 elements): [0.08993706107139587, 0.10106206685304642, -0.13004373013973236, -0.1485922783613205, 0.14382028579711914, -0.30974647402763367]
-[2025-05-04 06:03:53,265]: Mean: 0.0141
-[2025-05-04 06:03:53,269]: Std: 0.3045
-[2025-05-04 06:03:53,271]: Min: -0.4310
-[2025-05-04 06:03:53,275]: Max: 0.6667
-[2025-05-04 06:03:53,276]: 
+[2025-05-05 07:12:14,469]: Shape: torch.Size([10])
+[2025-05-05 07:12:14,470]: Sample Values (10 elements): [-0.07537603378295898, 0.056909941136837006, -0.06720434129238129, -0.07532650232315063, 0.0698060393333435, 0.03726081922650337, 0.040663398802280426, -0.06896936893463135, 0.02008846029639244, -0.023547878488898277]
+[2025-05-05 07:12:14,470]: Mean: -0.0086
+[2025-05-05 07:12:14,470]: Min: -0.0754
+[2025-05-05 07:12:14,470]: Max: 0.0698
+[2025-05-05 07:12:14,470]: 
 
 
 QAT of LeNet5 with relu down to 4 bits...
-[2025-05-04 06:03:53,627]: [LeNet5_relu_quantized_4_bits] after configure_qat:
-[2025-05-04 06:03:53,845]: LeNet5(
+[2025-05-05 07:12:14,513]: [LeNet5_relu_quantized_4_bits] after configure_qat:
+[2025-05-05 07:12:14,585]: LeNet5(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
       fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
@@ -300,76 +176,18 @@ QAT of LeNet5 with relu down to 4 bits...
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 06:05:22,418]: [LeNet5_relu_quantized_4_bits] Epoch: 001 Train Loss: 1.1126 Train Acc: 0.6046 Eval Loss: 1.0125 Eval Acc: 0.6412 (LR: 0.001000)
-[2025-05-04 06:06:47,313]: [LeNet5_relu_quantized_4_bits] Epoch: 002 Train Loss: 1.1182 Train Acc: 0.6049 Eval Loss: 1.0096 Eval Acc: 0.6449 (LR: 0.001000)
-[2025-05-04 06:08:18,640]: [LeNet5_relu_quantized_4_bits] Epoch: 003 Train Loss: 1.1108 Train Acc: 0.6050 Eval Loss: 1.0503 Eval Acc: 0.6311 (LR: 0.001000)
-[2025-05-04 06:09:50,937]: [LeNet5_relu_quantized_4_bits] Epoch: 004 Train Loss: 1.1097 Train Acc: 0.6058 Eval Loss: 1.0105 Eval Acc: 0.6417 (LR: 0.001000)
-[2025-05-04 06:11:15,086]: [LeNet5_relu_quantized_4_bits] Epoch: 005 Train Loss: 1.1134 Train Acc: 0.6058 Eval Loss: 1.0109 Eval Acc: 0.6451 (LR: 0.001000)
-[2025-05-04 06:12:41,010]: [LeNet5_relu_quantized_4_bits] Epoch: 006 Train Loss: 1.1089 Train Acc: 0.6069 Eval Loss: 1.0138 Eval Acc: 0.6408 (LR: 0.001000)
-[2025-05-04 06:14:04,380]: [LeNet5_relu_quantized_4_bits] Epoch: 007 Train Loss: 1.1031 Train Acc: 0.6105 Eval Loss: 1.0026 Eval Acc: 0.6469 (LR: 0.001000)
-[2025-05-04 06:15:28,662]: [LeNet5_relu_quantized_4_bits] Epoch: 008 Train Loss: 1.1027 Train Acc: 0.6086 Eval Loss: 1.0124 Eval Acc: 0.6430 (LR: 0.001000)
-[2025-05-04 06:16:55,791]: [LeNet5_relu_quantized_4_bits] Epoch: 009 Train Loss: 1.0938 Train Acc: 0.6127 Eval Loss: 1.0302 Eval Acc: 0.6314 (LR: 0.001000)
-[2025-05-04 06:18:26,790]: [LeNet5_relu_quantized_4_bits] Epoch: 010 Train Loss: 1.0954 Train Acc: 0.6109 Eval Loss: 0.9911 Eval Acc: 0.6492 (LR: 0.001000)
-[2025-05-04 06:19:57,581]: [LeNet5_relu_quantized_4_bits] Epoch: 011 Train Loss: 1.0981 Train Acc: 0.6115 Eval Loss: 0.9940 Eval Acc: 0.6465 (LR: 0.001000)
-[2025-05-04 06:21:21,168]: [LeNet5_relu_quantized_4_bits] Epoch: 012 Train Loss: 1.0936 Train Acc: 0.6121 Eval Loss: 1.0084 Eval Acc: 0.6440 (LR: 0.001000)
-[2025-05-04 06:22:49,889]: [LeNet5_relu_quantized_4_bits] Epoch: 013 Train Loss: 1.0890 Train Acc: 0.6131 Eval Loss: 0.9961 Eval Acc: 0.6470 (LR: 0.001000)
-[2025-05-04 06:24:17,005]: [LeNet5_relu_quantized_4_bits] Epoch: 014 Train Loss: 1.0912 Train Acc: 0.6122 Eval Loss: 1.0053 Eval Acc: 0.6443 (LR: 0.001000)
-[2025-05-04 06:25:43,083]: [LeNet5_relu_quantized_4_bits] Epoch: 015 Train Loss: 1.0850 Train Acc: 0.6158 Eval Loss: 1.0241 Eval Acc: 0.6403 (LR: 0.001000)
-[2025-05-04 06:27:07,924]: [LeNet5_relu_quantized_4_bits] Epoch: 016 Train Loss: 1.0962 Train Acc: 0.6125 Eval Loss: 1.0001 Eval Acc: 0.6461 (LR: 0.001000)
-[2025-05-04 06:28:36,030]: [LeNet5_relu_quantized_4_bits] Epoch: 017 Train Loss: 1.0838 Train Acc: 0.6150 Eval Loss: 0.9928 Eval Acc: 0.6469 (LR: 0.001000)
-[2025-05-04 06:30:16,196]: [LeNet5_relu_quantized_4_bits] Epoch: 018 Train Loss: 1.0828 Train Acc: 0.6154 Eval Loss: 0.9994 Eval Acc: 0.6476 (LR: 0.001000)
-[2025-05-04 06:31:55,182]: [LeNet5_relu_quantized_4_bits] Epoch: 019 Train Loss: 1.0829 Train Acc: 0.6171 Eval Loss: 0.9866 Eval Acc: 0.6482 (LR: 0.001000)
-[2025-05-04 06:33:34,589]: [LeNet5_relu_quantized_4_bits] Epoch: 020 Train Loss: 1.0782 Train Acc: 0.6191 Eval Loss: 1.0007 Eval Acc: 0.6471 (LR: 0.001000)
-[2025-05-04 06:35:12,630]: [LeNet5_relu_quantized_4_bits] Epoch: 021 Train Loss: 1.0828 Train Acc: 0.6186 Eval Loss: 0.9844 Eval Acc: 0.6515 (LR: 0.001000)
-[2025-05-04 06:36:51,708]: [LeNet5_relu_quantized_4_bits] Epoch: 022 Train Loss: 1.0801 Train Acc: 0.6174 Eval Loss: 0.9907 Eval Acc: 0.6484 (LR: 0.001000)
-[2025-05-04 06:38:30,437]: [LeNet5_relu_quantized_4_bits] Epoch: 023 Train Loss: 1.0757 Train Acc: 0.6202 Eval Loss: 0.9952 Eval Acc: 0.6491 (LR: 0.001000)
-[2025-05-04 06:40:08,981]: [LeNet5_relu_quantized_4_bits] Epoch: 024 Train Loss: 1.0717 Train Acc: 0.6228 Eval Loss: 0.9910 Eval Acc: 0.6508 (LR: 0.001000)
-[2025-05-04 06:41:47,376]: [LeNet5_relu_quantized_4_bits] Epoch: 025 Train Loss: 1.0711 Train Acc: 0.6234 Eval Loss: 0.9898 Eval Acc: 0.6514 (LR: 0.001000)
-[2025-05-04 06:43:28,394]: [LeNet5_relu_quantized_4_bits] Epoch: 026 Train Loss: 1.0720 Train Acc: 0.6179 Eval Loss: 0.9908 Eval Acc: 0.6509 (LR: 0.001000)
-[2025-05-04 06:45:07,958]: [LeNet5_relu_quantized_4_bits] Epoch: 027 Train Loss: 1.0705 Train Acc: 0.6206 Eval Loss: 0.9895 Eval Acc: 0.6487 (LR: 0.001000)
-[2025-05-04 06:46:49,786]: [LeNet5_relu_quantized_4_bits] Epoch: 028 Train Loss: 1.0661 Train Acc: 0.6227 Eval Loss: 0.9782 Eval Acc: 0.6598 (LR: 0.001000)
-[2025-05-04 06:48:30,406]: [LeNet5_relu_quantized_4_bits] Epoch: 029 Train Loss: 1.0760 Train Acc: 0.6210 Eval Loss: 0.9823 Eval Acc: 0.6558 (LR: 0.001000)
-[2025-05-04 06:50:08,674]: [LeNet5_relu_quantized_4_bits] Epoch: 030 Train Loss: 1.0631 Train Acc: 0.6232 Eval Loss: 0.9724 Eval Acc: 0.6592 (LR: 0.000250)
-[2025-05-04 06:51:47,208]: [LeNet5_relu_quantized_4_bits] Epoch: 031 Train Loss: 1.0394 Train Acc: 0.6312 Eval Loss: 0.9569 Eval Acc: 0.6611 (LR: 0.000250)
-[2025-05-04 06:53:25,575]: [LeNet5_relu_quantized_4_bits] Epoch: 032 Train Loss: 1.0338 Train Acc: 0.6347 Eval Loss: 0.9622 Eval Acc: 0.6644 (LR: 0.000250)
-[2025-05-04 06:55:04,265]: [LeNet5_relu_quantized_4_bits] Epoch: 033 Train Loss: 1.0263 Train Acc: 0.6358 Eval Loss: 0.9592 Eval Acc: 0.6609 (LR: 0.000250)
-[2025-05-04 06:56:41,276]: [LeNet5_relu_quantized_4_bits] Epoch: 034 Train Loss: 1.0303 Train Acc: 0.6352 Eval Loss: 0.9589 Eval Acc: 0.6609 (LR: 0.000250)
-[2025-05-04 06:58:14,154]: [LeNet5_relu_quantized_4_bits] Epoch: 035 Train Loss: 1.0357 Train Acc: 0.6334 Eval Loss: 0.9682 Eval Acc: 0.6613 (LR: 0.000250)
-[2025-05-04 06:59:52,361]: [LeNet5_relu_quantized_4_bits] Epoch: 036 Train Loss: 1.0408 Train Acc: 0.6309 Eval Loss: 0.9568 Eval Acc: 0.6606 (LR: 0.000250)
-[2025-05-04 07:01:31,518]: [LeNet5_relu_quantized_4_bits] Epoch: 037 Train Loss: 1.0340 Train Acc: 0.6328 Eval Loss: 0.9570 Eval Acc: 0.6592 (LR: 0.000250)
-[2025-05-04 07:03:10,718]: [LeNet5_relu_quantized_4_bits] Epoch: 038 Train Loss: 1.0355 Train Acc: 0.6342 Eval Loss: 0.9621 Eval Acc: 0.6600 (LR: 0.000250)
-[2025-05-04 07:04:46,409]: [LeNet5_relu_quantized_4_bits] Epoch: 039 Train Loss: 1.0367 Train Acc: 0.6359 Eval Loss: 0.9633 Eval Acc: 0.6602 (LR: 0.000250)
-[2025-05-04 07:06:15,290]: [LeNet5_relu_quantized_4_bits] Epoch: 040 Train Loss: 1.0320 Train Acc: 0.6345 Eval Loss: 0.9582 Eval Acc: 0.6636 (LR: 0.000250)
-[2025-05-04 07:07:55,628]: [LeNet5_relu_quantized_4_bits] Epoch: 041 Train Loss: 1.0345 Train Acc: 0.6342 Eval Loss: 0.9685 Eval Acc: 0.6600 (LR: 0.000250)
-[2025-05-04 07:09:34,414]: [LeNet5_relu_quantized_4_bits] Epoch: 042 Train Loss: 1.0352 Train Acc: 0.6353 Eval Loss: 0.9573 Eval Acc: 0.6614 (LR: 0.000250)
-[2025-05-04 07:11:13,799]: [LeNet5_relu_quantized_4_bits] Epoch: 043 Train Loss: 1.0293 Train Acc: 0.6361 Eval Loss: 0.9644 Eval Acc: 0.6575 (LR: 0.000250)
-[2025-05-04 07:12:52,688]: [LeNet5_relu_quantized_4_bits] Epoch: 044 Train Loss: 1.0307 Train Acc: 0.6357 Eval Loss: 0.9554 Eval Acc: 0.6632 (LR: 0.000250)
-[2025-05-04 07:14:30,700]: [LeNet5_relu_quantized_4_bits] Epoch: 045 Train Loss: 1.0308 Train Acc: 0.6336 Eval Loss: 0.9520 Eval Acc: 0.6675 (LR: 0.000063)
-[2025-05-04 07:16:10,108]: [LeNet5_relu_quantized_4_bits] Epoch: 046 Train Loss: 1.0180 Train Acc: 0.6394 Eval Loss: 0.9432 Eval Acc: 0.6681 (LR: 0.000063)
-[2025-05-04 07:17:44,337]: [LeNet5_relu_quantized_4_bits] Epoch: 047 Train Loss: 1.0291 Train Acc: 0.6376 Eval Loss: 0.9491 Eval Acc: 0.6677 (LR: 0.000063)
-[2025-05-04 07:19:15,031]: [LeNet5_relu_quantized_4_bits] Epoch: 048 Train Loss: 1.0189 Train Acc: 0.6406 Eval Loss: 0.9444 Eval Acc: 0.6702 (LR: 0.000063)
-[2025-05-04 07:20:44,812]: [LeNet5_relu_quantized_4_bits] Epoch: 049 Train Loss: 1.0218 Train Acc: 0.6391 Eval Loss: 0.9562 Eval Acc: 0.6604 (LR: 0.000063)
-[2025-05-04 07:22:13,635]: [LeNet5_relu_quantized_4_bits] Epoch: 050 Train Loss: 1.0187 Train Acc: 0.6417 Eval Loss: 0.9457 Eval Acc: 0.6667 (LR: 0.000063)
-[2025-05-04 07:23:43,980]: [LeNet5_relu_quantized_4_bits] Epoch: 051 Train Loss: 1.0202 Train Acc: 0.6413 Eval Loss: 0.9502 Eval Acc: 0.6622 (LR: 0.000063)
-[2025-05-04 07:25:14,964]: [LeNet5_relu_quantized_4_bits] Epoch: 052 Train Loss: 1.0190 Train Acc: 0.6415 Eval Loss: 0.9483 Eval Acc: 0.6702 (LR: 0.000063)
-[2025-05-04 07:26:44,118]: [LeNet5_relu_quantized_4_bits] Epoch: 053 Train Loss: 1.0249 Train Acc: 0.6351 Eval Loss: 0.9487 Eval Acc: 0.6659 (LR: 0.000063)
-[2025-05-04 07:28:08,463]: [LeNet5_relu_quantized_4_bits] Epoch: 054 Train Loss: 1.0183 Train Acc: 0.6380 Eval Loss: 0.9465 Eval Acc: 0.6676 (LR: 0.000063)
-[2025-05-04 07:29:27,712]: [LeNet5_relu_quantized_4_bits] Epoch: 055 Train Loss: 1.0200 Train Acc: 0.6393 Eval Loss: 0.9438 Eval Acc: 0.6675 (LR: 0.000063)
-[2025-05-04 07:30:37,374]: [LeNet5_relu_quantized_4_bits] Epoch: 056 Train Loss: 1.0211 Train Acc: 0.6374 Eval Loss: 0.9434 Eval Acc: 0.6635 (LR: 0.000063)
-[2025-05-04 07:31:51,091]: [LeNet5_relu_quantized_4_bits] Epoch: 057 Train Loss: 1.0180 Train Acc: 0.6371 Eval Loss: 0.9484 Eval Acc: 0.6681 (LR: 0.000063)
-[2025-05-04 07:33:04,304]: [LeNet5_relu_quantized_4_bits] Epoch: 058 Train Loss: 1.0186 Train Acc: 0.6393 Eval Loss: 0.9474 Eval Acc: 0.6700 (LR: 0.000063)
-[2025-05-04 07:34:21,381]: [LeNet5_relu_quantized_4_bits] Epoch: 059 Train Loss: 1.0203 Train Acc: 0.6404 Eval Loss: 0.9534 Eval Acc: 0.6633 (LR: 0.000063)
-[2025-05-04 07:35:33,739]: [LeNet5_relu_quantized_4_bits] Epoch: 060 Train Loss: 1.0212 Train Acc: 0.6412 Eval Loss: 0.9409 Eval Acc: 0.6695 (LR: 0.000063)
-[2025-05-04 07:35:33,751]: 
+[2025-05-05 07:12:46,093]: [LeNet5_relu_quantized_4_bits] Epoch: 001 Train Loss: 2.2863 Train Acc: 0.1575 Eval Loss: 2.2693 Eval Acc: 0.1753 (LR: 0.001000)
+[2025-05-05 07:12:46,104]: [LeNet5_relu_quantized_4_bits] Best Eval Accuracy: 0.1753
+[2025-05-05 07:12:46,114]: 
 
 
 Quantization of model down to 4 bits finished
-[2025-05-04 07:35:33,752]: Model Architecture:
-[2025-05-04 07:35:34,167]: LeNet5(
+[2025-05-05 07:12:46,114]: Model Architecture:
+[2025-05-05 07:12:46,247]: LeNet5(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
-      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.3017], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-      (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=19.525537490844727)
+      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2734], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+      (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=4.100526332855225)
     )
   )
   (dequant): DeQuantStub()
@@ -382,15 +200,15 @@ Quantization of model down to 4 bits finished
     (0): Conv2d(
       6, 16, kernel_size=(5, 5), stride=(1, 1)
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-8, quant_max=7, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0420, 0.0282, 0.0607, 0.0408, 0.0457, 0.0644, 0.0673, 0.0346, 0.0289,
-                0.0414, 0.0359, 0.0435, 0.0327, 0.0589, 0.0309, 0.0739],
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-8, quant_max=7, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0108, 0.0113, 0.0110, 0.0107, 0.0113, 0.0110, 0.0109, 0.0109, 0.0107,
+                0.0109, 0.0108, 0.0109, 0.0110, 0.0109, 0.0107, 0.0108],
                device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0',
                dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.3152, -0.2118, -0.4549, -0.3062, -0.1531, -0.4832, -0.5049, -0.2442,
-                  -0.1450, -0.1861, -0.2132, -0.2966, -0.2453, -0.3322, -0.1744, -0.5541],
-                 device='cuda:0'), max_val=tensor([0.3039, 0.2118, 0.4498, 0.2653, 0.3426, 0.2764, 0.2797, 0.2592, 0.2164,
-                  0.3106, 0.2692, 0.3259, 0.1845, 0.4421, 0.2317, 0.3320],
+          min_val=tensor([-0.0813, -0.0798, -0.0793, -0.0806, -0.0830, -0.0796, -0.0818, -0.0811,
+                  -0.0802, -0.0817, -0.0809, -0.0818, -0.0799, -0.0789, -0.0793, -0.0812],
+                 device='cuda:0'), max_val=tensor([0.0794, 0.0844, 0.0825, 0.0804, 0.0848, 0.0824, 0.0805, 0.0821, 0.0806,
+                  0.0821, 0.0784, 0.0815, 0.0825, 0.0817, 0.0805, 0.0810],
                  device='cuda:0')
         )
       )
@@ -400,8 +218,8 @@ Quantization of model down to 4 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([2.0098], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=30.14674186706543)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.1502], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=2.253357410430908)
         )
       )
     )
@@ -411,55 +229,55 @@ Quantization of model down to 4 bits finished
     (0): Linear(
       in_features=400, out_features=120, bias=True
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-8, quant_max=7, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0186, 0.0128, 0.0064, 0.0071, 0.0140, 0.0075, 0.0171, 0.0119, 0.0172,
-                0.0187, 0.0139, 0.0187, 0.0170, 0.0177, 0.0170, 0.0166, 0.0144, 0.0264,
-                0.0213, 0.0172, 0.0149, 0.0137, 0.0150, 0.0065, 0.0141, 0.0070, 0.0148,
-                0.0143, 0.0206, 0.0129, 0.0167, 0.0158, 0.0122, 0.0190, 0.0252, 0.0198,
-                0.0219, 0.0169, 0.0172, 0.0161, 0.0164, 0.0164, 0.0231, 0.0189, 0.0164,
-                0.0161, 0.0161, 0.0198, 0.0183, 0.0182, 0.0144, 0.0148, 0.0168, 0.0168,
-                0.0190, 0.0159, 0.0135, 0.0172, 0.0147, 0.0179, 0.0150, 0.0069, 0.0135,
-                0.0143, 0.0138, 0.0171, 0.0161, 0.0199, 0.0186, 0.0253, 0.0251, 0.0247,
-                0.0193, 0.0185, 0.0183, 0.0190, 0.0165, 0.0142, 0.0168, 0.0077, 0.0219,
-                0.0170, 0.0067, 0.0186, 0.0225, 0.0309, 0.0180, 0.0173, 0.0183, 0.0149,
-                0.0314, 0.0176, 0.0172, 0.0136, 0.0209, 0.0184, 0.0150, 0.0210, 0.0071,
-                0.0163, 0.0181, 0.0148, 0.0260, 0.0172, 0.0158, 0.0135, 0.0189, 0.0184,
-                0.0121, 0.0183, 0.0298, 0.0281, 0.0170, 0.0142, 0.0262, 0.0199, 0.0189,
-                0.0167, 0.0129, 0.0114], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-8, quant_max=7, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0067, 0.0068, 0.0066, 0.0067, 0.0067, 0.0066, 0.0066, 0.0068, 0.0067,
+                0.0067, 0.0067, 0.0067, 0.0067, 0.0066, 0.0067, 0.0067, 0.0067, 0.0067,
+                0.0067, 0.0067, 0.0067, 0.0067, 0.0067, 0.0070, 0.0066, 0.0067, 0.0067,
+                0.0067, 0.0067, 0.0068, 0.0068, 0.0067, 0.0068, 0.0066, 0.0067, 0.0067,
+                0.0067, 0.0067, 0.0067, 0.0066, 0.0068, 0.0066, 0.0066, 0.0067, 0.0067,
+                0.0067, 0.0066, 0.0066, 0.0067, 0.0067, 0.0067, 0.0066, 0.0067, 0.0067,
+                0.0067, 0.0067, 0.0067, 0.0067, 0.0067, 0.0066, 0.0067, 0.0069, 0.0067,
+                0.0066, 0.0069, 0.0067, 0.0067, 0.0067, 0.0068, 0.0067, 0.0067, 0.0067,
+                0.0067, 0.0066, 0.0067, 0.0067, 0.0067, 0.0067, 0.0068, 0.0066, 0.0067,
+                0.0069, 0.0067, 0.0066, 0.0068, 0.0067, 0.0067, 0.0067, 0.0067, 0.0066,
+                0.0067, 0.0067, 0.0067, 0.0066, 0.0067, 0.0068, 0.0067, 0.0067, 0.0067,
+                0.0067, 0.0067, 0.0066, 0.0068, 0.0066, 0.0067, 0.0067, 0.0066, 0.0067,
+                0.0067, 0.0066, 0.0067, 0.0067, 0.0067, 0.0067, 0.0067, 0.0067, 0.0067,
+                0.0067, 0.0065, 0.0068], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                device='cuda:0', dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.1268, -0.0861, -0.0479, -0.0526, -0.1050, -0.0559, -0.1280, -0.0887,
-                  -0.1289, -0.1404, -0.1046, -0.1003, -0.1217, -0.1170, -0.1274, -0.1243,
-                  -0.1077, -0.1477, -0.1595, -0.1017, -0.1114, -0.0983, -0.1124, -0.0485,
-                  -0.1061, -0.0526, -0.1112, -0.0917, -0.1290, -0.0970, -0.1036, -0.1186,
-                  -0.0784, -0.1187, -0.1890, -0.1484, -0.1643, -0.0913, -0.1287, -0.1210,
-                  -0.1228, -0.0974, -0.1736, -0.1418, -0.1227, -0.1204, -0.0904, -0.0942,
-                  -0.1370, -0.1316, -0.0931, -0.0902, -0.1197, -0.1248, -0.1424, -0.1191,
-                  -0.0995, -0.1061, -0.1101, -0.1341, -0.0924, -0.0514, -0.0963, -0.1016,
-                  -0.0989, -0.1167, -0.1205, -0.1489, -0.1397, -0.1898, -0.1882, -0.1850,
-                  -0.1182, -0.1386, -0.1370, -0.1427, -0.1238, -0.1067, -0.1264, -0.0575,
-                  -0.1639, -0.1079, -0.0504, -0.1255, -0.1686, -0.2319, -0.1346, -0.1299,
-                  -0.1187, -0.1119, -0.2351, -0.1318, -0.0913, -0.1022, -0.1571, -0.1381,
-                  -0.1124, -0.1575, -0.0523, -0.1158, -0.1100, -0.1112, -0.1950, -0.1289,
-                  -0.1182, -0.1011, -0.1393, -0.1036, -0.0908, -0.1144, -0.2233, -0.2110,
-                  -0.0912, -0.1061, -0.1963, -0.1492, -0.1258, -0.1251, -0.0969, -0.0837],
-                 device='cuda:0'), max_val=tensor([0.1391, 0.0963, 0.0477, 0.0534, 0.0940, 0.0458, 0.0953, 0.0893, 0.1291,
-                  0.1223, 0.0934, 0.1401, 0.1278, 0.1329, 0.0998, 0.0877, 0.1065, 0.1978,
-                  0.0958, 0.1289, 0.1032, 0.1026, 0.1122, 0.0460, 0.1010, 0.0453, 0.0938,
-                  0.1070, 0.1541, 0.0875, 0.1254, 0.1147, 0.0913, 0.1423, 0.1286, 0.1447,
-                  0.1192, 0.1266, 0.0930, 0.0981, 0.1228, 0.1233, 0.1023, 0.1278, 0.0890,
-                  0.1002, 0.1207, 0.1483, 0.0893, 0.1367, 0.1078, 0.1112, 0.1258, 0.1260,
-                  0.1233, 0.1041, 0.1010, 0.1286, 0.1045, 0.1228, 0.1125, 0.0472, 0.1010,
-                  0.1075, 0.1033, 0.1286, 0.1110, 0.1265, 0.1155, 0.1122, 0.1436, 0.1214,
-                  0.1447, 0.1292, 0.1195, 0.0966, 0.0841, 0.0904, 0.1170, 0.0579, 0.1572,
-                  0.1273, 0.0463, 0.1395, 0.1238, 0.1443, 0.1169, 0.1164, 0.1370, 0.1102,
-                  0.1008, 0.1068, 0.1293, 0.0918, 0.1084, 0.1237, 0.0790, 0.0958, 0.0530,
-                  0.1225, 0.1356, 0.1087, 0.1090, 0.1001, 0.0895, 0.0941, 0.1416, 0.1384,
-                  0.0767, 0.1373, 0.1138, 0.1485, 0.1275, 0.1052, 0.1127, 0.1131, 0.1421,
-                  0.1112, 0.0699, 0.0858], device='cuda:0')
+          min_val=tensor([-0.0499, -0.0492, -0.0498, -0.0504, -0.0497, -0.0481, -0.0497, -0.0510,
+                  -0.0503, -0.0496, -0.0496, -0.0499, -0.0497, -0.0495, -0.0498, -0.0496,
+                  -0.0500, -0.0501, -0.0500, -0.0494, -0.0497, -0.0498, -0.0499, -0.0524,
+                  -0.0496, -0.0489, -0.0500, -0.0486, -0.0506, -0.0494, -0.0496, -0.0498,
+                  -0.0493, -0.0497, -0.0502, -0.0501, -0.0502, -0.0495, -0.0502, -0.0494,
+                  -0.0509, -0.0497, -0.0492, -0.0496, -0.0499, -0.0492, -0.0496, -0.0497,
+                  -0.0492, -0.0499, -0.0499, -0.0498, -0.0506, -0.0496, -0.0501, -0.0501,
+                  -0.0500, -0.0500, -0.0495, -0.0496, -0.0499, -0.0496, -0.0501, -0.0498,
+                  -0.0502, -0.0500, -0.0504, -0.0506, -0.0497, -0.0501, -0.0502, -0.0502,
+                  -0.0498, -0.0488, -0.0501, -0.0488, -0.0501, -0.0499, -0.0508, -0.0494,
+                  -0.0506, -0.0475, -0.0500, -0.0493, -0.0506, -0.0495, -0.0499, -0.0489,
+                  -0.0500, -0.0498, -0.0499, -0.0473, -0.0492, -0.0496, -0.0503, -0.0513,
+                  -0.0492, -0.0487, -0.0499, -0.0498, -0.0503, -0.0495, -0.0499, -0.0498,
+                  -0.0504, -0.0485, -0.0497, -0.0491, -0.0497, -0.0495, -0.0493, -0.0500,
+                  -0.0499, -0.0504, -0.0502, -0.0501, -0.0500, -0.0503, -0.0489, -0.0495],
+                 device='cuda:0'), max_val=tensor([0.0498, 0.0510, 0.0496, 0.0496, 0.0499, 0.0498, 0.0497, 0.0501, 0.0503,
+                  0.0502, 0.0500, 0.0499, 0.0500, 0.0496, 0.0499, 0.0504, 0.0500, 0.0494,
+                  0.0497, 0.0502, 0.0500, 0.0503, 0.0499, 0.0498, 0.0496, 0.0500, 0.0500,
+                  0.0500, 0.0495, 0.0510, 0.0508, 0.0500, 0.0508, 0.0491, 0.0499, 0.0502,
+                  0.0498, 0.0502, 0.0498, 0.0498, 0.0495, 0.0494, 0.0490, 0.0500, 0.0500,
+                  0.0506, 0.0499, 0.0497, 0.0505, 0.0499, 0.0499, 0.0497, 0.0500, 0.0500,
+                  0.0496, 0.0500, 0.0499, 0.0498, 0.0500, 0.0496, 0.0499, 0.0514, 0.0500,
+                  0.0497, 0.0515, 0.0495, 0.0503, 0.0495, 0.0510, 0.0502, 0.0498, 0.0498,
+                  0.0501, 0.0494, 0.0496, 0.0504, 0.0500, 0.0498, 0.0508, 0.0497, 0.0498,
+                  0.0515, 0.0498, 0.0494, 0.0504, 0.0500, 0.0499, 0.0503, 0.0499, 0.0495,
+                  0.0502, 0.0502, 0.0500, 0.0497, 0.0502, 0.0496, 0.0499, 0.0501, 0.0491,
+                  0.0501, 0.0496, 0.0494, 0.0507, 0.0497, 0.0495, 0.0503, 0.0491, 0.0505,
+                  0.0501, 0.0498, 0.0499, 0.0498, 0.0499, 0.0501, 0.0499, 0.0495, 0.0499,
+                  0.0499, 0.0485, 0.0507], device='cuda:0')
         )
       )
       (activation_post_process): NoopObserver()
@@ -468,8 +286,8 @@ Quantization of model down to 4 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.4970], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=22.455305099487305)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.0912], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=1.3683947324752808)
         )
       )
     )
@@ -478,41 +296,41 @@ Quantization of model down to 4 bits finished
     (0): Linear(
       in_features=120, out_features=84, bias=True
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-8, quant_max=7, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0208, 0.0188, 0.0178, 0.0165, 0.0265, 0.0201, 0.0188, 0.0134, 0.0244,
-                0.0185, 0.0130, 0.0213, 0.0188, 0.0187, 0.0183, 0.0203, 0.0247, 0.0203,
-                0.0190, 0.0156, 0.0192, 0.0253, 0.0274, 0.0246, 0.0247, 0.0202, 0.0259,
-                0.0119, 0.0200, 0.0198, 0.0215, 0.0242, 0.0232, 0.0234, 0.0252, 0.0221,
-                0.0235, 0.0194, 0.0223, 0.0187, 0.0117, 0.0229, 0.0117, 0.0249, 0.0256,
-                0.0206, 0.0172, 0.0236, 0.0228, 0.0201, 0.0285, 0.0196, 0.0285, 0.0121,
-                0.0242, 0.0150, 0.0212, 0.0226, 0.0154, 0.0215, 0.0224, 0.0223, 0.0289,
-                0.0216, 0.0212, 0.0206, 0.0220, 0.0219, 0.0184, 0.0144, 0.0216, 0.0276,
-                0.0162, 0.0186, 0.0163, 0.0200, 0.0122, 0.0203, 0.0191, 0.0220, 0.0187,
-                0.0185, 0.0189, 0.0132], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-8, quant_max=7, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0121, 0.0121, 0.0119, 0.0122, 0.0121, 0.0121, 0.0122, 0.0121, 0.0120,
+                0.0121, 0.0122, 0.0122, 0.0121, 0.0122, 0.0120, 0.0122, 0.0119, 0.0121,
+                0.0120, 0.0121, 0.0122, 0.0121, 0.0121, 0.0121, 0.0121, 0.0119, 0.0120,
+                0.0121, 0.0121, 0.0120, 0.0120, 0.0121, 0.0121, 0.0122, 0.0121, 0.0119,
+                0.0120, 0.0121, 0.0121, 0.0119, 0.0117, 0.0121, 0.0123, 0.0121, 0.0122,
+                0.0120, 0.0122, 0.0121, 0.0121, 0.0121, 0.0123, 0.0120, 0.0119, 0.0120,
+                0.0119, 0.0122, 0.0122, 0.0120, 0.0121, 0.0121, 0.0119, 0.0121, 0.0127,
+                0.0121, 0.0120, 0.0120, 0.0119, 0.0121, 0.0121, 0.0121, 0.0122, 0.0119,
+                0.0122, 0.0121, 0.0122, 0.0121, 0.0121, 0.0119, 0.0120, 0.0122, 0.0118,
+                0.0121, 0.0121, 0.0120], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0',
                dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.1499, -0.1409, -0.1015, -0.1240, -0.1209, -0.1270, -0.1058, -0.0930,
-                  -0.1831, -0.1387, -0.0948, -0.1376, -0.1206, -0.1404, -0.1372, -0.1304,
-                  -0.1598, -0.1476, -0.1214, -0.1153, -0.1432, -0.1896, -0.1649, -0.1844,
-                  -0.1409, -0.1515, -0.1657, -0.0859, -0.1500, -0.1483, -0.1413, -0.1376,
-                  -0.1738, -0.1662, -0.1770, -0.1279, -0.1308, -0.1142, -0.1429, -0.1405,
-                  -0.0862, -0.1716, -0.0875, -0.1616, -0.1175, -0.1544, -0.1205, -0.1740,
-                  -0.1376, -0.1490, -0.1802, -0.1261, -0.2135, -0.0908, -0.1818, -0.0993,
-                  -0.1290, -0.1437, -0.1150, -0.1374, -0.1679, -0.1445, -0.1614, -0.1618,
-                  -0.1417, -0.1302, -0.1570, -0.1645, -0.1142, -0.1084, -0.1445, -0.1895,
-                  -0.1212, -0.1294, -0.1090, -0.1416, -0.0912, -0.1455, -0.1391, -0.1189,
-                  -0.1399, -0.1389, -0.1281, -0.0941], device='cuda:0'), max_val=tensor([0.1558, 0.1222, 0.1332, 0.1123, 0.1989, 0.1509, 0.1411, 0.1006, 0.1441,
-                  0.1388, 0.0974, 0.1596, 0.1408, 0.1389, 0.1328, 0.1524, 0.1850, 0.1520,
-                  0.1427, 0.1170, 0.1437, 0.1582, 0.2052, 0.1303, 0.1852, 0.1491, 0.1944,
-                  0.0895, 0.1295, 0.1287, 0.1615, 0.1818, 0.1632, 0.1757, 0.1889, 0.1654,
-                  0.1762, 0.1455, 0.1675, 0.1386, 0.0880, 0.1376, 0.0806, 0.1867, 0.1920,
-                  0.1437, 0.1289, 0.1766, 0.1707, 0.1505, 0.2141, 0.1471, 0.1454, 0.0872,
-                  0.1523, 0.1122, 0.1588, 0.1691, 0.1157, 0.1614, 0.1598, 0.1670, 0.2170,
-                  0.1442, 0.1589, 0.1542, 0.1653, 0.1408, 0.1380, 0.0984, 0.1617, 0.2072,
-                  0.1216, 0.1397, 0.1222, 0.1501, 0.0911, 0.1520, 0.1429, 0.1653, 0.1334,
-                  0.1315, 0.1414, 0.0989], device='cuda:0')
+          min_val=tensor([-0.0905, -0.0909, -0.0894, -0.0914, -0.0901, -0.0905, -0.0902, -0.0906,
+                  -0.0895, -0.0903, -0.0916, -0.0909, -0.0906, -0.0913, -0.0902, -0.0887,
+                  -0.0882, -0.0910, -0.0877, -0.0905, -0.0912, -0.0908, -0.0905, -0.0906,
+                  -0.0883, -0.0883, -0.0857, -0.0910, -0.0878, -0.0875, -0.0876, -0.0892,
+                  -0.0904, -0.0900, -0.0908, -0.0896, -0.0899, -0.0907, -0.0902, -0.0890,
+                  -0.0880, -0.0907, -0.0878, -0.0906, -0.0879, -0.0878, -0.0912, -0.0907,
+                  -0.0908, -0.0892, -0.0872, -0.0899, -0.0896, -0.0897, -0.0892, -0.0919,
+                  -0.0883, -0.0882, -0.0911, -0.0874, -0.0889, -0.0909, -0.0935, -0.0910,
+                  -0.0902, -0.0903, -0.0858, -0.0910, -0.0890, -0.0910, -0.0911, -0.0885,
+                  -0.0913, -0.0902, -0.0911, -0.0905, -0.0901, -0.0891, -0.0903, -0.0890,
+                  -0.0888, -0.0889, -0.0910, -0.0900], device='cuda:0'), max_val=tensor([0.0895, 0.0891, 0.0892, 0.0895, 0.0906, 0.0905, 0.0912, 0.0861, 0.0902,
+                  0.0909, 0.0887, 0.0912, 0.0898, 0.0912, 0.0887, 0.0912, 0.0893, 0.0882,
+                  0.0903, 0.0893, 0.0903, 0.0884, 0.0896, 0.0911, 0.0911, 0.0896, 0.0896,
+                  0.0906, 0.0907, 0.0897, 0.0901, 0.0909, 0.0911, 0.0913, 0.0819, 0.0849,
+                  0.0889, 0.0906, 0.0905, 0.0893, 0.0875, 0.0889, 0.0922, 0.0859, 0.0912,
+                  0.0902, 0.0910, 0.0903, 0.0897, 0.0908, 0.0923, 0.0886, 0.0867, 0.0871,
+                  0.0880, 0.0885, 0.0912, 0.0901, 0.0911, 0.0904, 0.0875, 0.0855, 0.0950,
+                  0.0905, 0.0902, 0.0865, 0.0896, 0.0883, 0.0911, 0.0911, 0.0904, 0.0895,
+                  0.0895, 0.0905, 0.0912, 0.0901, 0.0905, 0.0889, 0.0867, 0.0915, 0.0881,
+                  0.0907, 0.0894, 0.0893], device='cuda:0')
         )
       )
       (activation_post_process): NoopObserver()
@@ -521,102 +339,92 @@ Quantization of model down to 4 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.9726], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=14.588567733764648)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.0455], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=0.6825346350669861)
         )
       )
     )
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 07:35:34,167]: 
+[2025-05-05 07:12:46,247]: 
 Model Parameters with Weights:
-[2025-05-04 07:35:34,167]: 
+[2025-05-05 07:12:46,247]: 
 Parameter: conv1.0.weight
-[2025-05-04 07:35:34,167]: Shape: torch.Size([6, 3, 5, 5])
-[2025-05-04 07:35:34,180]: Sample Values (16 elements): [-0.1449074000120163, -0.16816402971744537, -0.1254808008670807, -0.037307579070329666, 0.2354879230260849, -0.21931642293930054, 0.5529898405075073, -0.1407618373632431, -0.22920499742031097, 0.07157497107982635, 0.13240140676498413, 0.09652968496084213, 0.056377995759248734, -0.04116586595773697, 0.25163039565086365, -0.009903969243168831]
-[2025-05-04 07:35:34,181]: Mean: 0.0009
-[2025-05-04 07:35:34,181]: Std: 0.2351
-[2025-05-04 07:35:34,182]: Min: -1.0730
-[2025-05-04 07:35:34,190]: Max: 1.0755
-[2025-05-04 07:35:34,190]: 
+[2025-05-05 07:12:46,247]: Shape: torch.Size([6, 3, 5, 5])
+[2025-05-05 07:12:46,252]: Sample Values (16 elements): [0.03879057988524437, 0.105770543217659, -0.05186229199171066, 0.06320443749427795, 0.07010140269994736, -0.009514777921140194, -0.05249828100204468, 0.040367648005485535, 0.060754772275686264, -0.09314767271280289, -0.008561588823795319, -0.08294897526502609, 0.04801299050450325, 0.018307527527213097, 0.03822378069162369, -0.053833700716495514]
+[2025-05-05 07:12:46,252]: Mean: 0.0032
+[2025-05-05 07:12:46,252]: Min: -0.1101
+[2025-05-05 07:12:46,253]: Max: 0.1207
+[2025-05-05 07:12:46,253]: 
 Parameter: conv1.0.bias
-[2025-05-04 07:35:34,190]: Shape: torch.Size([6])
-[2025-05-04 07:35:34,193]: Sample Values (6 elements): [-0.03908656910061836, -0.0003594755835365504, 0.9581834077835083, -0.2193237692117691, 0.3677545189857483, 0.4909924864768982]
-[2025-05-04 07:35:34,195]: Mean: 0.2597
-[2025-05-04 07:35:34,205]: Std: 0.4335
-[2025-05-04 07:35:34,208]: Min: -0.2193
-[2025-05-04 07:35:34,210]: Max: 0.9582
-[2025-05-04 07:35:34,210]: 
+[2025-05-05 07:12:46,253]: Shape: torch.Size([6])
+[2025-05-05 07:12:46,253]: Sample Values (6 elements): [0.03679677098989487, -0.07648498564958572, 0.07704584300518036, 0.03914431482553482, -0.1019320860505104, -0.08788163959980011]
+[2025-05-05 07:12:46,253]: Mean: -0.0189
+[2025-05-05 07:12:46,254]: Min: -0.1019
+[2025-05-05 07:12:46,254]: Max: 0.0770
+[2025-05-05 07:12:46,255]: 
 Parameter: conv2.0.weight
-[2025-05-04 07:35:34,210]: Shape: torch.Size([16, 6, 5, 5])
-[2025-05-04 07:35:34,217]: Sample Values (6 elements): [0.10002151131629944, 0.4334850609302521, -0.09459735453128815, -0.052263230085372925, -0.40771687030792236, -0.10112755745649338]
-[2025-05-04 07:35:34,219]: Mean: 0.0042
-[2025-05-04 07:35:34,220]: Std: 0.1140
-[2025-05-04 07:35:34,222]: Min: -0.5542
-[2025-05-04 07:35:34,228]: Max: 0.4499
-[2025-05-04 07:35:34,228]: 
+[2025-05-05 07:12:46,255]: Shape: torch.Size([16, 6, 5, 5])
+[2025-05-05 07:12:46,255]: Sample Values (16 elements): [0.05306055396795273, -0.05777805298566818, -0.07953400909900665, -0.03232590854167938, 0.06178324669599533, 0.0520191565155983, -0.05619977042078972, 0.038093362003564835, 0.07256856560707092, 0.015960751101374626, -0.011535546742379665, 0.020391441881656647, -0.058370694518089294, -0.04702365770936012, -0.06848713755607605, -0.07887198776006699]
+[2025-05-05 07:12:46,255]: Mean: -0.0052
+[2025-05-05 07:12:46,255]: Min: -0.0814
+[2025-05-05 07:12:46,256]: Max: 0.0794
+[2025-05-05 07:12:46,256]: 
 Parameter: conv2.0.bias
-[2025-05-04 07:35:34,228]: Shape: torch.Size([16])
-[2025-05-04 07:35:34,237]: Sample Values (6 elements): [-0.05056048929691315, 0.28132364153862, 0.24089670181274414, 0.016681738197803497, 0.44701018929481506, -0.24972251057624817]
-[2025-05-04 07:35:34,252]: Mean: 0.0521
-[2025-05-04 07:35:34,265]: Std: 0.5519
-[2025-05-04 07:35:34,276]: Min: -0.6413
-[2025-05-04 07:35:34,285]: Max: 1.3745
-[2025-05-04 07:35:34,285]: 
+[2025-05-05 07:12:46,256]: Shape: torch.Size([16])
+[2025-05-05 07:12:46,256]: Sample Values (16 elements): [-0.0003032588865607977, 0.06332296133041382, 0.06662559509277344, 0.03741700202226639, -0.02970835752785206, -0.007884378544986248, -0.05583838000893593, -0.05429097265005112, 0.03283090144395828, 0.013208198361098766, -0.031724076718091965, -0.007125514093786478, -0.013800162822008133, -0.025540437549352646, 0.033720772713422775, -0.07039007544517517]
+[2025-05-05 07:12:46,256]: Mean: -0.0031
+[2025-05-05 07:12:46,257]: Min: -0.0704
+[2025-05-05 07:12:46,257]: Max: 0.0666
+[2025-05-05 07:12:46,257]: 
 Parameter: fc1.0.weight
-[2025-05-04 07:35:34,286]: Shape: torch.Size([120, 400])
-[2025-05-04 07:35:34,291]: Sample Values (6 elements): [-0.001689234166406095, -0.029955070465803146, -0.01991242542862892, -0.009347629733383656, -0.028943514451384544, -0.045074351131916046]
-[2025-05-04 07:35:34,291]: Mean: -0.0001
-[2025-05-04 07:35:34,292]: Std: 0.0394
-[2025-05-04 07:35:34,292]: Min: -0.2351
-[2025-05-04 07:35:34,293]: Max: 0.1978
-[2025-05-04 07:35:34,293]: 
+[2025-05-05 07:12:46,257]: Shape: torch.Size([120, 400])
+[2025-05-05 07:12:46,257]: Sample Values (16 elements): [0.01459907740354538, -0.006286753807216883, -0.012110481970012188, -0.03133115544915199, -0.032811105251312256, -0.015282181091606617, -0.03490469977259636, 0.004073319956660271, -0.0450974777340889, -0.027276240289211273, -0.03629346564412117, 0.04222949966788292, -0.02808786928653717, -0.0094955675303936, 0.03937861695885658, -0.01937176287174225]
+[2025-05-05 07:12:46,257]: Mean: -0.0020
+[2025-05-05 07:12:46,258]: Min: -0.0499
+[2025-05-05 07:12:46,258]: Max: 0.0498
+[2025-05-05 07:12:46,258]: 
 Parameter: fc1.0.bias
-[2025-05-04 07:35:34,293]: Shape: torch.Size([120])
-[2025-05-04 07:35:34,293]: Sample Values (6 elements): [0.08509880304336548, -0.01232899446040392, 0.058664221316576004, -0.16253520548343658, 0.005570031236857176, 0.1304050087928772]
-[2025-05-04 07:35:34,294]: Mean: 0.0113
-[2025-05-04 07:35:34,296]: Std: 0.0703
-[2025-05-04 07:35:34,301]: Min: -0.1790
-[2025-05-04 07:35:34,303]: Max: 0.1934
-[2025-05-04 07:35:34,303]: 
+[2025-05-05 07:12:46,258]: Shape: torch.Size([120])
+[2025-05-05 07:12:46,260]: Sample Values (16 elements): [0.01446892973035574, 0.005656014196574688, -0.0013503398513421416, 0.006530653685331345, -0.03961499035358429, -0.02221602573990822, 0.017700662836432457, -0.02193092741072178, -0.016612479463219643, -0.04352910816669464, 0.030198778957128525, 0.007847622036933899, -0.01592506282031536, -0.032924309372901917, 0.0002972533693537116, -0.039262525737285614]
+[2025-05-05 07:12:46,260]: Mean: -0.0010
+[2025-05-05 07:12:46,260]: Min: -0.0496
+[2025-05-05 07:12:46,260]: Max: 0.0503
+[2025-05-05 07:12:46,260]: 
 Parameter: fc2.0.weight
-[2025-05-04 07:35:34,303]: Shape: torch.Size([84, 120])
-[2025-05-04 07:35:34,309]: Sample Values (6 elements): [0.06034165620803833, -0.07031555473804474, 0.11864210665225983, 0.20523488521575928, 0.055611420422792435, 0.086305633187294]
-[2025-05-04 07:35:34,310]: Mean: 0.0011
-[2025-05-04 07:35:34,318]: Std: 0.0626
-[2025-05-04 07:35:34,332]: Min: -0.2135
-[2025-05-04 07:35:34,337]: Max: 0.2170
-[2025-05-04 07:35:34,337]: 
+[2025-05-05 07:12:46,260]: Shape: torch.Size([84, 120])
+[2025-05-05 07:12:46,261]: Sample Values (16 elements): [-0.031259335577487946, 0.0632874071598053, -0.08082793653011322, -0.045005206018686295, 0.059393856674432755, 0.06677283346652985, 0.07837066799402237, 0.06417537480592728, -0.006201668176800013, -0.03311570733785629, -0.06792094558477402, -0.02066439390182495, -0.006351114250719547, 0.058764971792697906, 0.07253995537757874, -0.057385243475437164]
+[2025-05-05 07:12:46,261]: Mean: 0.0052
+[2025-05-05 07:12:46,261]: Min: -0.0909
+[2025-05-05 07:12:46,262]: Max: 0.0895
+[2025-05-05 07:12:46,262]: 
 Parameter: fc2.0.bias
-[2025-05-04 07:35:34,338]: Shape: torch.Size([84])
-[2025-05-04 07:35:34,341]: Sample Values (6 elements): [0.2366187423467636, -0.013408670201897621, 0.01694699376821518, 0.32489630579948425, 0.06955312937498093, 0.2894611954689026]
-[2025-05-04 07:35:34,346]: Mean: 0.0320
-[2025-05-04 07:35:34,357]: Std: 0.1173
-[2025-05-04 07:35:34,363]: Min: -0.2675
-[2025-05-04 07:35:34,377]: Max: 0.3249
-[2025-05-04 07:35:34,377]: 
+[2025-05-05 07:12:46,262]: Shape: torch.Size([84])
+[2025-05-05 07:12:46,262]: Sample Values (16 elements): [-0.044908612966537476, 0.10157208889722824, 0.032165106385946274, -0.013640795834362507, 0.03173435106873512, 0.023962877690792084, -0.021108653396368027, -0.008889148011803627, -0.0035547760780900717, -0.012703646905720234, 0.022780485451221466, 0.06193740665912628, -0.08104541152715683, 0.039860259741544724, 0.049758415669202805, -0.024830462411046028]
+[2025-05-05 07:12:46,262]: Mean: -0.0021
+[2025-05-05 07:12:46,262]: Min: -0.0912
+[2025-05-05 07:12:46,263]: Max: 0.1016
+[2025-05-05 07:12:46,263]: 
 Parameter: fc3.weight
-[2025-05-04 07:35:34,377]: Shape: torch.Size([10, 84])
-[2025-05-04 07:35:34,399]: Sample Values (6 elements): [0.05184601992368698, -0.02434575743973255, -0.006647756788879633, -0.10227957367897034, 0.03791409358382225, 0.09714417159557343]
-[2025-05-04 07:35:34,406]: Mean: 0.0010
-[2025-05-04 07:35:34,409]: Std: 0.1057
-[2025-05-04 07:35:34,409]: Min: -0.3160
-[2025-05-04 07:35:34,410]: Max: 0.3361
-[2025-05-04 07:35:34,410]: 
+[2025-05-05 07:12:46,263]: Shape: torch.Size([10, 84])
+[2025-05-05 07:12:46,263]: Sample Values (16 elements): [0.04056257754564285, 0.059163376688957214, 0.0954095721244812, 0.06689154356718063, 0.07445874810218811, 0.10490821301937103, 0.09096726030111313, 0.10368061810731888, -0.03073936328291893, 0.015104062855243683, -0.040608420968055725, 0.08455683290958405, 0.08107210695743561, -0.02676551043987274, -0.01886088028550148, -0.008838036097586155]
+[2025-05-05 07:12:46,263]: Mean: 0.0067
+[2025-05-05 07:12:46,263]: Min: -0.1119
+[2025-05-05 07:12:46,265]: Max: 0.1065
+[2025-05-05 07:12:46,266]: 
 Parameter: fc3.bias
-[2025-05-04 07:35:34,410]: Shape: torch.Size([10])
-[2025-05-04 07:35:34,411]: Sample Values (6 elements): [0.8093785643577576, -0.47667422890663147, -0.19053038954734802, 0.10785000771284103, -0.2786872088909149, 0.15975229442119598]
-[2025-05-04 07:35:34,411]: Mean: 0.0140
-[2025-05-04 07:35:34,412]: Std: 0.3528
-[2025-05-04 07:35:34,413]: Min: -0.4767
-[2025-05-04 07:35:34,413]: Max: 0.8094
-[2025-05-04 07:35:34,414]: 
+[2025-05-05 07:12:46,266]: Shape: torch.Size([10])
+[2025-05-05 07:12:46,266]: Sample Values (10 elements): [-0.08541972190141678, 0.03904558718204498, -0.059445835649967194, -0.060961611568927765, 0.04851873219013214, 0.04982587322592735, -0.009081616997718811, 0.06491293758153915, 0.010571036487817764, -0.08364482969045639]
+[2025-05-05 07:12:46,266]: Mean: -0.0086
+[2025-05-05 07:12:46,266]: Min: -0.0854
+[2025-05-05 07:12:46,267]: Max: 0.0649
+[2025-05-05 07:12:46,267]: 
 
 
 QAT of LeNet5 with relu down to 3 bits...
-[2025-05-04 07:35:34,754]: [LeNet5_relu_quantized_3_bits] after configure_qat:
-[2025-05-04 07:35:34,872]: LeNet5(
+[2025-05-05 07:12:46,294]: [LeNet5_relu_quantized_3_bits] after configure_qat:
+[2025-05-05 07:12:46,312]: LeNet5(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
       fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
@@ -689,68 +497,18 @@ QAT of LeNet5 with relu down to 3 bits...
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 07:36:41,206]: [LeNet5_relu_quantized_3_bits] Epoch: 001 Train Loss: 1.3220 Train Acc: 0.5365 Eval Loss: 1.2211 Eval Acc: 0.5713 (LR: 0.001000)
-[2025-05-04 07:37:32,943]: [LeNet5_relu_quantized_3_bits] Epoch: 002 Train Loss: 1.2886 Train Acc: 0.5455 Eval Loss: 1.1926 Eval Acc: 0.5821 (LR: 0.001000)
-[2025-05-04 07:38:15,828]: [LeNet5_relu_quantized_3_bits] Epoch: 003 Train Loss: 1.2910 Train Acc: 0.5444 Eval Loss: 1.2538 Eval Acc: 0.5591 (LR: 0.001000)
-[2025-05-04 07:38:43,278]: [LeNet5_relu_quantized_3_bits] Epoch: 004 Train Loss: 1.2840 Train Acc: 0.5466 Eval Loss: 1.1888 Eval Acc: 0.5776 (LR: 0.001000)
-[2025-05-04 07:39:09,685]: [LeNet5_relu_quantized_3_bits] Epoch: 005 Train Loss: 1.2813 Train Acc: 0.5437 Eval Loss: 1.1924 Eval Acc: 0.5761 (LR: 0.001000)
-[2025-05-04 07:39:37,045]: [LeNet5_relu_quantized_3_bits] Epoch: 006 Train Loss: 1.2728 Train Acc: 0.5497 Eval Loss: 1.1873 Eval Acc: 0.5768 (LR: 0.001000)
-[2025-05-04 07:40:05,066]: [LeNet5_relu_quantized_3_bits] Epoch: 007 Train Loss: 1.2659 Train Acc: 0.5488 Eval Loss: 1.1763 Eval Acc: 0.5798 (LR: 0.001000)
-[2025-05-04 07:40:32,297]: [LeNet5_relu_quantized_3_bits] Epoch: 008 Train Loss: 1.2693 Train Acc: 0.5492 Eval Loss: 1.1587 Eval Acc: 0.5875 (LR: 0.001000)
-[2025-05-04 07:41:00,111]: [LeNet5_relu_quantized_3_bits] Epoch: 009 Train Loss: 1.2713 Train Acc: 0.5475 Eval Loss: 1.1680 Eval Acc: 0.5840 (LR: 0.001000)
-[2025-05-04 07:41:27,234]: [LeNet5_relu_quantized_3_bits] Epoch: 010 Train Loss: 1.2682 Train Acc: 0.5499 Eval Loss: 1.1703 Eval Acc: 0.5918 (LR: 0.001000)
-[2025-05-04 07:41:57,271]: [LeNet5_relu_quantized_3_bits] Epoch: 011 Train Loss: 1.2613 Train Acc: 0.5516 Eval Loss: 1.1441 Eval Acc: 0.5947 (LR: 0.001000)
-[2025-05-04 07:42:28,720]: [LeNet5_relu_quantized_3_bits] Epoch: 012 Train Loss: 1.2619 Train Acc: 0.5487 Eval Loss: 1.1794 Eval Acc: 0.5819 (LR: 0.001000)
-[2025-05-04 07:43:00,496]: [LeNet5_relu_quantized_3_bits] Epoch: 013 Train Loss: 1.2603 Train Acc: 0.5493 Eval Loss: 1.2126 Eval Acc: 0.5740 (LR: 0.001000)
-[2025-05-04 07:43:29,359]: [LeNet5_relu_quantized_3_bits] Epoch: 014 Train Loss: 1.2568 Train Acc: 0.5547 Eval Loss: 1.1516 Eval Acc: 0.5903 (LR: 0.001000)
-[2025-05-04 07:43:56,730]: [LeNet5_relu_quantized_3_bits] Epoch: 015 Train Loss: 1.2546 Train Acc: 0.5505 Eval Loss: 1.1576 Eval Acc: 0.5916 (LR: 0.001000)
-[2025-05-04 07:44:25,080]: [LeNet5_relu_quantized_3_bits] Epoch: 016 Train Loss: 1.2603 Train Acc: 0.5501 Eval Loss: 1.1786 Eval Acc: 0.5782 (LR: 0.001000)
-[2025-05-04 07:44:52,128]: [LeNet5_relu_quantized_3_bits] Epoch: 017 Train Loss: 1.2609 Train Acc: 0.5509 Eval Loss: 1.1606 Eval Acc: 0.5855 (LR: 0.001000)
-[2025-05-04 07:45:19,042]: [LeNet5_relu_quantized_3_bits] Epoch: 018 Train Loss: 1.2581 Train Acc: 0.5486 Eval Loss: 1.1932 Eval Acc: 0.5752 (LR: 0.001000)
-[2025-05-04 07:45:45,799]: [LeNet5_relu_quantized_3_bits] Epoch: 019 Train Loss: 1.2537 Train Acc: 0.5528 Eval Loss: 1.1528 Eval Acc: 0.5885 (LR: 0.001000)
-[2025-05-04 07:46:12,398]: [LeNet5_relu_quantized_3_bits] Epoch: 020 Train Loss: 1.2515 Train Acc: 0.5545 Eval Loss: 1.1737 Eval Acc: 0.5824 (LR: 0.001000)
-[2025-05-04 07:46:39,698]: [LeNet5_relu_quantized_3_bits] Epoch: 021 Train Loss: 1.2589 Train Acc: 0.5498 Eval Loss: 1.1651 Eval Acc: 0.5871 (LR: 0.001000)
-[2025-05-04 07:47:06,555]: [LeNet5_relu_quantized_3_bits] Epoch: 022 Train Loss: 1.2534 Train Acc: 0.5510 Eval Loss: 1.1597 Eval Acc: 0.5857 (LR: 0.001000)
-[2025-05-04 07:47:33,056]: [LeNet5_relu_quantized_3_bits] Epoch: 023 Train Loss: 1.2510 Train Acc: 0.5536 Eval Loss: 1.1523 Eval Acc: 0.5927 (LR: 0.001000)
-[2025-05-04 07:48:00,892]: [LeNet5_relu_quantized_3_bits] Epoch: 024 Train Loss: 1.2541 Train Acc: 0.5507 Eval Loss: 1.1624 Eval Acc: 0.5832 (LR: 0.001000)
-[2025-05-04 07:48:28,813]: [LeNet5_relu_quantized_3_bits] Epoch: 025 Train Loss: 1.2529 Train Acc: 0.5553 Eval Loss: 1.1375 Eval Acc: 0.5952 (LR: 0.001000)
-[2025-05-04 07:48:56,124]: [LeNet5_relu_quantized_3_bits] Epoch: 026 Train Loss: 1.2557 Train Acc: 0.5478 Eval Loss: 1.1962 Eval Acc: 0.5792 (LR: 0.001000)
-[2025-05-04 07:49:23,132]: [LeNet5_relu_quantized_3_bits] Epoch: 027 Train Loss: 1.2581 Train Acc: 0.5518 Eval Loss: 1.1573 Eval Acc: 0.5891 (LR: 0.001000)
-[2025-05-04 07:49:50,114]: [LeNet5_relu_quantized_3_bits] Epoch: 028 Train Loss: 1.2520 Train Acc: 0.5518 Eval Loss: 1.1656 Eval Acc: 0.5857 (LR: 0.001000)
-[2025-05-04 07:50:17,529]: [LeNet5_relu_quantized_3_bits] Epoch: 029 Train Loss: 1.2504 Train Acc: 0.5513 Eval Loss: 1.1486 Eval Acc: 0.5926 (LR: 0.001000)
-[2025-05-04 07:50:45,223]: [LeNet5_relu_quantized_3_bits] Epoch: 030 Train Loss: 1.2490 Train Acc: 0.5529 Eval Loss: 1.1529 Eval Acc: 0.5923 (LR: 0.000250)
-[2025-05-04 07:51:13,231]: [LeNet5_relu_quantized_3_bits] Epoch: 031 Train Loss: 1.2154 Train Acc: 0.5664 Eval Loss: 1.1383 Eval Acc: 0.5941 (LR: 0.000250)
-[2025-05-04 07:51:41,593]: [LeNet5_relu_quantized_3_bits] Epoch: 032 Train Loss: 1.2140 Train Acc: 0.5661 Eval Loss: 1.1346 Eval Acc: 0.5980 (LR: 0.000250)
-[2025-05-04 07:52:09,860]: [LeNet5_relu_quantized_3_bits] Epoch: 033 Train Loss: 1.2201 Train Acc: 0.5638 Eval Loss: 1.1418 Eval Acc: 0.5981 (LR: 0.000250)
-[2025-05-04 07:52:37,902]: [LeNet5_relu_quantized_3_bits] Epoch: 034 Train Loss: 1.2230 Train Acc: 0.5610 Eval Loss: 1.1428 Eval Acc: 0.5952 (LR: 0.000250)
-[2025-05-04 07:53:06,599]: [LeNet5_relu_quantized_3_bits] Epoch: 035 Train Loss: 1.2278 Train Acc: 0.5620 Eval Loss: 1.1560 Eval Acc: 0.5917 (LR: 0.000250)
-[2025-05-04 07:53:34,443]: [LeNet5_relu_quantized_3_bits] Epoch: 036 Train Loss: 1.2270 Train Acc: 0.5601 Eval Loss: 1.1306 Eval Acc: 0.6011 (LR: 0.000250)
-[2025-05-04 07:54:02,720]: [LeNet5_relu_quantized_3_bits] Epoch: 037 Train Loss: 1.2265 Train Acc: 0.5596 Eval Loss: 1.1565 Eval Acc: 0.5856 (LR: 0.000250)
-[2025-05-04 07:54:30,974]: [LeNet5_relu_quantized_3_bits] Epoch: 038 Train Loss: 1.2298 Train Acc: 0.5598 Eval Loss: 1.1305 Eval Acc: 0.5941 (LR: 0.000250)
-[2025-05-04 07:54:59,197]: [LeNet5_relu_quantized_3_bits] Epoch: 039 Train Loss: 1.2299 Train Acc: 0.5620 Eval Loss: 1.1292 Eval Acc: 0.6007 (LR: 0.000250)
-[2025-05-04 07:55:27,978]: [LeNet5_relu_quantized_3_bits] Epoch: 040 Train Loss: 1.2299 Train Acc: 0.5615 Eval Loss: 1.1414 Eval Acc: 0.5939 (LR: 0.000250)
-[2025-05-04 07:55:56,330]: [LeNet5_relu_quantized_3_bits] Epoch: 041 Train Loss: 1.2306 Train Acc: 0.5611 Eval Loss: 1.1582 Eval Acc: 0.5883 (LR: 0.000250)
-[2025-05-04 07:56:24,619]: [LeNet5_relu_quantized_3_bits] Epoch: 042 Train Loss: 1.2305 Train Acc: 0.5607 Eval Loss: 1.1512 Eval Acc: 0.5891 (LR: 0.000250)
-[2025-05-04 07:56:52,492]: [LeNet5_relu_quantized_3_bits] Epoch: 043 Train Loss: 1.2363 Train Acc: 0.5566 Eval Loss: 1.1496 Eval Acc: 0.5919 (LR: 0.000250)
-[2025-05-04 07:57:21,948]: [LeNet5_relu_quantized_3_bits] Epoch: 044 Train Loss: 1.2288 Train Acc: 0.5628 Eval Loss: 1.1511 Eval Acc: 0.5933 (LR: 0.000250)
-[2025-05-04 07:57:49,608]: [LeNet5_relu_quantized_3_bits] Epoch: 045 Train Loss: 1.2331 Train Acc: 0.5598 Eval Loss: 1.1518 Eval Acc: 0.5930 (LR: 0.000063)
-[2025-05-04 07:58:18,573]: [LeNet5_relu_quantized_3_bits] Epoch: 046 Train Loss: 1.2156 Train Acc: 0.5641 Eval Loss: 1.1384 Eval Acc: 0.5945 (LR: 0.000063)
-[2025-05-04 07:58:46,449]: [LeNet5_relu_quantized_3_bits] Epoch: 047 Train Loss: 1.2191 Train Acc: 0.5643 Eval Loss: 1.1219 Eval Acc: 0.5998 (LR: 0.000063)
-[2025-05-04 07:59:13,743]: [LeNet5_relu_quantized_3_bits] Epoch: 048 Train Loss: 1.2205 Train Acc: 0.5639 Eval Loss: 1.1542 Eval Acc: 0.5892 (LR: 0.000063)
-[2025-05-04 07:59:42,257]: [LeNet5_relu_quantized_3_bits] Epoch: 049 Train Loss: 1.2216 Train Acc: 0.5620 Eval Loss: 1.1398 Eval Acc: 0.5957 (LR: 0.000063)
-[2025-05-04 08:00:09,945]: [LeNet5_relu_quantized_3_bits] Epoch: 050 Train Loss: 1.2161 Train Acc: 0.5623 Eval Loss: 1.1340 Eval Acc: 0.5968 (LR: 0.000063)
-[2025-05-04 08:00:37,702]: [LeNet5_relu_quantized_3_bits] Epoch: 051 Train Loss: 1.2222 Train Acc: 0.5621 Eval Loss: 1.1380 Eval Acc: 0.5945 (LR: 0.000063)
-[2025-05-04 08:00:37,702]: Early stopping was triggered!
-[2025-05-04 08:00:37,717]: 
+[2025-05-05 07:13:18,204]: [LeNet5_relu_quantized_3_bits] Epoch: 001 Train Loss: 2.2885 Train Acc: 0.1455 Eval Loss: 2.2731 Eval Acc: 0.1652 (LR: 0.001000)
+[2025-05-05 07:13:18,215]: [LeNet5_relu_quantized_3_bits] Best Eval Accuracy: 0.1652
+[2025-05-05 07:13:18,224]: 
 
 
 Quantization of model down to 3 bits finished
-[2025-05-04 08:00:37,718]: Model Architecture:
-[2025-05-04 08:00:37,944]: LeNet5(
+[2025-05-05 07:13:18,224]: Model Architecture:
+[2025-05-05 07:13:18,314]: LeNet5(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
-      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([4.0271], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-      (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=28.189504623413086)
+      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.5772], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+      (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=4.040599822998047)
     )
   )
   (dequant): DeQuantStub()
@@ -763,15 +521,15 @@ Quantization of model down to 3 bits finished
     (0): Conv2d(
       6, 16, kernel_size=(5, 5), stride=(1, 1)
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-4, quant_max=3, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0996, 0.0722, 0.1362, 0.0971, 0.1053, 0.1389, 0.1476, 0.0886, 0.0628,
-                0.0920, 0.0785, 0.0931, 0.0723, 0.1293, 0.0703, 0.1607],
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-4, quant_max=3, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0232, 0.0241, 0.0236, 0.0230, 0.0242, 0.0235, 0.0234, 0.0234, 0.0230,
+                0.0235, 0.0231, 0.0233, 0.0236, 0.0233, 0.0230, 0.0232],
                device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0',
                dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.3487, -0.2528, -0.4768, -0.3398, -0.1350, -0.4862, -0.5166, -0.2838,
-                  -0.1577, -0.1758, -0.2502, -0.3260, -0.2532, -0.3468, -0.1591, -0.5625],
-                 device='cuda:0'), max_val=tensor([0.3299, 0.2528, 0.4768, 0.3397, 0.3685, 0.3461, 0.3847, 0.3102, 0.2198,
-                  0.3221, 0.2748, 0.3260, 0.2463, 0.4525, 0.2462, 0.3707],
+          min_val=tensor([-0.0813, -0.0795, -0.0795, -0.0805, -0.0823, -0.0795, -0.0818, -0.0812,
+                  -0.0802, -0.0817, -0.0809, -0.0817, -0.0800, -0.0789, -0.0792, -0.0811],
+                 device='cuda:0'), max_val=tensor([0.0794, 0.0844, 0.0825, 0.0804, 0.0848, 0.0823, 0.0805, 0.0820, 0.0806,
+                  0.0821, 0.0785, 0.0814, 0.0825, 0.0817, 0.0805, 0.0810],
                  device='cuda:0')
         )
       )
@@ -781,8 +539,8 @@ Quantization of model down to 3 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([13.2530], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=92.77082824707031)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3135], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=2.194241523742676)
         )
       )
     )
@@ -792,55 +550,55 @@ Quantization of model down to 3 bits finished
     (0): Linear(
       in_features=400, out_features=120, bias=True
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-4, quant_max=3, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0391, 0.0281, 0.0138, 0.0150, 0.0305, 0.0159, 0.0373, 0.0278, 0.0369,
-                0.0455, 0.0308, 0.0419, 0.0366, 0.0371, 0.0382, 0.0342, 0.0331, 0.0581,
-                0.0447, 0.0374, 0.0344, 0.0296, 0.0325, 0.0139, 0.0323, 0.0153, 0.0348,
-                0.0299, 0.0460, 0.0292, 0.0369, 0.0341, 0.0250, 0.0408, 0.0599, 0.0423,
-                0.0489, 0.0356, 0.0364, 0.0365, 0.0367, 0.0360, 0.0542, 0.0403, 0.0350,
-                0.0360, 0.0335, 0.0407, 0.0434, 0.0427, 0.0317, 0.0317, 0.0370, 0.0345,
-                0.0466, 0.0349, 0.0289, 0.0363, 0.0333, 0.0381, 0.0326, 0.0149, 0.0300,
-                0.0355, 0.0338, 0.0398, 0.0363, 0.0484, 0.0433, 0.0524, 0.0510, 0.0541,
-                0.0401, 0.0468, 0.0405, 0.0439, 0.0334, 0.0347, 0.0414, 0.0159, 0.0454,
-                0.0336, 0.0145, 0.0398, 0.0520, 0.0649, 0.0372, 0.0382, 0.0393, 0.0325,
-                0.0669, 0.0419, 0.0370, 0.0282, 0.0460, 0.0433, 0.0321, 0.0420, 0.0155,
-                0.0354, 0.0379, 0.0310, 0.0604, 0.0346, 0.0390, 0.0284, 0.0411, 0.0379,
-                0.0263, 0.0404, 0.0679, 0.0607, 0.0385, 0.0325, 0.0524, 0.0458, 0.0401,
-                0.0339, 0.0287, 0.0278], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-4, quant_max=3, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0143, 0.0146, 0.0142, 0.0144, 0.0143, 0.0142, 0.0142, 0.0145, 0.0144,
+                0.0144, 0.0143, 0.0143, 0.0143, 0.0142, 0.0143, 0.0144, 0.0144, 0.0143,
+                0.0143, 0.0143, 0.0143, 0.0144, 0.0142, 0.0150, 0.0142, 0.0143, 0.0143,
+                0.0143, 0.0144, 0.0146, 0.0145, 0.0143, 0.0145, 0.0142, 0.0143, 0.0144,
+                0.0143, 0.0143, 0.0144, 0.0142, 0.0145, 0.0142, 0.0140, 0.0143, 0.0143,
+                0.0145, 0.0142, 0.0142, 0.0144, 0.0143, 0.0143, 0.0142, 0.0144, 0.0143,
+                0.0143, 0.0143, 0.0143, 0.0143, 0.0143, 0.0142, 0.0143, 0.0147, 0.0143,
+                0.0142, 0.0147, 0.0143, 0.0144, 0.0144, 0.0146, 0.0143, 0.0144, 0.0144,
+                0.0143, 0.0141, 0.0143, 0.0144, 0.0143, 0.0142, 0.0145, 0.0142, 0.0144,
+                0.0147, 0.0143, 0.0141, 0.0145, 0.0143, 0.0143, 0.0144, 0.0143, 0.0142,
+                0.0143, 0.0144, 0.0143, 0.0142, 0.0144, 0.0147, 0.0143, 0.0143, 0.0143,
+                0.0143, 0.0144, 0.0141, 0.0145, 0.0142, 0.0144, 0.0144, 0.0142, 0.0144,
+                0.0143, 0.0142, 0.0143, 0.0143, 0.0143, 0.0144, 0.0143, 0.0143, 0.0143,
+                0.0144, 0.0140, 0.0145], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                device='cuda:0', dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.1331, -0.0983, -0.0484, -0.0520, -0.1064, -0.0556, -0.1304, -0.0974,
-                  -0.1293, -0.1593, -0.1079, -0.1138, -0.1265, -0.1251, -0.1336, -0.1196,
-                  -0.1157, -0.1690, -0.1565, -0.0936, -0.1204, -0.0986, -0.1099, -0.0487,
-                  -0.1130, -0.0536, -0.1218, -0.0942, -0.1237, -0.1021, -0.1000, -0.1193,
-                  -0.0848, -0.1308, -0.2096, -0.1482, -0.1712, -0.0907, -0.1274, -0.1277,
-                  -0.1284, -0.1114, -0.1897, -0.1411, -0.1226, -0.1259, -0.0841, -0.1045,
-                  -0.1521, -0.1486, -0.1066, -0.0901, -0.1189, -0.1030, -0.1632, -0.1220,
-                  -0.1012, -0.1156, -0.1167, -0.1335, -0.0866, -0.0521, -0.1033, -0.1243,
-                  -0.1182, -0.1285, -0.1272, -0.1694, -0.1516, -0.1835, -0.1785, -0.1894,
-                  -0.1070, -0.1637, -0.1416, -0.1537, -0.1169, -0.1213, -0.1448, -0.0499,
-                  -0.1581, -0.1177, -0.0507, -0.1305, -0.1822, -0.2270, -0.1303, -0.1336,
-                  -0.1249, -0.1138, -0.2343, -0.1467, -0.0917, -0.0907, -0.1611, -0.1515,
-                  -0.1125, -0.1471, -0.0538, -0.1038, -0.1174, -0.0926, -0.2115, -0.1209,
-                  -0.1363, -0.0994, -0.1440, -0.1046, -0.0921, -0.1180, -0.2378, -0.2125,
-                  -0.1060, -0.1136, -0.1835, -0.1604, -0.1122, -0.1186, -0.1003, -0.0972],
-                 device='cuda:0'), max_val=tensor([0.1370, 0.0954, 0.0479, 0.0524, 0.1067, 0.0458, 0.1034, 0.0969, 0.1288,
-                  0.1292, 0.1048, 0.1466, 0.1282, 0.1300, 0.0950, 0.0911, 0.1064, 0.2033,
-                  0.1097, 0.1310, 0.1093, 0.1037, 0.1136, 0.0460, 0.1109, 0.0458, 0.1157,
-                  0.1046, 0.1609, 0.0751, 0.1292, 0.1195, 0.0876, 0.1428, 0.1590, 0.1464,
-                  0.1313, 0.1247, 0.1048, 0.1121, 0.1276, 0.1261, 0.1105, 0.1405, 0.0990,
-                  0.0923, 0.1173, 0.1424, 0.0978, 0.1495, 0.1108, 0.1108, 0.1296, 0.1209,
-                  0.1420, 0.1023, 0.1003, 0.1269, 0.0955, 0.1335, 0.1140, 0.0467, 0.1049,
-                  0.1138, 0.0991, 0.1394, 0.1160, 0.1295, 0.1227, 0.1324, 0.1599, 0.1334,
-                  0.1405, 0.1270, 0.1290, 0.0966, 0.0974, 0.0964, 0.1446, 0.0557, 0.1587,
-                  0.1175, 0.0459, 0.1394, 0.1301, 0.1603, 0.1303, 0.1239, 0.1377, 0.1139,
-                  0.1059, 0.0924, 0.1296, 0.0987, 0.1174, 0.1259, 0.0800, 0.0991, 0.0541,
-                  0.1240, 0.1325, 0.1086, 0.1255, 0.1175, 0.0980, 0.0904, 0.1428, 0.1325,
-                  0.0730, 0.1415, 0.1105, 0.1676, 0.1349, 0.0981, 0.1167, 0.1425, 0.1404,
-                  0.1114, 0.0839, 0.0856], device='cuda:0')
+          min_val=tensor([-0.0499, -0.0492, -0.0496, -0.0503, -0.0497, -0.0481, -0.0497, -0.0508,
+                  -0.0500, -0.0496, -0.0496, -0.0497, -0.0497, -0.0496, -0.0498, -0.0496,
+                  -0.0503, -0.0501, -0.0500, -0.0493, -0.0497, -0.0499, -0.0498, -0.0526,
+                  -0.0496, -0.0488, -0.0500, -0.0486, -0.0505, -0.0495, -0.0496, -0.0497,
+                  -0.0495, -0.0497, -0.0501, -0.0504, -0.0502, -0.0495, -0.0503, -0.0494,
+                  -0.0508, -0.0497, -0.0492, -0.0497, -0.0499, -0.0491, -0.0496, -0.0497,
+                  -0.0493, -0.0499, -0.0499, -0.0497, -0.0505, -0.0496, -0.0500, -0.0500,
+                  -0.0499, -0.0500, -0.0494, -0.0496, -0.0499, -0.0497, -0.0500, -0.0498,
+                  -0.0501, -0.0500, -0.0502, -0.0505, -0.0497, -0.0501, -0.0503, -0.0504,
+                  -0.0498, -0.0488, -0.0502, -0.0488, -0.0501, -0.0497, -0.0508, -0.0494,
+                  -0.0504, -0.0475, -0.0500, -0.0492, -0.0508, -0.0497, -0.0499, -0.0488,
+                  -0.0498, -0.0498, -0.0499, -0.0472, -0.0492, -0.0494, -0.0503, -0.0514,
+                  -0.0492, -0.0487, -0.0499, -0.0498, -0.0503, -0.0495, -0.0499, -0.0498,
+                  -0.0504, -0.0484, -0.0497, -0.0492, -0.0497, -0.0496, -0.0493, -0.0500,
+                  -0.0499, -0.0504, -0.0502, -0.0502, -0.0499, -0.0503, -0.0489, -0.0495],
+                 device='cuda:0'), max_val=tensor([0.0498, 0.0510, 0.0496, 0.0497, 0.0499, 0.0498, 0.0497, 0.0501, 0.0502,
+                  0.0502, 0.0500, 0.0500, 0.0500, 0.0496, 0.0499, 0.0504, 0.0501, 0.0494,
+                  0.0497, 0.0502, 0.0500, 0.0503, 0.0498, 0.0497, 0.0496, 0.0500, 0.0499,
+                  0.0500, 0.0496, 0.0510, 0.0508, 0.0500, 0.0508, 0.0491, 0.0499, 0.0502,
+                  0.0498, 0.0502, 0.0498, 0.0498, 0.0495, 0.0494, 0.0490, 0.0499, 0.0500,
+                  0.0506, 0.0499, 0.0497, 0.0505, 0.0499, 0.0499, 0.0497, 0.0499, 0.0500,
+                  0.0497, 0.0499, 0.0499, 0.0498, 0.0500, 0.0495, 0.0499, 0.0514, 0.0499,
+                  0.0497, 0.0515, 0.0495, 0.0503, 0.0495, 0.0510, 0.0502, 0.0498, 0.0498,
+                  0.0501, 0.0494, 0.0496, 0.0504, 0.0499, 0.0499, 0.0508, 0.0497, 0.0499,
+                  0.0515, 0.0498, 0.0494, 0.0505, 0.0499, 0.0499, 0.0503, 0.0499, 0.0495,
+                  0.0501, 0.0503, 0.0499, 0.0498, 0.0502, 0.0496, 0.0499, 0.0501, 0.0491,
+                  0.0501, 0.0496, 0.0494, 0.0507, 0.0498, 0.0495, 0.0503, 0.0491, 0.0505,
+                  0.0502, 0.0498, 0.0499, 0.0498, 0.0499, 0.0499, 0.0500, 0.0495, 0.0499,
+                  0.0499, 0.0485, 0.0507], device='cuda:0')
         )
       )
       (activation_post_process): NoopObserver()
@@ -849,8 +607,8 @@ Quantization of model down to 3 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([11.9292], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=83.50425720214844)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.1824], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=1.2765339612960815)
         )
       )
     )
@@ -859,41 +617,41 @@ Quantization of model down to 3 bits finished
     (0): Linear(
       in_features=120, out_features=84, bias=True
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-4, quant_max=3, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0424, 0.0395, 0.0340, 0.0365, 0.0550, 0.0432, 0.0394, 0.0293, 0.0469,
-                0.0409, 0.0299, 0.0377, 0.0362, 0.0413, 0.0404, 0.0448, 0.0523, 0.0444,
-                0.0395, 0.0327, 0.0397, 0.0565, 0.0560, 0.0535, 0.0516, 0.0437, 0.0527,
-                0.0260, 0.0410, 0.0399, 0.0452, 0.0525, 0.0477, 0.0463, 0.0501, 0.0453,
-                0.0491, 0.0411, 0.0476, 0.0384, 0.0256, 0.0481, 0.0283, 0.0522, 0.0544,
-                0.0473, 0.0381, 0.0525, 0.0485, 0.0446, 0.0611, 0.0439, 0.0610, 0.0269,
-                0.0446, 0.0325, 0.0450, 0.0474, 0.0362, 0.0460, 0.0447, 0.0476, 0.0562,
-                0.0470, 0.0473, 0.0412, 0.0471, 0.0444, 0.0411, 0.0284, 0.0454, 0.0621,
-                0.0353, 0.0413, 0.0352, 0.0430, 0.0279, 0.0435, 0.0423, 0.0437, 0.0415,
-                0.0406, 0.0421, 0.0284], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-4, quant_max=3, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0258, 0.0260, 0.0255, 0.0261, 0.0259, 0.0259, 0.0261, 0.0259, 0.0258,
+                0.0260, 0.0261, 0.0260, 0.0259, 0.0261, 0.0258, 0.0260, 0.0255, 0.0260,
+                0.0258, 0.0259, 0.0261, 0.0259, 0.0259, 0.0260, 0.0260, 0.0256, 0.0256,
+                0.0260, 0.0259, 0.0256, 0.0257, 0.0260, 0.0260, 0.0261, 0.0259, 0.0256,
+                0.0257, 0.0259, 0.0258, 0.0255, 0.0251, 0.0259, 0.0263, 0.0259, 0.0260,
+                0.0258, 0.0261, 0.0259, 0.0259, 0.0259, 0.0264, 0.0257, 0.0256, 0.0256,
+                0.0254, 0.0263, 0.0260, 0.0258, 0.0260, 0.0258, 0.0254, 0.0260, 0.0272,
+                0.0260, 0.0258, 0.0258, 0.0256, 0.0260, 0.0260, 0.0260, 0.0260, 0.0256,
+                0.0261, 0.0258, 0.0261, 0.0259, 0.0258, 0.0255, 0.0258, 0.0262, 0.0254,
+                0.0259, 0.0260, 0.0257], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0',
                dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.1249, -0.1342, -0.1170, -0.1278, -0.1280, -0.1335, -0.1033, -0.0888,
-                  -0.1643, -0.1175, -0.1047, -0.1320, -0.1187, -0.1435, -0.1335, -0.1570,
-                  -0.1466, -0.1490, -0.1197, -0.1145, -0.1313, -0.1977, -0.1432, -0.1873,
-                  -0.1308, -0.1336, -0.1489, -0.0859, -0.1433, -0.1395, -0.1320, -0.1304,
-                  -0.1671, -0.1615, -0.1472, -0.1143, -0.1234, -0.1079, -0.1225, -0.1345,
-                  -0.0862, -0.1684, -0.0990, -0.1530, -0.1062, -0.1654, -0.1130, -0.1839,
-                  -0.1192, -0.1561, -0.1824, -0.1469, -0.2134, -0.0942, -0.1562, -0.1035,
-                  -0.1464, -0.1409, -0.1244, -0.1281, -0.1565, -0.1434, -0.1678, -0.1646,
-                  -0.1296, -0.1190, -0.1267, -0.1555, -0.1366, -0.0985, -0.1521, -0.1791,
-                  -0.1217, -0.1323, -0.1225, -0.1255, -0.0978, -0.1518, -0.1444, -0.1186,
-                  -0.1451, -0.1419, -0.1405, -0.0903], device='cuda:0'), max_val=tensor([0.1485, 0.1381, 0.1189, 0.1099, 0.1924, 0.1511, 0.1378, 0.1024, 0.1280,
-                  0.1432, 0.1039, 0.1315, 0.1265, 0.1444, 0.1414, 0.1470, 0.1830, 0.1553,
-                  0.1381, 0.1107, 0.1388, 0.1424, 0.1961, 0.1303, 0.1806, 0.1530, 0.1845,
-                  0.0910, 0.1101, 0.1265, 0.1580, 0.1838, 0.1669, 0.1621, 0.1753, 0.1585,
-                  0.1719, 0.1440, 0.1667, 0.1327, 0.0895, 0.1455, 0.0896, 0.1829, 0.1903,
-                  0.1379, 0.1335, 0.1783, 0.1696, 0.1560, 0.2137, 0.1537, 0.1437, 0.0825,
-                  0.1501, 0.1138, 0.1576, 0.1659, 0.1269, 0.1611, 0.1516, 0.1667, 0.1967,
-                  0.1426, 0.1657, 0.1442, 0.1650, 0.1310, 0.1440, 0.0992, 0.1590, 0.2172,
-                  0.1236, 0.1444, 0.1230, 0.1505, 0.0946, 0.1522, 0.1479, 0.1530, 0.1202,
-                  0.1139, 0.1473, 0.0992], device='cuda:0')
+          min_val=tensor([-0.0904, -0.0909, -0.0894, -0.0913, -0.0901, -0.0905, -0.0902, -0.0906,
+                  -0.0897, -0.0904, -0.0914, -0.0909, -0.0907, -0.0910, -0.0902, -0.0888,
+                  -0.0882, -0.0909, -0.0877, -0.0905, -0.0912, -0.0907, -0.0905, -0.0907,
+                  -0.0883, -0.0883, -0.0857, -0.0910, -0.0878, -0.0875, -0.0876, -0.0892,
+                  -0.0904, -0.0900, -0.0908, -0.0895, -0.0899, -0.0907, -0.0902, -0.0890,
+                  -0.0880, -0.0907, -0.0877, -0.0906, -0.0879, -0.0878, -0.0912, -0.0908,
+                  -0.0908, -0.0892, -0.0872, -0.0899, -0.0897, -0.0896, -0.0889, -0.0920,
+                  -0.0884, -0.0882, -0.0911, -0.0875, -0.0890, -0.0909, -0.0935, -0.0910,
+                  -0.0902, -0.0903, -0.0858, -0.0910, -0.0890, -0.0909, -0.0911, -0.0886,
+                  -0.0913, -0.0903, -0.0911, -0.0905, -0.0901, -0.0891, -0.0904, -0.0889,
+                  -0.0888, -0.0888, -0.0910, -0.0899], device='cuda:0'), max_val=tensor([0.0895, 0.0890, 0.0892, 0.0895, 0.0906, 0.0905, 0.0912, 0.0861, 0.0902,
+                  0.0909, 0.0886, 0.0912, 0.0895, 0.0912, 0.0887, 0.0912, 0.0893, 0.0882,
+                  0.0903, 0.0893, 0.0903, 0.0884, 0.0896, 0.0911, 0.0911, 0.0896, 0.0896,
+                  0.0906, 0.0907, 0.0897, 0.0901, 0.0909, 0.0910, 0.0913, 0.0819, 0.0850,
+                  0.0889, 0.0906, 0.0905, 0.0893, 0.0875, 0.0890, 0.0922, 0.0859, 0.0912,
+                  0.0902, 0.0910, 0.0903, 0.0897, 0.0907, 0.0923, 0.0885, 0.0866, 0.0871,
+                  0.0880, 0.0885, 0.0912, 0.0902, 0.0911, 0.0904, 0.0875, 0.0855, 0.0950,
+                  0.0905, 0.0901, 0.0865, 0.0896, 0.0882, 0.0911, 0.0911, 0.0904, 0.0895,
+                  0.0895, 0.0905, 0.0912, 0.0901, 0.0905, 0.0889, 0.0868, 0.0915, 0.0881,
+                  0.0907, 0.0894, 0.0894], device='cuda:0')
         )
       )
       (activation_post_process): NoopObserver()
@@ -902,102 +660,92 @@ Quantization of model down to 3 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([7.1389], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=49.972476959228516)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=7, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.0978], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=0.6844348907470703)
         )
       )
     )
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 08:00:37,944]: 
+[2025-05-05 07:13:18,314]: 
 Model Parameters with Weights:
-[2025-05-04 08:00:37,944]: 
+[2025-05-05 07:13:18,314]: 
 Parameter: conv1.0.weight
-[2025-05-04 08:00:37,944]: Shape: torch.Size([6, 3, 5, 5])
-[2025-05-04 08:00:37,945]: Sample Values (16 elements): [-0.25407475233078003, -0.009266581386327744, -0.1576007902622223, -1.0983346700668335, -0.043004218488931656, -0.07754410803318024, -0.17466890811920166, 0.05692782253026962, 0.10747785866260529, 0.29954051971435547, 0.415083110332489, 0.2588039040565491, -0.1972852498292923, -0.17852112650871277, 0.1790701001882553, -0.17712178826332092]
-[2025-05-04 08:00:37,946]: Mean: 0.0032
-[2025-05-04 08:00:37,947]: Std: 0.3102
-[2025-05-04 08:00:37,947]: Min: -1.3491
-[2025-05-04 08:00:37,949]: Max: 1.2698
-[2025-05-04 08:00:37,949]: 
+[2025-05-05 07:13:18,314]: Shape: torch.Size([6, 3, 5, 5])
+[2025-05-05 07:13:18,316]: Sample Values (16 elements): [0.05401788279414177, -0.0850287452340126, -0.0625058263540268, -0.08261118829250336, 0.04211686551570892, -0.032928112894296646, -0.06388842314481735, 0.07036417722702026, 0.04893657937645912, 0.0649520605802536, -0.03458793833851814, 0.051119640469551086, -0.09375762939453125, 0.06314346939325333, -0.008283733390271664, -0.10821768641471863]
+[2025-05-05 07:13:18,317]: Mean: 0.0037
+[2025-05-05 07:13:18,317]: Min: -0.1094
+[2025-05-05 07:13:18,318]: Max: 0.1215
+[2025-05-05 07:13:18,318]: 
 Parameter: conv1.0.bias
-[2025-05-04 08:00:37,949]: Shape: torch.Size([6])
-[2025-05-04 08:00:37,950]: Sample Values (6 elements): [0.8355603814125061, 1.0334504842758179, 0.049665991216897964, -0.1717224419116974, 0.08073955774307251, 0.46335870027542114]
-[2025-05-04 08:00:37,951]: Mean: 0.3818
-[2025-05-04 08:00:37,951]: Std: 0.4784
-[2025-05-04 08:00:37,952]: Min: -0.1717
-[2025-05-04 08:00:37,953]: Max: 1.0335
-[2025-05-04 08:00:37,954]: 
+[2025-05-05 07:13:18,318]: Shape: torch.Size([6])
+[2025-05-05 07:13:18,318]: Sample Values (6 elements): [-0.08786880224943161, -0.07652296870946884, -0.10137487947940826, 0.03737522289156914, 0.039784759283065796, 0.07597191631793976]
+[2025-05-05 07:13:18,321]: Mean: -0.0188
+[2025-05-05 07:13:18,321]: Min: -0.1014
+[2025-05-05 07:13:18,322]: Max: 0.0760
+[2025-05-05 07:13:18,322]: 
 Parameter: conv2.0.weight
-[2025-05-04 08:00:37,954]: Shape: torch.Size([16, 6, 5, 5])
-[2025-05-04 08:00:37,955]: Sample Values (6 elements): [-0.05346228554844856, -0.07559431344270706, 0.10041125118732452, 0.09071534126996994, -0.04307902976870537, 0.14277634024620056]
-[2025-05-04 08:00:37,955]: Mean: 0.0158
-[2025-05-04 08:00:37,956]: Std: 0.1337
-[2025-05-04 08:00:37,956]: Min: -0.5626
-[2025-05-04 08:00:37,956]: Max: 0.4769
-[2025-05-04 08:00:37,957]: 
+[2025-05-05 07:13:18,322]: Shape: torch.Size([16, 6, 5, 5])
+[2025-05-05 07:13:18,322]: Sample Values (16 elements): [0.0725218653678894, -0.05990446358919144, -0.017179274931550026, -0.06840889155864716, 0.03241957351565361, -0.047250427305698395, -0.03226751089096069, -0.0535912811756134, -0.03654449060559273, -0.05679146945476532, -0.012504606507718563, -0.011279583908617496, 0.05897638201713562, -0.08118317276239395, 0.053470153361558914, -0.048497121781110764]
+[2025-05-05 07:13:18,325]: Mean: -0.0052
+[2025-05-05 07:13:18,325]: Min: -0.0814
+[2025-05-05 07:13:18,326]: Max: 0.0794
+[2025-05-05 07:13:18,326]: 
 Parameter: conv2.0.bias
-[2025-05-04 08:00:37,957]: Shape: torch.Size([16])
-[2025-05-04 08:00:37,957]: Sample Values (6 elements): [-0.5927900075912476, -0.009307059459388256, 0.24035295844078064, 0.0816483199596405, 0.04300430417060852, -0.44789859652519226]
-[2025-05-04 08:00:37,958]: Mean: 0.0612
-[2025-05-04 08:00:37,958]: Std: 0.5478
-[2025-05-04 08:00:37,959]: Min: -0.6203
-[2025-05-04 08:00:37,959]: Max: 1.3753
-[2025-05-04 08:00:37,959]: 
+[2025-05-05 07:13:18,326]: Shape: torch.Size([16])
+[2025-05-05 07:13:18,326]: Sample Values (16 elements): [-0.05592624843120575, 0.034396614879369736, 0.013269922696053982, -0.02610984817147255, -0.05429598316550255, 0.03682452067732811, 0.06877885013818741, -0.007149467710405588, -0.029548626393079758, 0.06436841934919357, -0.007785466965287924, -0.013466252014040947, -0.07079894840717316, -0.030248330906033516, 0.0002635104756336659, 0.03166060149669647]
+[2025-05-05 07:13:18,329]: Mean: -0.0029
+[2025-05-05 07:13:18,329]: Min: -0.0708
+[2025-05-05 07:13:18,330]: Max: 0.0688
+[2025-05-05 07:13:18,330]: 
 Parameter: fc1.0.weight
-[2025-05-04 08:00:37,959]: Shape: torch.Size([120, 400])
-[2025-05-04 08:00:37,974]: Sample Values (6 elements): [0.06440433859825134, 0.021080702543258667, -0.002683967584744096, -0.020346567034721375, -0.0398988351225853, -0.010601356625556946]
-[2025-05-04 08:00:37,975]: Mean: 0.0004
-[2025-05-04 08:00:37,977]: Std: 0.0410
-[2025-05-04 08:00:37,978]: Min: -0.2378
-[2025-05-04 08:00:37,978]: Max: 0.2033
-[2025-05-04 08:00:37,978]: 
+[2025-05-05 07:13:18,330]: Shape: torch.Size([120, 400])
+[2025-05-05 07:13:18,331]: Sample Values (16 elements): [0.0020839092321693897, 0.004256720654666424, -0.028085123747587204, 0.03591811656951904, 0.02789556048810482, 0.027204643934965134, 0.04223031550645828, 0.04903547838330269, -0.022959716618061066, -0.02872367575764656, 0.027772748842835426, -0.023701274767518044, 0.0056691477075219154, 0.001991053344681859, 0.0008148964261636138, 0.004759436007589102]
+[2025-05-05 07:13:18,331]: Mean: -0.0020
+[2025-05-05 07:13:18,332]: Min: -0.0499
+[2025-05-05 07:13:18,332]: Max: 0.0498
+[2025-05-05 07:13:18,332]: 
 Parameter: fc1.0.bias
-[2025-05-04 08:00:37,978]: Shape: torch.Size([120])
-[2025-05-04 08:00:37,994]: Sample Values (6 elements): [0.02088497206568718, 0.11921193450689316, 0.1892329305410385, -0.026207979768514633, 0.01895364746451378, 0.008887993171811104]
-[2025-05-04 08:00:38,007]: Mean: 0.0101
-[2025-05-04 08:00:38,007]: Std: 0.0687
-[2025-05-04 08:00:38,018]: Min: -0.1714
-[2025-05-04 08:00:38,022]: Max: 0.1892
-[2025-05-04 08:00:38,022]: 
+[2025-05-05 07:13:18,332]: Shape: torch.Size([120])
+[2025-05-05 07:13:18,333]: Sample Values (16 elements): [0.02366097830235958, 0.015253832563757896, 0.005040612071752548, -0.006197079550474882, -0.03993919864296913, -0.03911452740430832, 0.036971233785152435, 0.03353908658027649, -0.02429601177573204, 0.017432672902941704, 0.02046101540327072, 0.004433433059602976, -0.006758134346455336, -0.016785893589258194, -0.043530065566301346, 0.026069780811667442]
+[2025-05-05 07:13:18,333]: Mean: -0.0009
+[2025-05-05 07:13:18,334]: Min: -0.0496
+[2025-05-05 07:13:18,334]: Max: 0.0508
+[2025-05-05 07:13:18,334]: 
 Parameter: fc2.0.weight
-[2025-05-04 08:00:38,022]: Shape: torch.Size([84, 120])
-[2025-05-04 08:00:38,023]: Sample Values (6 elements): [-0.07555440813302994, -0.016736315563321114, -0.13936758041381836, -0.0561499297618866, 0.03489965945482254, -0.06764807552099228]
-[2025-05-04 08:00:38,024]: Mean: 0.0004
-[2025-05-04 08:00:38,024]: Std: 0.0609
-[2025-05-04 08:00:38,025]: Min: -0.2134
-[2025-05-04 08:00:38,026]: Max: 0.2172
-[2025-05-04 08:00:38,026]: 
+[2025-05-05 07:13:18,334]: Shape: torch.Size([84, 120])
+[2025-05-05 07:13:18,335]: Sample Values (16 elements): [0.08468617498874664, -0.030629927292466164, -0.07191171497106552, 0.022229887545108795, 0.06314871460199356, 0.005219792481511831, 0.07502955943346024, -0.005184034816920757, 0.05368354171514511, 0.05525822937488556, -0.013177154585719109, 0.05942881852388382, 0.06691084802150726, 0.027224045246839523, -0.018995674327015877, 0.01987316831946373]
+[2025-05-05 07:13:18,336]: Mean: 0.0052
+[2025-05-05 07:13:18,336]: Min: -0.0908
+[2025-05-05 07:13:18,336]: Max: 0.0895
+[2025-05-05 07:13:18,336]: 
 Parameter: fc2.0.bias
-[2025-05-04 08:00:38,026]: Shape: torch.Size([84])
-[2025-05-04 08:00:38,028]: Sample Values (6 elements): [0.01800592988729477, 0.0866609662771225, 0.031172025948762894, -0.17813606560230255, 0.046675097197294235, -0.0046079386956989765]
-[2025-05-04 08:00:38,030]: Mean: 0.0289
-[2025-05-04 08:00:38,030]: Std: 0.1157
-[2025-05-04 08:00:38,030]: Min: -0.2667
-[2025-05-04 08:00:38,031]: Max: 0.3036
-[2025-05-04 08:00:38,031]: 
+[2025-05-05 07:13:18,336]: Shape: torch.Size([84])
+[2025-05-05 07:13:18,337]: Sample Values (16 elements): [0.08436528593301773, -0.08574548363685608, -0.08118292689323425, -0.020924992859363556, 0.0005966684548184276, -0.05579512193799019, 0.050673823803663254, -0.06887156516313553, 0.027750544250011444, 0.0555831715464592, -0.03274131193757057, 0.060321222990751266, -0.08301645517349243, -0.021466311067342758, -0.020644119009375572, 0.042984139174222946]
+[2025-05-05 07:13:18,338]: Mean: -0.0022
+[2025-05-05 07:13:18,338]: Min: -0.0906
+[2025-05-05 07:13:18,338]: Max: 0.1006
+[2025-05-05 07:13:18,338]: 
 Parameter: fc3.weight
-[2025-05-04 08:00:38,031]: Shape: torch.Size([10, 84])
-[2025-05-04 08:00:38,032]: Sample Values (6 elements): [-0.02129843458533287, 0.010962693952023983, -0.006593992467969656, -0.06363403797149658, -0.00782820489257574, 0.030802547931671143]
-[2025-05-04 08:00:38,032]: Mean: 0.0010
-[2025-05-04 08:00:38,033]: Std: 0.0287
-[2025-05-04 08:00:38,033]: Min: -0.0988
-[2025-05-04 08:00:38,034]: Max: 0.0839
-[2025-05-04 08:00:38,034]: 
+[2025-05-05 07:13:18,338]: Shape: torch.Size([10, 84])
+[2025-05-05 07:13:18,339]: Sample Values (16 elements): [0.09542535990476608, -0.004727852530777454, 0.10287699848413467, -0.09503450989723206, -0.08654700964689255, -0.0016872885171324015, -0.077977754175663, -0.027224795892834663, -0.03322169929742813, 0.05129021033644676, 0.04369537904858589, -0.08941183984279633, -0.027519728988409042, -0.04381223022937775, -0.001796973287127912, -0.029213763773441315]
+[2025-05-05 07:13:18,340]: Mean: 0.0066
+[2025-05-05 07:13:18,340]: Min: -0.1116
+[2025-05-05 07:13:18,341]: Max: 0.1066
+[2025-05-05 07:13:18,341]: 
 Parameter: fc3.bias
-[2025-05-04 08:00:38,034]: Shape: torch.Size([10])
-[2025-05-04 08:00:38,036]: Sample Values (6 elements): [0.930837869644165, 0.2605324685573578, -0.10491389036178589, -0.22618798911571503, -0.2959826588630676, 0.28767719864845276]
-[2025-05-04 08:00:38,036]: Mean: 0.0140
-[2025-05-04 08:00:38,037]: Std: 0.4257
-[2025-05-04 08:00:38,037]: Min: -0.5641
-[2025-05-04 08:00:38,038]: Max: 0.9308
-[2025-05-04 08:00:38,038]: 
+[2025-05-05 07:13:18,341]: Shape: torch.Size([10])
+[2025-05-05 07:13:18,341]: Sample Values (10 elements): [-0.06076192110776901, 0.048097364604473114, 0.03834386169910431, -0.08159537613391876, 0.06689370423555374, 0.012610235251486301, -0.06186997517943382, 0.04764915630221367, -0.08416441828012466, -0.010882054455578327]
+[2025-05-05 07:13:18,342]: Mean: -0.0086
+[2025-05-05 07:13:18,343]: Min: -0.0842
+[2025-05-05 07:13:18,343]: Max: 0.0669
+[2025-05-05 07:13:18,343]: 
 
 
 QAT of LeNet5 with relu down to 2 bits...
-[2025-05-04 08:00:38,114]: [LeNet5_relu_quantized_2_bits] after configure_qat:
-[2025-05-04 08:00:38,155]: LeNet5(
+[2025-05-05 07:13:18,383]: [LeNet5_relu_quantized_2_bits] after configure_qat:
+[2025-05-05 07:13:18,408]: LeNet5(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
       fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
@@ -1070,37 +818,18 @@ QAT of LeNet5 with relu down to 2 bits...
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 08:01:06,824]: [LeNet5_relu_quantized_2_bits] Epoch: 001 Train Loss: 2.0623 Train Acc: 0.3542 Eval Loss: 1.7425 Eval Acc: 0.3951 (LR: 0.001000)
-[2025-05-04 08:01:35,270]: [LeNet5_relu_quantized_2_bits] Epoch: 002 Train Loss: 1.8518 Train Acc: 0.3716 Eval Loss: 1.7636 Eval Acc: 0.4012 (LR: 0.001000)
-[2025-05-04 08:02:03,969]: [LeNet5_relu_quantized_2_bits] Epoch: 003 Train Loss: 1.8509 Train Acc: 0.3779 Eval Loss: 1.7323 Eval Acc: 0.3956 (LR: 0.001000)
-[2025-05-04 08:02:32,172]: [LeNet5_relu_quantized_2_bits] Epoch: 004 Train Loss: 1.7726 Train Acc: 0.3903 Eval Loss: 1.6359 Eval Acc: 0.4243 (LR: 0.001000)
-[2025-05-04 08:02:59,976]: [LeNet5_relu_quantized_2_bits] Epoch: 005 Train Loss: 1.7006 Train Acc: 0.3986 Eval Loss: 1.6009 Eval Acc: 0.4409 (LR: 0.001000)
-[2025-05-04 08:03:27,761]: [LeNet5_relu_quantized_2_bits] Epoch: 006 Train Loss: 1.6832 Train Acc: 0.3998 Eval Loss: 1.5915 Eval Acc: 0.4323 (LR: 0.001000)
-[2025-05-04 08:03:56,902]: [LeNet5_relu_quantized_2_bits] Epoch: 007 Train Loss: 1.6834 Train Acc: 0.3981 Eval Loss: 1.6200 Eval Acc: 0.4128 (LR: 0.001000)
-[2025-05-04 08:04:25,095]: [LeNet5_relu_quantized_2_bits] Epoch: 008 Train Loss: 1.6856 Train Acc: 0.3972 Eval Loss: 1.6342 Eval Acc: 0.4094 (LR: 0.001000)
-[2025-05-04 08:04:53,293]: [LeNet5_relu_quantized_2_bits] Epoch: 009 Train Loss: 1.6759 Train Acc: 0.3959 Eval Loss: 1.5758 Eval Acc: 0.4354 (LR: 0.001000)
-[2025-05-04 08:05:21,675]: [LeNet5_relu_quantized_2_bits] Epoch: 010 Train Loss: 1.6818 Train Acc: 0.3977 Eval Loss: 1.5871 Eval Acc: 0.4277 (LR: 0.001000)
-[2025-05-04 08:05:49,973]: [LeNet5_relu_quantized_2_bits] Epoch: 011 Train Loss: 1.6727 Train Acc: 0.3978 Eval Loss: 1.5751 Eval Acc: 0.4337 (LR: 0.001000)
-[2025-05-04 08:06:18,709]: [LeNet5_relu_quantized_2_bits] Epoch: 012 Train Loss: 1.6817 Train Acc: 0.3953 Eval Loss: 1.5876 Eval Acc: 0.4300 (LR: 0.001000)
-[2025-05-04 08:06:46,714]: [LeNet5_relu_quantized_2_bits] Epoch: 013 Train Loss: 1.6842 Train Acc: 0.3950 Eval Loss: 1.6061 Eval Acc: 0.4288 (LR: 0.001000)
-[2025-05-04 08:07:14,465]: [LeNet5_relu_quantized_2_bits] Epoch: 014 Train Loss: 1.6929 Train Acc: 0.3933 Eval Loss: 1.6051 Eval Acc: 0.4173 (LR: 0.001000)
-[2025-05-04 08:07:40,766]: [LeNet5_relu_quantized_2_bits] Epoch: 015 Train Loss: 1.6945 Train Acc: 0.3939 Eval Loss: 1.6073 Eval Acc: 0.4112 (LR: 0.001000)
-[2025-05-04 08:08:06,810]: [LeNet5_relu_quantized_2_bits] Epoch: 016 Train Loss: 1.6909 Train Acc: 0.3907 Eval Loss: 1.5955 Eval Acc: 0.4244 (LR: 0.001000)
-[2025-05-04 08:08:33,422]: [LeNet5_relu_quantized_2_bits] Epoch: 017 Train Loss: 1.6904 Train Acc: 0.3945 Eval Loss: 1.6221 Eval Acc: 0.4257 (LR: 0.001000)
-[2025-05-04 08:08:59,996]: [LeNet5_relu_quantized_2_bits] Epoch: 018 Train Loss: 1.6945 Train Acc: 0.3932 Eval Loss: 1.6337 Eval Acc: 0.4066 (LR: 0.001000)
-[2025-05-04 08:09:26,211]: [LeNet5_relu_quantized_2_bits] Epoch: 019 Train Loss: 1.6907 Train Acc: 0.3944 Eval Loss: 1.6588 Eval Acc: 0.4116 (LR: 0.001000)
-[2025-05-04 08:09:51,877]: [LeNet5_relu_quantized_2_bits] Epoch: 020 Train Loss: 1.6837 Train Acc: 0.3957 Eval Loss: 1.6168 Eval Acc: 0.4200 (LR: 0.001000)
-[2025-05-04 08:09:51,878]: Early stopping was triggered!
-[2025-05-04 08:09:51,907]: 
+[2025-05-05 07:13:50,388]: [LeNet5_relu_quantized_2_bits] Epoch: 001 Train Loss: 2.2936 Train Acc: 0.1277 Eval Loss: 2.2854 Eval Acc: 0.1489 (LR: 0.001000)
+[2025-05-05 07:13:50,399]: [LeNet5_relu_quantized_2_bits] Best Eval Accuracy: 0.1489
+[2025-05-05 07:13:50,411]: 
 
 
 Quantization of model down to 2 bits finished
-[2025-05-04 08:09:51,907]: Model Architecture:
-[2025-05-04 08:09:52,244]: LeNet5(
+[2025-05-05 07:13:50,411]: Model Architecture:
+[2025-05-05 07:13:50,576]: LeNet5(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
-      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([9.4468], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-      (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=28.340497970581055)
+      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.3202], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+      (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=3.960728883743286)
     )
   )
   (dequant): DeQuantStub()
@@ -1113,15 +842,15 @@ Quantization of model down to 2 bits finished
     (0): Conv2d(
       6, 16, kernel_size=(5, 5), stride=(1, 1)
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-2, quant_max=1, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.2003, 0.1359, 0.2700, 0.1892, 0.2136, 0.2717, 0.2634, 0.1708, 0.1305,
-                0.1891, 0.1693, 0.1931, 0.1472, 0.2760, 0.1549, 0.3064],
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-2, quant_max=1, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0541, 0.0561, 0.0550, 0.0538, 0.0564, 0.0549, 0.0545, 0.0547, 0.0537,
+                0.0547, 0.0539, 0.0542, 0.0550, 0.0544, 0.0537, 0.0540],
                device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0',
                dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.3005, -0.2005, -0.4049, -0.2839, -0.1554, -0.4075, -0.3950, -0.2506,
-                  -0.1277, -0.1969, -0.1910, -0.2487, -0.2190, -0.3025, -0.1407, -0.4596],
-                 device='cuda:0'), max_val=tensor([0.2953, 0.2039, 0.4049, 0.2836, 0.3204, 0.2439, 0.3664, 0.2562, 0.1958,
-                  0.2836, 0.2540, 0.2896, 0.2208, 0.4140, 0.2323, 0.3135],
+          min_val=tensor([-0.0812, -0.0793, -0.0797, -0.0806, -0.0819, -0.0793, -0.0818, -0.0804,
+                  -0.0800, -0.0811, -0.0809, -0.0814, -0.0805, -0.0790, -0.0795, -0.0810],
+                 device='cuda:0'), max_val=tensor([0.0794, 0.0842, 0.0825, 0.0807, 0.0846, 0.0823, 0.0805, 0.0820, 0.0806,
+                  0.0821, 0.0783, 0.0814, 0.0825, 0.0817, 0.0805, 0.0810],
                  device='cuda:0')
         )
       )
@@ -1131,8 +860,8 @@ Quantization of model down to 2 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([41.8944], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=125.68310546875)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.6967], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=2.0899765491485596)
         )
       )
     )
@@ -1142,55 +871,55 @@ Quantization of model down to 2 bits finished
     (0): Linear(
       in_features=400, out_features=120, bias=True
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-2, quant_max=1, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0886, 0.0586, 0.0364, 0.0349, 0.0673, 0.0402, 0.0823, 0.0556, 0.0816,
-                0.0821, 0.0641, 0.0931, 0.0886, 0.0881, 0.0745, 0.0666, 0.0614, 0.1277,
-                0.1013, 0.0841, 0.0771, 0.0642, 0.0754, 0.0350, 0.0710, 0.0363, 0.0714,
-                0.0701, 0.1058, 0.0508, 0.0844, 0.0783, 0.0562, 0.0908, 0.1232, 0.0870,
-                0.1120, 0.0806, 0.0770, 0.0754, 0.0782, 0.0791, 0.0974, 0.0972, 0.0661,
-                0.0811, 0.0813, 0.0919, 0.1114, 0.0910, 0.0735, 0.0722, 0.0828, 0.0793,
-                0.1022, 0.0693, 0.0677, 0.0795, 0.0698, 0.0925, 0.0750, 0.0368, 0.0688,
-                0.0781, 0.0676, 0.0968, 0.0925, 0.0849, 0.0982, 0.1042, 0.1173, 0.1187,
-                0.0821, 0.0844, 0.0907, 0.0805, 0.0664, 0.0775, 0.0893, 0.0373, 0.0989,
-                0.0790, 0.0346, 0.0882, 0.1177, 0.1631, 0.0881, 0.0779, 0.0889, 0.0675,
-                0.1602, 0.0822, 0.0820, 0.0691, 0.0921, 0.1074, 0.0636, 0.0919, 0.0366,
-                0.0711, 0.0893, 0.0677, 0.1359, 0.0746, 0.0891, 0.0629, 0.0923, 0.0836,
-                0.0505, 0.0948, 0.1762, 0.1099, 0.0837, 0.0712, 0.1239, 0.0890, 0.0865,
-                0.0888, 0.0571, 0.0539], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-2, quant_max=1, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0333, 0.0340, 0.0331, 0.0333, 0.0333, 0.0332, 0.0331, 0.0341, 0.0335,
+                0.0335, 0.0333, 0.0334, 0.0333, 0.0331, 0.0333, 0.0336, 0.0334, 0.0335,
+                0.0333, 0.0334, 0.0333, 0.0335, 0.0333, 0.0345, 0.0331, 0.0333, 0.0333,
+                0.0334, 0.0336, 0.0340, 0.0338, 0.0333, 0.0339, 0.0331, 0.0334, 0.0337,
+                0.0335, 0.0335, 0.0336, 0.0332, 0.0337, 0.0331, 0.0328, 0.0333, 0.0333,
+                0.0337, 0.0332, 0.0331, 0.0337, 0.0333, 0.0333, 0.0332, 0.0339, 0.0333,
+                0.0333, 0.0335, 0.0333, 0.0333, 0.0333, 0.0330, 0.0333, 0.0343, 0.0333,
+                0.0332, 0.0343, 0.0334, 0.0335, 0.0336, 0.0340, 0.0335, 0.0334, 0.0337,
+                0.0334, 0.0329, 0.0334, 0.0336, 0.0334, 0.0333, 0.0338, 0.0332, 0.0336,
+                0.0344, 0.0333, 0.0330, 0.0337, 0.0333, 0.0333, 0.0335, 0.0333, 0.0332,
+                0.0335, 0.0335, 0.0333, 0.0332, 0.0335, 0.0341, 0.0333, 0.0334, 0.0333,
+                0.0334, 0.0332, 0.0330, 0.0338, 0.0332, 0.0336, 0.0335, 0.0331, 0.0336,
+                0.0334, 0.0332, 0.0333, 0.0333, 0.0333, 0.0336, 0.0334, 0.0334, 0.0334,
+                0.0336, 0.0326, 0.0337], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                device='cuda:0', dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.1192, -0.0821, -0.0519, -0.0521, -0.1010, -0.0603, -0.1235, -0.0742,
-                  -0.1224, -0.1232, -0.0961, -0.1170, -0.1329, -0.1256, -0.1117, -0.0843,
-                  -0.0921, -0.1322, -0.1519, -0.1048, -0.1157, -0.0855, -0.0958, -0.0525,
-                  -0.1007, -0.0544, -0.1071, -0.0801, -0.1144, -0.0762, -0.1266, -0.1175,
-                  -0.0764, -0.1362, -0.1848, -0.1295, -0.1679, -0.0905, -0.1156, -0.1131,
-                  -0.1173, -0.1067, -0.1460, -0.1458, -0.0991, -0.1216, -0.0826, -0.0934,
-                  -0.1671, -0.1365, -0.1102, -0.0978, -0.1046, -0.1033, -0.1533, -0.1040,
-                  -0.0928, -0.1190, -0.1048, -0.1387, -0.0697, -0.0510, -0.0920, -0.1171,
-                  -0.1014, -0.1445, -0.1388, -0.1273, -0.1473, -0.1563, -0.1759, -0.1780,
-                  -0.1019, -0.1266, -0.1360, -0.1207, -0.0995, -0.1162, -0.1340, -0.0484,
-                  -0.1434, -0.1145, -0.0519, -0.1128, -0.1766, -0.2446, -0.1321, -0.1169,
-                  -0.1152, -0.0983, -0.2403, -0.1233, -0.0710, -0.1037, -0.1382, -0.1611,
-                  -0.0954, -0.1378, -0.0501, -0.0994, -0.0870, -0.1012, -0.2039, -0.1119,
-                  -0.1337, -0.0944, -0.1385, -0.1013, -0.0758, -0.1182, -0.2643, -0.1648,
-                  -0.1012, -0.1069, -0.1858, -0.1336, -0.1033, -0.1332, -0.0856, -0.0678],
-                 device='cuda:0'), max_val=tensor([0.1329, 0.0879, 0.0547, 0.0524, 0.0994, 0.0451, 0.1195, 0.0833, 0.1205,
-                  0.1122, 0.0948, 0.1396, 0.1322, 0.1322, 0.0743, 0.0999, 0.0909, 0.1916,
-                  0.0979, 0.1261, 0.1157, 0.0963, 0.1131, 0.0468, 0.1065, 0.0480, 0.1050,
-                  0.1051, 0.1587, 0.0759, 0.1249, 0.1171, 0.0844, 0.1275, 0.1355, 0.1305,
-                  0.1136, 0.1209, 0.1101, 0.1115, 0.1172, 0.1186, 0.1118, 0.1226, 0.0930,
-                  0.1036, 0.1219, 0.1379, 0.1524, 0.1363, 0.1084, 0.1084, 0.1241, 0.1190,
-                  0.1269, 0.0909, 0.1016, 0.1192, 0.1007, 0.1244, 0.1124, 0.0552, 0.1032,
-                  0.1170, 0.0971, 0.1452, 0.1135, 0.1139, 0.1022, 0.1469, 0.1650, 0.1214,
-                  0.1232, 0.1265, 0.1118, 0.0842, 0.0996, 0.1015, 0.1294, 0.0560, 0.1484,
-                  0.1185, 0.0455, 0.1323, 0.1088, 0.1270, 0.1222, 0.1158, 0.1334, 0.1013,
-                  0.1048, 0.0800, 0.1229, 0.0853, 0.0948, 0.1610, 0.0785, 0.0817, 0.0549,
-                  0.1066, 0.1339, 0.1016, 0.1219, 0.0997, 0.0982, 0.0811, 0.1324, 0.1254,
-                  0.0726, 0.1422, 0.1512, 0.1431, 0.1255, 0.0971, 0.1241, 0.1064, 0.1297,
-                  0.1039, 0.0771, 0.0808], device='cuda:0')
+          min_val=tensor([-0.0499, -0.0491, -0.0496, -0.0500, -0.0498, -0.0482, -0.0496, -0.0512,
+                  -0.0501, -0.0496, -0.0496, -0.0501, -0.0497, -0.0495, -0.0499, -0.0495,
+                  -0.0501, -0.0502, -0.0499, -0.0494, -0.0497, -0.0497, -0.0497, -0.0517,
+                  -0.0496, -0.0491, -0.0500, -0.0486, -0.0505, -0.0492, -0.0495, -0.0497,
+                  -0.0495, -0.0497, -0.0502, -0.0505, -0.0502, -0.0493, -0.0504, -0.0494,
+                  -0.0505, -0.0496, -0.0492, -0.0495, -0.0498, -0.0494, -0.0497, -0.0497,
+                  -0.0491, -0.0499, -0.0499, -0.0497, -0.0509, -0.0496, -0.0499, -0.0502,
+                  -0.0500, -0.0500, -0.0495, -0.0496, -0.0498, -0.0494, -0.0497, -0.0498,
+                  -0.0502, -0.0501, -0.0499, -0.0503, -0.0493, -0.0501, -0.0501, -0.0505,
+                  -0.0498, -0.0488, -0.0500, -0.0489, -0.0501, -0.0499, -0.0502, -0.0493,
+                  -0.0504, -0.0473, -0.0500, -0.0494, -0.0505, -0.0495, -0.0499, -0.0487,
+                  -0.0497, -0.0498, -0.0499, -0.0472, -0.0492, -0.0496, -0.0501, -0.0511,
+                  -0.0494, -0.0487, -0.0499, -0.0497, -0.0498, -0.0495, -0.0498, -0.0498,
+                  -0.0504, -0.0484, -0.0497, -0.0490, -0.0496, -0.0495, -0.0493, -0.0499,
+                  -0.0499, -0.0504, -0.0501, -0.0501, -0.0501, -0.0505, -0.0489, -0.0495],
+                 device='cuda:0'), max_val=tensor([0.0498, 0.0510, 0.0497, 0.0494, 0.0499, 0.0498, 0.0497, 0.0494, 0.0502,
+                  0.0502, 0.0500, 0.0498, 0.0500, 0.0497, 0.0499, 0.0504, 0.0500, 0.0493,
+                  0.0498, 0.0502, 0.0500, 0.0503, 0.0499, 0.0494, 0.0495, 0.0500, 0.0499,
+                  0.0500, 0.0495, 0.0510, 0.0507, 0.0500, 0.0508, 0.0491, 0.0500, 0.0502,
+                  0.0498, 0.0502, 0.0498, 0.0498, 0.0496, 0.0494, 0.0490, 0.0500, 0.0500,
+                  0.0506, 0.0499, 0.0497, 0.0505, 0.0499, 0.0499, 0.0497, 0.0500, 0.0500,
+                  0.0497, 0.0500, 0.0499, 0.0498, 0.0500, 0.0496, 0.0499, 0.0514, 0.0499,
+                  0.0498, 0.0515, 0.0496, 0.0503, 0.0496, 0.0510, 0.0502, 0.0497, 0.0498,
+                  0.0502, 0.0494, 0.0495, 0.0504, 0.0500, 0.0497, 0.0508, 0.0497, 0.0498,
+                  0.0515, 0.0498, 0.0493, 0.0504, 0.0499, 0.0499, 0.0503, 0.0499, 0.0495,
+                  0.0502, 0.0502, 0.0499, 0.0498, 0.0502, 0.0496, 0.0499, 0.0501, 0.0491,
+                  0.0501, 0.0497, 0.0493, 0.0507, 0.0498, 0.0495, 0.0503, 0.0491, 0.0504,
+                  0.0502, 0.0498, 0.0499, 0.0499, 0.0499, 0.0496, 0.0500, 0.0495, 0.0498,
+                  0.0500, 0.0485, 0.0506], device='cuda:0')
         )
       )
       (activation_post_process): NoopObserver()
@@ -1199,8 +928,8 @@ Quantization of model down to 2 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([47.8753], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=143.6257781982422)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3905], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=1.171441912651062)
         )
       )
     )
@@ -1209,41 +938,41 @@ Quantization of model down to 2 bits finished
     (0): Linear(
       in_features=120, out_features=84, bias=True
       (weight_fake_quant): FakeQuantize(
-        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-2, quant_max=1, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0905, 0.0939, 0.0768, 0.0748, 0.1280, 0.1021, 0.0880, 0.0673, 0.1027,
-                0.0908, 0.0705, 0.1048, 0.0905, 0.1066, 0.1007, 0.0896, 0.1161, 0.0934,
-                0.0841, 0.0665, 0.1053, 0.1182, 0.1293, 0.1018, 0.1161, 0.0991, 0.1055,
-                0.0661, 0.1025, 0.0930, 0.0943, 0.1195, 0.1161, 0.1039, 0.1252, 0.0897,
-                0.1039, 0.0973, 0.1112, 0.0909, 0.0648, 0.1042, 0.0753, 0.1186, 0.1232,
-                0.1111, 0.0882, 0.1207, 0.1124, 0.0981, 0.1356, 0.1115, 0.1397, 0.0610,
-                0.0760, 0.0767, 0.1008, 0.1111, 0.0733, 0.0986, 0.0981, 0.1048, 0.1386,
-                0.1076, 0.1032, 0.0891, 0.1100, 0.0959, 0.0878, 0.0696, 0.1006, 0.1353,
-                0.0799, 0.0918, 0.0845, 0.0964, 0.0593, 0.1054, 0.0921, 0.0870, 0.1022,
-                0.0827, 0.0903, 0.0611], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=-2, quant_max=1, dtype=torch.qint8, qscheme=torch.per_channel_symmetric, ch_axis=0, scale=tensor([0.0606, 0.0606, 0.0596, 0.0607, 0.0604, 0.0603, 0.0608, 0.0604, 0.0602,
+                0.0606, 0.0607, 0.0608, 0.0605, 0.0608, 0.0601, 0.0608, 0.0595, 0.0606,
+                0.0601, 0.0603, 0.0608, 0.0605, 0.0604, 0.0607, 0.0607, 0.0597, 0.0598,
+                0.0607, 0.0605, 0.0598, 0.0600, 0.0606, 0.0607, 0.0609, 0.0605, 0.0597,
+                0.0600, 0.0605, 0.0603, 0.0596, 0.0587, 0.0605, 0.0615, 0.0604, 0.0607,
+                0.0601, 0.0608, 0.0606, 0.0605, 0.0605, 0.0615, 0.0600, 0.0598, 0.0597,
+                0.0594, 0.0609, 0.0608, 0.0601, 0.0607, 0.0603, 0.0593, 0.0606, 0.0634,
+                0.0606, 0.0602, 0.0602, 0.0596, 0.0606, 0.0607, 0.0607, 0.0608, 0.0597,
+                0.0610, 0.0603, 0.0608, 0.0604, 0.0603, 0.0593, 0.0602, 0.0610, 0.0592,
+                0.0605, 0.0606, 0.0597], device='cuda:0'), zero_point=tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
                 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], device='cuda:0',
                dtype=torch.int32)
         (activation_post_process): MovingAveragePerChannelMinMaxObserver(
-          min_val=tensor([-0.1199, -0.1409, -0.0958, -0.1085, -0.1351, -0.1142, -0.1286, -0.0875,
-                  -0.1541, -0.1323, -0.1027, -0.1572, -0.1107, -0.1599, -0.1511, -0.1344,
-                  -0.1199, -0.1391, -0.1189, -0.0998, -0.1579, -0.1774, -0.1514, -0.1526,
-                  -0.1380, -0.1363, -0.1294, -0.0895, -0.1537, -0.1174, -0.1415, -0.1572,
-                  -0.1741, -0.1513, -0.1778, -0.1228, -0.1348, -0.1459, -0.1478, -0.1363,
-                  -0.0929, -0.1564, -0.1128, -0.1267, -0.1186, -0.1666, -0.1323, -0.1811,
-                  -0.1305, -0.1425, -0.1480, -0.1672, -0.2095, -0.0914, -0.1140, -0.0966,
-                  -0.1511, -0.1557, -0.1037, -0.1479, -0.1471, -0.1545, -0.1688, -0.1614,
-                  -0.1457, -0.1336, -0.1213, -0.1438, -0.1316, -0.1044, -0.1180, -0.2008,
-                  -0.1198, -0.1377, -0.1112, -0.1301, -0.0850, -0.1580, -0.1382, -0.1201,
-                  -0.1533, -0.1240, -0.1231, -0.0848], device='cuda:0'), max_val=tensor([0.1357, 0.0959, 0.1152, 0.1123, 0.1921, 0.1531, 0.1321, 0.1009, 0.1049,
-                  0.1361, 0.1058, 0.1548, 0.1357, 0.1208, 0.1245, 0.1217, 0.1742, 0.1401,
-                  0.1262, 0.0954, 0.1176, 0.1347, 0.1939, 0.1171, 0.1742, 0.1487, 0.1582,
-                  0.0992, 0.1043, 0.1395, 0.1208, 0.1793, 0.1487, 0.1559, 0.1878, 0.1346,
-                  0.1558, 0.1333, 0.1668, 0.1162, 0.0972, 0.1317, 0.1129, 0.1779, 0.1848,
-                  0.1164, 0.1101, 0.1665, 0.1686, 0.1472, 0.2034, 0.1257, 0.1384, 0.0822,
-                  0.1032, 0.1151, 0.1277, 0.1666, 0.1099, 0.1411, 0.1341, 0.1572, 0.2079,
-                  0.1357, 0.1549, 0.1226, 0.1651, 0.1092, 0.1317, 0.0986, 0.1509, 0.2029,
-                  0.1052, 0.1174, 0.1267, 0.1447, 0.0890, 0.1421, 0.1259, 0.1305, 0.1058,
-                  0.1064, 0.1354, 0.0917], device='cuda:0')
+          min_val=tensor([-0.0909, -0.0909, -0.0894, -0.0911, -0.0901, -0.0905, -0.0902, -0.0906,
+                  -0.0894, -0.0903, -0.0910, -0.0909, -0.0907, -0.0912, -0.0902, -0.0887,
+                  -0.0882, -0.0909, -0.0877, -0.0905, -0.0912, -0.0907, -0.0905, -0.0906,
+                  -0.0883, -0.0883, -0.0858, -0.0911, -0.0877, -0.0875, -0.0877, -0.0892,
+                  -0.0904, -0.0900, -0.0907, -0.0895, -0.0899, -0.0907, -0.0898, -0.0890,
+                  -0.0880, -0.0907, -0.0879, -0.0906, -0.0880, -0.0878, -0.0912, -0.0909,
+                  -0.0908, -0.0892, -0.0868, -0.0899, -0.0897, -0.0895, -0.0891, -0.0914,
+                  -0.0880, -0.0879, -0.0911, -0.0873, -0.0889, -0.0910, -0.0929, -0.0910,
+                  -0.0902, -0.0903, -0.0858, -0.0910, -0.0893, -0.0911, -0.0912, -0.0881,
+                  -0.0915, -0.0899, -0.0911, -0.0905, -0.0903, -0.0889, -0.0903, -0.0895,
+                  -0.0888, -0.0889, -0.0909, -0.0896], device='cuda:0'), max_val=tensor([0.0894, 0.0889, 0.0891, 0.0894, 0.0906, 0.0905, 0.0912, 0.0862, 0.0903,
+                  0.0909, 0.0887, 0.0912, 0.0895, 0.0910, 0.0887, 0.0912, 0.0893, 0.0882,
+                  0.0902, 0.0893, 0.0903, 0.0884, 0.0896, 0.0911, 0.0910, 0.0896, 0.0896,
+                  0.0906, 0.0907, 0.0897, 0.0901, 0.0909, 0.0911, 0.0913, 0.0819, 0.0852,
+                  0.0889, 0.0904, 0.0905, 0.0894, 0.0875, 0.0890, 0.0922, 0.0859, 0.0911,
+                  0.0902, 0.0910, 0.0903, 0.0898, 0.0908, 0.0923, 0.0881, 0.0865, 0.0871,
+                  0.0881, 0.0885, 0.0912, 0.0901, 0.0911, 0.0904, 0.0875, 0.0855, 0.0950,
+                  0.0905, 0.0902, 0.0865, 0.0895, 0.0885, 0.0911, 0.0911, 0.0902, 0.0895,
+                  0.0895, 0.0905, 0.0912, 0.0901, 0.0904, 0.0889, 0.0867, 0.0915, 0.0881,
+                  0.0907, 0.0895, 0.0891], device='cuda:0')
         )
       )
       (activation_post_process): NoopObserver()
@@ -1252,94 +981,83 @@ Quantization of model down to 2 bits finished
       (0): ReLU(inplace=True)
       (1): QuantStub(
         (activation_post_process): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([23.3688], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=70.1063461303711)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.1911], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=0.0, max_val=0.5734342932701111)
         )
       )
     )
   )
   (fc3): Linear(in_features=84, out_features=10, bias=True)
 )
-[2025-05-04 08:09:52,244]: 
+[2025-05-05 07:13:50,577]: 
 Model Parameters with Weights:
-[2025-05-04 08:09:52,244]: 
+[2025-05-05 07:13:50,577]: 
 Parameter: conv1.0.weight
-[2025-05-04 08:09:52,244]: Shape: torch.Size([6, 3, 5, 5])
-[2025-05-04 08:09:52,265]: Sample Values (16 elements): [0.23301728069782257, 0.17478035390377045, 0.1223348081111908, 0.1372334510087967, -0.13943307101726532, -0.311179518699646, 0.3935694098472595, 0.34417206048965454, 0.37571004033088684, 0.15897735953330994, -0.05072004348039627, 0.07616355270147324, 0.46267831325531006, 0.06041984260082245, -0.11506929248571396, -0.3183814585208893]
-[2025-05-04 08:09:52,266]: Mean: 0.0050
-[2025-05-04 08:09:52,267]: Std: 0.2868
-[2025-05-04 08:09:52,267]: Min: -1.1644
-[2025-05-04 08:09:52,268]: Max: 1.1487
-[2025-05-04 08:09:52,268]: 
+[2025-05-05 07:13:50,577]: Shape: torch.Size([6, 3, 5, 5])
+[2025-05-05 07:13:50,579]: Sample Values (16 elements): [0.10552340000867844, 0.0383683480322361, 0.028663791716098785, 0.06386865675449371, -0.0015239546773955226, 0.04105167090892792, 0.1183222308754921, 0.06221993640065193, 0.09361815452575684, -0.08624961227178574, -0.03455047681927681, 0.08901447802782059, -0.052558112889528275, -0.06247497349977493, 0.036747246980667114, -0.014599609188735485]
+[2025-05-05 07:13:50,579]: Mean: 0.0025
+[2025-05-05 07:13:50,580]: Min: -0.1120
+[2025-05-05 07:13:50,580]: Max: 0.1183
+[2025-05-05 07:13:50,580]: 
 Parameter: conv1.0.bias
-[2025-05-04 08:09:52,268]: Shape: torch.Size([6])
-[2025-05-04 08:09:52,269]: Sample Values (6 elements): [0.02492458187043667, 0.8661913871765137, 0.8429334163665771, 0.21392786502838135, 0.548053503036499, 0.7751435041427612]
-[2025-05-04 08:09:52,270]: Mean: 0.5452
-[2025-05-04 08:09:52,270]: Std: 0.3536
-[2025-05-04 08:09:52,271]: Min: 0.0249
-[2025-05-04 08:09:52,271]: Max: 0.8662
-[2025-05-04 08:09:52,271]: 
+[2025-05-05 07:13:50,581]: Shape: torch.Size([6])
+[2025-05-05 07:13:50,581]: Sample Values (6 elements): [-0.10016191005706787, 0.038012851029634476, 0.03924356773495674, -0.0914042517542839, 0.07615360617637634, -0.07807935029268265]
+[2025-05-05 07:13:50,581]: Mean: -0.0194
+[2025-05-05 07:13:50,582]: Min: -0.1002
+[2025-05-05 07:13:50,582]: Max: 0.0762
+[2025-05-05 07:13:50,582]: 
 Parameter: conv2.0.weight
-[2025-05-04 08:09:52,271]: Shape: torch.Size([16, 6, 5, 5])
-[2025-05-04 08:09:52,273]: Sample Values (6 elements): [0.11467274278402328, 0.21859072148799896, -0.060132816433906555, 0.08046112954616547, -0.028890471905469894, 0.07561764866113663]
-[2025-05-04 08:09:52,273]: Mean: 0.0251
-[2025-05-04 08:09:52,287]: Std: 0.1206
-[2025-05-04 08:09:52,288]: Min: -0.4603
-[2025-05-04 08:09:52,288]: Max: 0.4140
-[2025-05-04 08:09:52,288]: 
+[2025-05-05 07:13:50,582]: Shape: torch.Size([16, 6, 5, 5])
+[2025-05-05 07:13:50,586]: Sample Values (16 elements): [-0.0435112826526165, 0.005382217932492495, 0.058887917548418045, 0.03995143622159958, -0.04316946491599083, -0.037490032613277435, -0.055654123425483704, -0.03661486133933067, -0.06373986601829529, -0.023837203159928322, 0.020389484241604805, 0.016129592433571815, -0.058384623378515244, 0.03292049840092659, 0.07358281314373016, -0.024202095344662666]
+[2025-05-05 07:13:50,586]: Mean: -0.0052
+[2025-05-05 07:13:50,587]: Min: -0.0812
+[2025-05-05 07:13:50,587]: Max: 0.0794
+[2025-05-05 07:13:50,587]: 
 Parameter: conv2.0.bias
-[2025-05-04 08:09:52,289]: Shape: torch.Size([16])
-[2025-05-04 08:09:52,290]: Sample Values (6 elements): [0.06611809134483337, 2.4602286430308595e-05, 0.44431227445602417, 0.7815666198730469, -0.5239812731742859, 0.42836591601371765]
-[2025-05-04 08:09:52,290]: Mean: 0.0828
-[2025-05-04 08:09:52,291]: Std: 0.4971
-[2025-05-04 08:09:52,292]: Min: -0.5575
-[2025-05-04 08:09:52,293]: Max: 1.3037
-[2025-05-04 08:09:52,293]: 
+[2025-05-05 07:13:50,587]: Shape: torch.Size([16])
+[2025-05-05 07:13:50,587]: Sample Values (16 elements): [-0.008479701355099678, -0.007438028696924448, 0.035500556230545044, -0.009752989746630192, 0.010224110446870327, 0.06153780594468117, 0.07085748016834259, -0.07079548388719559, -0.028179461136460304, 0.03668392449617386, -0.025612501427531242, 0.0021410465706139803, -0.028079338371753693, -0.055394936352968216, 0.03102574497461319, -0.05348768085241318]
+[2025-05-05 07:13:50,588]: Mean: -0.0025
+[2025-05-05 07:13:50,588]: Min: -0.0708
+[2025-05-05 07:13:50,589]: Max: 0.0709
+[2025-05-05 07:13:50,589]: 
 Parameter: fc1.0.weight
-[2025-05-04 08:09:52,293]: Shape: torch.Size([120, 400])
-[2025-05-04 08:09:52,295]: Sample Values (6 elements): [0.012263110838830471, -0.06121298298239708, -0.06372809410095215, -0.044260554015636444, -0.04110207036137581, -0.038307782262563705]
-[2025-05-04 08:09:52,295]: Mean: 0.0010
-[2025-05-04 08:09:52,296]: Std: 0.0392
-[2025-05-04 08:09:52,296]: Min: -0.2646
-[2025-05-04 08:09:52,296]: Max: 0.1916
-[2025-05-04 08:09:52,297]: 
+[2025-05-05 07:13:50,589]: Shape: torch.Size([120, 400])
+[2025-05-05 07:13:50,589]: Sample Values (16 elements): [0.01436266116797924, 0.01005915179848671, -0.04232519492506981, 0.002309069037437439, -0.00520124938338995, -0.028003735467791557, 0.03771980479359627, -0.0009712501778267324, -0.02126850001513958, 0.01058700866997242, 0.0022037853486835957, 0.030137181282043457, -0.0012463846942409873, 0.01797792874276638, 0.017861245200037956, 0.0027973155956715345]
+[2025-05-05 07:13:50,593]: Mean: -0.0019
+[2025-05-05 07:13:50,593]: Min: -0.0499
+[2025-05-05 07:13:50,594]: Max: 0.0498
+[2025-05-05 07:13:50,594]: 
 Parameter: fc1.0.bias
-[2025-05-04 08:09:52,297]: Shape: torch.Size([120])
-[2025-05-04 08:09:52,297]: Sample Values (6 elements): [0.12509840726852417, -0.09603941440582275, 0.030269550159573555, -0.12832610309123993, -0.009694566950201988, -0.024475250393152237]
-[2025-05-04 08:09:52,298]: Mean: 0.0100
-[2025-05-04 08:09:52,298]: Std: 0.0669
-[2025-05-04 08:09:52,298]: Min: -0.1657
-[2025-05-04 08:09:52,299]: Max: 0.1930
-[2025-05-04 08:09:52,299]: 
+[2025-05-05 07:13:50,594]: Shape: torch.Size([120])
+[2025-05-05 07:13:50,594]: Sample Values (16 elements): [-0.013201755471527576, 0.028771517798304558, 0.03982583060860634, -0.0026943283155560493, -0.03799957409501076, 0.03995383530855179, 0.05137988552451134, -0.0016271582571789622, -0.04305095970630646, 0.023706331849098206, -0.01853034645318985, 0.009274511598050594, 0.0037081767804920673, 0.020902549847960472, 0.020663393661379814, 0.036539189517498016]
+[2025-05-05 07:13:50,595]: Mean: -0.0009
+[2025-05-05 07:13:50,595]: Min: -0.0494
+[2025-05-05 07:13:50,595]: Max: 0.0514
+[2025-05-05 07:13:50,596]: 
 Parameter: fc2.0.weight
-[2025-05-04 08:09:52,299]: Shape: torch.Size([84, 120])
-[2025-05-04 08:09:52,299]: Sample Values (6 elements): [-0.03808382526040077, -0.0544014535844326, -0.02654636837542057, -0.012976083904504776, -0.029291905462741852, -0.003694329410791397]
-[2025-05-04 08:09:52,300]: Mean: -0.0037
-[2025-05-04 08:09:52,300]: Std: 0.0564
-[2025-05-04 08:09:52,301]: Min: -0.2100
-[2025-05-04 08:09:52,302]: Max: 0.2079
-[2025-05-04 08:09:52,302]: 
+[2025-05-05 07:13:50,596]: Shape: torch.Size([84, 120])
+[2025-05-05 07:13:50,596]: Sample Values (16 elements): [-0.031457528471946716, -0.007160330656915903, 0.0640493631362915, -0.007099072448909283, 0.06806154549121857, -0.07193273305892944, 0.015870196744799614, -0.08802954852581024, 0.043223246932029724, 0.059641283005476, 0.055257007479667664, -0.09163043648004532, -0.08985200524330139, 0.05772304907441139, 0.02665940672159195, -0.02090184949338436]
+[2025-05-05 07:13:50,597]: Mean: 0.0049
+[2025-05-05 07:13:50,597]: Min: -0.0916
+[2025-05-05 07:13:50,598]: Max: 0.0893
+[2025-05-05 07:13:50,598]: 
 Parameter: fc2.0.bias
-[2025-05-04 08:09:52,302]: Shape: torch.Size([84])
-[2025-05-04 08:09:52,303]: Sample Values (6 elements): [0.02076917514204979, 0.14158399403095245, 0.034413669258356094, -0.0011805250542238355, -0.05874177813529968, 0.23269590735435486]
-[2025-05-04 08:09:52,303]: Mean: 0.0325
-[2025-05-04 08:09:52,304]: Std: 0.1142
-[2025-05-04 08:09:52,304]: Min: -0.2346
-[2025-05-04 08:09:52,304]: Max: 0.3579
-[2025-05-04 08:09:52,304]: 
+[2025-05-05 07:13:50,598]: Shape: torch.Size([84])
+[2025-05-05 07:13:50,600]: Sample Values (16 elements): [-0.03207375109195709, -0.0378449410200119, -0.054453134536743164, 0.026663832366466522, 0.04093685746192932, -0.08038730174303055, 0.023596758022904396, -0.009516295976936817, 0.08578583598136902, 0.03157268092036247, 0.03308430314064026, 0.03573581203818321, -0.06709146499633789, 0.0549447163939476, -0.015652049332857132, -0.04336171597242355]
+[2025-05-05 07:13:50,600]: Mean: -0.0021
+[2025-05-05 07:13:50,601]: Min: -0.0906
+[2025-05-05 07:13:50,601]: Max: 0.1010
+[2025-05-05 07:13:50,601]: 
 Parameter: fc3.weight
-[2025-05-04 08:09:52,304]: Shape: torch.Size([10, 84])
-[2025-05-04 08:09:52,305]: Sample Values (6 elements): [0.002699443604797125, 0.008166051469743252, 0.0016376958228647709, 0.023955415934324265, -0.03150647133588791, 0.012738151475787163]
-[2025-05-04 08:09:52,306]: Mean: 0.0010
-[2025-05-04 08:09:52,306]: Std: 0.0224
-[2025-05-04 08:09:52,307]: Min: -0.0673
-[2025-05-04 08:09:52,307]: Max: 0.0630
-[2025-05-04 08:09:52,307]: 
+[2025-05-05 07:13:50,601]: Shape: torch.Size([10, 84])
+[2025-05-05 07:13:50,602]: Sample Values (16 elements): [0.06766557693481445, 0.10651819407939911, 0.037841785699129105, -0.017339861020445824, -0.03349965065717697, 0.05473010987043381, -0.016895180568099022, -0.0001248710323125124, -0.0626668855547905, 0.07569762319326401, 0.01935199648141861, -0.09002246707677841, 0.02036452665925026, 0.006540785543620586, -0.018946051597595215, 0.011873607523739338]
+[2025-05-05 07:13:50,602]: Mean: 0.0063
+[2025-05-05 07:13:50,603]: Min: -0.1080
+[2025-05-05 07:13:50,603]: Max: 0.1065
+[2025-05-05 07:13:50,603]: 
 Parameter: fc3.bias
-[2025-05-04 08:09:52,307]: Shape: torch.Size([10])
-[2025-05-04 08:09:52,309]: Sample Values (6 elements): [0.8881910443305969, -0.23122663795948029, -0.1029258519411087, -0.42973291873931885, 0.296095073223114, -0.1655561327934265]
-[2025-05-04 08:09:52,309]: Mean: 0.0140
-[2025-05-04 08:09:52,310]: Std: 0.4543
-[2025-05-04 08:09:52,310]: Min: -0.4987
-[2025-05-04 08:09:52,310]: Max: 0.8882
-[2025-05-04 08:09:52,914]: Files already downloaded and verified
+[2025-05-05 07:13:50,603]: Shape: torch.Size([10])
+[2025-05-05 07:13:50,604]: Sample Values (10 elements): [-0.07920737564563751, 0.043169163167476654, -0.05854027718305588, -0.057736512273550034, 0.03687572106719017, -0.0792393833398819, -0.013252400793135166, 0.013411843217909336, 0.06292355060577393, 0.04591620713472366]
+[2025-05-05 07:13:50,604]: Mean: -0.0086
+[2025-05-05 07:13:50,607]: Min: -0.0792
+[2025-05-05 07:13:50,607]: Max: 0.0629
