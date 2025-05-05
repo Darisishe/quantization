@@ -29,7 +29,7 @@ atexit.register(terminate_children)
 
 
 NUM_EPOCHS = 120
-BATCH_SIZE = 256
+BATCH_SIZE = 128
 LR = 1e-3
 NUM_CLASSES = 10
 QAT_EPOCHS = 60
@@ -80,39 +80,37 @@ def print_model_with_weights(model, max_sample_size=16):
     # Print the model architecture
     print("Model Architecture:")
     print(model)
-    print("\nModel Parameters with Weights:")
+    print("\nModel Weights:")
 
-    # Iterate through all named parameters
-    for name, param in model.named_parameters():
-        if param.requires_grad:
-            print(f"\nParameter: {name}")
-            print(f"Shape: {param.shape}")
+   
+    for name, module in model.named_modules():
+        if not hasattr(module, 'weight'):
+            continue
+        weights = module.weight
+        if hasattr(module, 'weight_fake_quant'):
+            weights = module.weight_fake_quant(weights)
 
-            if hasattr(param, 'qscheme'):
-                param = param.dequantize()
+        print(f"\nLayer: {name}\nLayer Shape: {weights.shape}")
 
-            channel = param
-            if param.dim() > 1:
-                channel = param[0]
 
-            # Flatten the parameter tensor for sampling
-            flat_param = channel.flatten()
-            total_elements = flat_param.numel()
+        # Flatten the parameter tensor for sampling
+        flat_param = weights.flatten()
+        total_elements = flat_param.numel()
 
-            # Adjust sample_size to not exceed total elements
-            sample_size = min(max_sample_size, total_elements)
+        # Adjust sample_size to not exceed total elements
+        sample_size = min(max_sample_size, total_elements)
 
-            # Randomly sample indices and values
-            sample_indices = torch.randperm(total_elements)[:sample_size]
-            sample_values = flat_param[sample_indices].tolist()
+        # Randomly sample indices and values
+        sample_indices = torch.randperm(total_elements)[:sample_size]
+        sample_values = flat_param[sample_indices].tolist()
 
-            # Print the sampled values
-            print(f"Sample Values ({sample_size} elements): {sample_values}")
+        # Print the sampled values
+        print(f"Sample Values ({sample_size} elements): {sample_values}")
 
-            # Print summary statistics
-            print(f"Mean: {channel.mean().item():.4f}")
-            print(f"Min: {channel.min().item():.4f}")
-            print(f"Max: {channel.max().item():.4f}")
+        # Print summary statistics
+        print(f"Mean: {weights.mean().item():.4f}")
+        print(f"Min: {weights.min().item():.4f}")
+        print(f"Max: {weights.max().item():.4f}")
 
 
 def evaluate_model(model, device, test_loader, criterion=None):
@@ -271,10 +269,10 @@ def configure_qat(model, activation_bitwidth=4, weight_bitwidth=4):
     # Fake quantizer for weights
     fq_weights = FakeQuantize.with_args(
         observer=torch.quantization.MovingAveragePerChannelMinMaxObserver.with_args(
-            quant_min=-(2**weight_bitwidth) // 2,
-            quant_max=(2**weight_bitwidth) // 2 - 1,
+            quant_min=0,
+            quant_max=2**weight_bitwidth - 1,
             dtype=torch.qint8,
-            qscheme=torch.per_channel_symmetric,
+            qscheme=torch.per_tensor_affine,
             reduce_range=False,
             ch_axis=0,
         )
