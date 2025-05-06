@@ -156,6 +156,9 @@ def train_model(
     writer=None,
     model_name="model",
 ):
+    patience = 20
+    cur_idle = 0
+
     criterion = nn.CrossEntropyLoss()
 
     model.to(device)
@@ -220,9 +223,14 @@ def train_model(
             )
         )
 
+        cur_idle += 1
         if eval_accuracy > best_eval_acc:
             best_eval_acc = eval_accuracy
             torch.save(model.state_dict(), f"checkpoint/best_{model_name}.ckpt")
+            cur_idle = 0
+        elif cur_idle >= patience:
+            print("Early stopping was triggered!")
+            break
 
     print(
         "[{}] Best Eval Accuracy: {:.4f}".format(
@@ -268,13 +276,12 @@ def configure_qat(model, activation_bitwidth=4, weight_bitwidth=4):
 
     # Fake quantizer for weights
     fq_weights = FakeQuantize.with_args(
-        observer=torch.quantization.MovingAveragePerChannelMinMaxObserver.with_args(
+        observer=torch.quantization.MovingAverageMinMaxObserver.with_args(
             quant_min=0,
             quant_max=2**weight_bitwidth - 1,
             dtype=torch.qint8,
             qscheme=torch.per_tensor_affine,
             reduce_range=False,
-            ch_axis=0,
         )
     )
 
@@ -417,7 +424,7 @@ if __name__ == "__main__":
 
     tasks = [(model, act) for model in models for act in activations]
 
-    num_processes = min(len(tasks), 4)  # Limit processes to manage GPU memory
+    num_processes = min(len(tasks), 5)  # Limit processes to manage GPU memory
 
     task_queue = mp.Queue()
     for task in tasks:

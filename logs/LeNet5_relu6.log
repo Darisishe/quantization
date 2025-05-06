@@ -1,2 +1,201 @@
-[2025-05-05 08:28:48,689]: 
+[2025-05-06 07:34:39,034]: 
 Training LeNet5 with relu6
+[2025-05-06 07:35:13,817]: [LeNet5_relu6] Epoch: 001 Train Loss: 2.2988 Train Acc: 0.1011 Eval Loss: 2.2900 Eval Acc: 0.1226 (LR: 0.001000)
+[2025-05-06 07:35:47,987]: [LeNet5_relu6] Epoch: 002 Train Loss: 2.2503 Train Acc: 0.1428 Eval Loss: 2.1791 Eval Acc: 0.1973 (LR: 0.001000)
+[2025-05-06 07:36:21,598]: [LeNet5_relu6] Epoch: 003 Train Loss: 2.0834 Train Acc: 0.2396 Eval Loss: 1.9496 Eval Acc: 0.2969 (LR: 0.001000)
+[2025-05-06 07:36:54,973]: [LeNet5_relu6] Epoch: 004 Train Loss: 1.9220 Train Acc: 0.2974 Eval Loss: 1.8118 Eval Acc: 0.3410 (LR: 0.001000)
+[2025-05-06 07:37:28,269]: [LeNet5_relu6] Epoch: 005 Train Loss: 1.8173 Train Acc: 0.3302 Eval Loss: 1.7034 Eval Acc: 0.3753 (LR: 0.001000)
+[2025-05-06 07:38:01,876]: [LeNet5_relu6] Epoch: 006 Train Loss: 1.7465 Train Acc: 0.3550 Eval Loss: 1.6414 Eval Acc: 0.3939 (LR: 0.001000)
+[2025-05-06 07:38:35,681]: [LeNet5_relu6] Epoch: 007 Train Loss: 1.6958 Train Acc: 0.3747 Eval Loss: 1.5971 Eval Acc: 0.4114 (LR: 0.001000)
+[2025-05-06 07:39:09,509]: [LeNet5_relu6] Epoch: 008 Train Loss: 1.6587 Train Acc: 0.3885 Eval Loss: 1.5473 Eval Acc: 0.4338 (LR: 0.001000)
+[2025-05-06 07:39:42,704]: [LeNet5_relu6] Epoch: 009 Train Loss: 1.6181 Train Acc: 0.4048 Eval Loss: 1.5043 Eval Acc: 0.4527 (LR: 0.001000)
+[2025-05-06 07:40:15,779]: [LeNet5_relu6] Epoch: 010 Train Loss: 1.5920 Train Acc: 0.4139 Eval Loss: 1.4727 Eval Acc: 0.4617 (LR: 0.001000)
+[2025-05-06 07:40:49,840]: [LeNet5_relu6] Epoch: 011 Train Loss: 1.5660 Train Acc: 0.4256 Eval Loss: 1.4727 Eval Acc: 0.4572 (LR: 0.001000)
+[2025-05-06 07:41:24,465]: [LeNet5_relu6] Epoch: 012 Train Loss: 1.5485 Train Acc: 0.4339 Eval Loss: 1.4434 Eval Acc: 0.4708 (LR: 0.001000)
+[2025-05-06 07:41:57,585]: [LeNet5_relu6] Epoch: 013 Train Loss: 1.5292 Train Acc: 0.4376 Eval Loss: 1.4143 Eval Acc: 0.4838 (LR: 0.001000)
+[2025-05-06 07:42:30,508]: [LeNet5_relu6] Epoch: 014 Train Loss: 1.5097 Train Acc: 0.4473 Eval Loss: 1.3948 Eval Acc: 0.4938 (LR: 0.001000)
+[2025-05-06 07:43:03,484]: [LeNet5_relu6] Epoch: 015 Train Loss: 1.4893 Train Acc: 0.4536 Eval Loss: 1.3721 Eval Acc: 0.5044 (LR: 0.001000)
+[2025-05-06 07:43:36,517]: [LeNet5_relu6] Epoch: 016 Train Loss: 1.4796 Train Acc: 0.4612 Eval Loss: 1.3650 Eval Acc: 0.5014 (LR: 0.001000)
+[2025-05-06 07:44:10,460]: [LeNet5_relu6] Epoch: 017 Train Loss: 1.4613 Train Acc: 0.4679 Eval Loss: 1.3502 Eval Acc: 0.5117 (LR: 0.001000)
+[2025-05-06 07:44:43,665]: [LeNet5_relu6] Epoch: 018 Train Loss: 1.4519 Train Acc: 0.4708 Eval Loss: 1.3479 Eval Acc: 0.5113 (LR: 0.001000)
+[2025-05-06 07:45:16,415]: [LeNet5_relu6] Epoch: 019 Train Loss: 1.4366 Train Acc: 0.4767 Eval Loss: 1.3252 Eval Acc: 0.5204 (LR: 0.001000)
+[2025-05-06 07:45:49,786]: [LeNet5_relu6] Epoch: 020 Train Loss: 1.4318 Train Acc: 0.4772 Eval Loss: 1.3133 Eval Acc: 0.5194 (LR: 0.001000)
+[2025-05-06 07:45:49,786]: [LeNet5_relu6] Best Eval Accuracy: 0.5204
+[2025-05-06 07:45:49,790]: 
+Training of full-precision model finished!
+[2025-05-06 07:45:49,790]: Model Architecture:
+[2025-05-06 07:45:49,790]: LeNet5(
+  (conv1): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU6(inplace=True)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv2): Sequential(
+    (0): Conv2d(6, 16, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU6(inplace=True)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(in_features=400, out_features=120, bias=True)
+    (1): ReLU6(inplace=True)
+  )
+  (fc2): Sequential(
+    (0): Linear(in_features=120, out_features=84, bias=True)
+    (1): ReLU6(inplace=True)
+  )
+  (fc3): Linear(in_features=84, out_features=10, bias=True)
+)
+[2025-05-06 07:45:49,790]: 
+Model Weights:
+[2025-05-06 07:45:49,790]: 
+Layer: conv1.0
+Layer Shape: torch.Size([6, 3, 5, 5])
+[2025-05-06 07:45:49,801]: Sample Values (16 elements): [0.04962145537137985, -0.07578020542860031, 0.13389086723327637, -0.15086370706558228, -0.03366366773843765, -0.05726606771349907, -0.1554833948612213, 0.18667387962341309, -0.047176543623209, 0.05511057376861572, -0.22961731255054474, -0.08420474082231522, 0.02299157902598381, -0.2664516270160675, 0.1433199942111969, 0.12195342779159546]
+[2025-05-06 07:45:49,806]: Mean: 0.0005
+[2025-05-06 07:45:49,812]: Min: -0.3636
+[2025-05-06 07:45:49,812]: Max: 0.4309
+[2025-05-06 07:45:49,813]: 
+Layer: conv2.0
+Layer Shape: torch.Size([16, 6, 5, 5])
+[2025-05-06 07:45:49,813]: Sample Values (16 elements): [0.04914240911602974, -0.006989850662648678, 0.01496752817183733, 0.0063788709230721, 0.07905614376068115, 0.07549773156642914, 0.01238525565713644, 0.04775548726320267, -0.08330579102039337, 0.0027040622662752867, 0.0015453565865755081, 0.01601271517574787, 0.01501802634447813, -0.003523457795381546, -0.009081530384719372, 0.1138778105378151]
+[2025-05-06 07:45:49,813]: Mean: 0.0111
+[2025-05-06 07:45:49,813]: Min: -0.1606
+[2025-05-06 07:45:49,813]: Max: 0.2392
+[2025-05-06 07:45:49,814]: 
+Layer: fc1.0
+Layer Shape: torch.Size([120, 400])
+[2025-05-06 07:45:49,814]: Sample Values (16 elements): [0.0003052794490940869, 0.005833478178828955, 0.008891277946531773, 0.06310462206602097, -0.013354798778891563, 0.009553437121212482, -0.014530829153954983, -0.010087903589010239, 0.0113468486815691, 0.01016943994909525, 0.04235551506280899, -0.010364596731960773, 0.020675696432590485, 0.017713967710733414, 0.00989476591348648, -0.009914202615618706]
+[2025-05-06 07:45:49,814]: Mean: 0.0006
+[2025-05-06 07:45:49,815]: Min: -0.1171
+[2025-05-06 07:45:49,815]: Max: 0.1283
+[2025-05-06 07:45:49,815]: 
+Layer: fc2.0
+Layer Shape: torch.Size([84, 120])
+[2025-05-06 07:45:49,815]: Sample Values (16 elements): [0.10787567496299744, 0.10140497237443924, 0.08993381261825562, 0.1076728031039238, 0.05698241665959358, 0.022665217518806458, -0.06340084224939346, 0.014556391164660454, 0.03038916550576687, -0.04984814301133156, 0.015295187011361122, -0.02030858024954796, -0.027418311685323715, 0.06271951645612717, 0.031127436086535454, 0.01403680071234703]
+[2025-05-06 07:45:49,815]: Mean: 0.0014
+[2025-05-06 07:45:49,815]: Min: -0.1873
+[2025-05-06 07:45:49,816]: Max: 0.2837
+[2025-05-06 07:45:49,816]: 
+Layer: fc3
+Layer Shape: torch.Size([10, 84])
+[2025-05-06 07:45:49,816]: Sample Values (16 elements): [-0.04499169811606407, -0.15838922560214996, 0.06695341318845749, -0.08049998432397842, -0.02359108440577984, -0.09784755110740662, 0.10886354744434357, 0.2615245282649994, -0.05970893055200577, 0.032633114606142044, 0.10917355120182037, -0.16977949440479279, 0.03766839578747749, 0.07423017174005508, -0.06494086980819702, 0.14604443311691284]
+[2025-05-06 07:45:49,816]: Mean: 0.0048
+[2025-05-06 07:45:49,816]: Min: -0.3321
+[2025-05-06 07:45:49,816]: Max: 0.3027
+[2025-05-06 07:45:49,817]: 
+
+
+QAT of LeNet5 with relu6 down to 4 bits...
+[2025-05-06 07:45:49,849]: [LeNet5_relu6_quantized_4_bits] after configure_qat:
+[2025-05-06 07:45:49,894]: LeNet5(
+  (quant): QuantStub(
+    (activation_post_process): FakeQuantize(
+      fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+      (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+    )
+  )
+  (dequant): DeQuantStub()
+  (conv1): Sequential(
+    (0): Conv2d(3, 6, kernel_size=(5, 5), stride=(1, 1))
+    (1): ReLU6(inplace=True)
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (conv2): Sequential(
+    (0): Conv2d(
+      6, 16, kernel_size=(5, 5), stride=(1, 1)
+      (weight_fake_quant): FakeQuantize(
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+        (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+      )
+      (activation_post_process): NoopObserver()
+    )
+    (1): ReLU6(
+      inplace=True
+      (activation_post_process): FakeQuantize(
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+        (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+      )
+    )
+    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  )
+  (fc1): Sequential(
+    (0): Linear(
+      in_features=400, out_features=120, bias=True
+      (weight_fake_quant): FakeQuantize(
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+        (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+      )
+      (activation_post_process): NoopObserver()
+    )
+    (1): ReLU6(
+      inplace=True
+      (activation_post_process): FakeQuantize(
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+        (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+      )
+    )
+  )
+  (fc2): Sequential(
+    (0): Linear(
+      in_features=120, out_features=84, bias=True
+      (weight_fake_quant): FakeQuantize(
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+        (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+      )
+      (activation_post_process): NoopObserver()
+    )
+    (1): ReLU6(
+      inplace=True
+      (activation_post_process): FakeQuantize(
+        fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=15, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
+        (activation_post_process): MovingAverageMinMaxObserver(min_val=inf, max_val=-inf)
+      )
+    )
+  )
+  (fc3): Linear(in_features=84, out_features=10, bias=True)
+)
+[2025-05-06 07:46:26,410]: [LeNet5_relu6_quantized_4_bits] Epoch: 001 Train Loss: 1.4259 Train Acc: 0.4800 Eval Loss: 1.3170 Eval Acc: 0.5216 (LR: 0.001000)
+[2025-05-06 07:47:02,372]: [LeNet5_relu6_quantized_4_bits] Epoch: 002 Train Loss: 1.4182 Train Acc: 0.4866 Eval Loss: 1.3129 Eval Acc: 0.5262 (LR: 0.001000)
+[2025-05-06 07:47:37,551]: [LeNet5_relu6_quantized_4_bits] Epoch: 003 Train Loss: 1.4071 Train Acc: 0.4883 Eval Loss: 1.3070 Eval Acc: 0.5227 (LR: 0.001000)
+[2025-05-06 07:48:12,674]: [LeNet5_relu6_quantized_4_bits] Epoch: 004 Train Loss: 1.4018 Train Acc: 0.4922 Eval Loss: 1.2834 Eval Acc: 0.5375 (LR: 0.001000)
+[2025-05-06 07:48:48,019]: [LeNet5_relu6_quantized_4_bits] Epoch: 005 Train Loss: 1.3859 Train Acc: 0.4991 Eval Loss: 1.2847 Eval Acc: 0.5363 (LR: 0.001000)
+[2025-05-06 07:49:23,143]: [LeNet5_relu6_quantized_4_bits] Epoch: 006 Train Loss: 1.3749 Train Acc: 0.5020 Eval Loss: 1.2577 Eval Acc: 0.5470 (LR: 0.001000)
+[2025-05-06 07:49:58,154]: [LeNet5_relu6_quantized_4_bits] Epoch: 007 Train Loss: 1.3686 Train Acc: 0.5070 Eval Loss: 1.2716 Eval Acc: 0.5433 (LR: 0.001000)
+[2025-05-06 07:50:33,260]: [LeNet5_relu6_quantized_4_bits] Epoch: 008 Train Loss: 1.3627 Train Acc: 0.5047 Eval Loss: 1.2507 Eval Acc: 0.5506 (LR: 0.001000)
+[2025-05-06 07:51:08,432]: [LeNet5_relu6_quantized_4_bits] Epoch: 009 Train Loss: 1.3579 Train Acc: 0.5091 Eval Loss: 1.2429 Eval Acc: 0.5520 (LR: 0.001000)
+[2025-05-06 07:51:43,443]: [LeNet5_relu6_quantized_4_bits] Epoch: 010 Train Loss: 1.3425 Train Acc: 0.5151 Eval Loss: 1.2452 Eval Acc: 0.5529 (LR: 0.001000)
+[2025-05-06 07:52:18,319]: [LeNet5_relu6_quantized_4_bits] Epoch: 011 Train Loss: 1.3379 Train Acc: 0.5165 Eval Loss: 1.2272 Eval Acc: 0.5583 (LR: 0.001000)
+[2025-05-06 07:52:53,492]: [LeNet5_relu6_quantized_4_bits] Epoch: 012 Train Loss: 1.3337 Train Acc: 0.5195 Eval Loss: 1.2372 Eval Acc: 0.5540 (LR: 0.001000)
+[2025-05-06 07:53:28,452]: [LeNet5_relu6_quantized_4_bits] Epoch: 013 Train Loss: 1.3179 Train Acc: 0.5231 Eval Loss: 1.2305 Eval Acc: 0.5566 (LR: 0.001000)
+[2025-05-06 07:54:03,456]: [LeNet5_relu6_quantized_4_bits] Epoch: 014 Train Loss: 1.3106 Train Acc: 0.5298 Eval Loss: 1.1988 Eval Acc: 0.5743 (LR: 0.001000)
+[2025-05-06 07:54:38,403]: [LeNet5_relu6_quantized_4_bits] Epoch: 015 Train Loss: 1.3046 Train Acc: 0.5309 Eval Loss: 1.1890 Eval Acc: 0.5770 (LR: 0.001000)
+[2025-05-06 07:55:13,055]: [LeNet5_relu6_quantized_4_bits] Epoch: 016 Train Loss: 1.2950 Train Acc: 0.5334 Eval Loss: 1.1914 Eval Acc: 0.5748 (LR: 0.001000)
+[2025-05-06 07:55:47,776]: [LeNet5_relu6_quantized_4_bits] Epoch: 017 Train Loss: 1.2903 Train Acc: 0.5375 Eval Loss: 1.2169 Eval Acc: 0.5603 (LR: 0.001000)
+[2025-05-06 07:56:22,548]: [LeNet5_relu6_quantized_4_bits] Epoch: 018 Train Loss: 1.2818 Train Acc: 0.5378 Eval Loss: 1.1684 Eval Acc: 0.5826 (LR: 0.001000)
+[2025-05-06 07:56:57,467]: [LeNet5_relu6_quantized_4_bits] Epoch: 019 Train Loss: 1.2824 Train Acc: 0.5421 Eval Loss: 1.1656 Eval Acc: 0.5816 (LR: 0.001000)
+[2025-05-06 07:57:32,180]: [LeNet5_relu6_quantized_4_bits] Epoch: 020 Train Loss: 1.2698 Train Acc: 0.5431 Eval Loss: 1.2066 Eval Acc: 0.5760 (LR: 0.001000)
+[2025-05-06 07:58:06,857]: [LeNet5_relu6_quantized_4_bits] Epoch: 021 Train Loss: 1.2635 Train Acc: 0.5485 Eval Loss: 1.1527 Eval Acc: 0.5851 (LR: 0.001000)
+[2025-05-06 07:58:41,604]: [LeNet5_relu6_quantized_4_bits] Epoch: 022 Train Loss: 1.2589 Train Acc: 0.5485 Eval Loss: 1.1453 Eval Acc: 0.5888 (LR: 0.001000)
+[2025-05-06 07:59:16,381]: [LeNet5_relu6_quantized_4_bits] Epoch: 023 Train Loss: 1.2573 Train Acc: 0.5487 Eval Loss: 1.1597 Eval Acc: 0.5840 (LR: 0.001000)
+[2025-05-06 07:59:50,847]: [LeNet5_relu6_quantized_4_bits] Epoch: 024 Train Loss: 1.2524 Train Acc: 0.5520 Eval Loss: 1.1354 Eval Acc: 0.5970 (LR: 0.001000)
+[2025-05-06 08:00:25,412]: [LeNet5_relu6_quantized_4_bits] Epoch: 025 Train Loss: 1.2453 Train Acc: 0.5566 Eval Loss: 1.1757 Eval Acc: 0.5758 (LR: 0.001000)
+[2025-05-06 08:01:00,142]: [LeNet5_relu6_quantized_4_bits] Epoch: 026 Train Loss: 1.2355 Train Acc: 0.5589 Eval Loss: 1.1361 Eval Acc: 0.5991 (LR: 0.001000)
+[2025-05-06 08:01:34,626]: [LeNet5_relu6_quantized_4_bits] Epoch: 027 Train Loss: 1.2387 Train Acc: 0.5563 Eval Loss: 1.1367 Eval Acc: 0.5950 (LR: 0.001000)
+[2025-05-06 08:02:09,278]: [LeNet5_relu6_quantized_4_bits] Epoch: 028 Train Loss: 1.2329 Train Acc: 0.5600 Eval Loss: 1.1280 Eval Acc: 0.5988 (LR: 0.001000)
+[2025-05-06 08:02:43,843]: [LeNet5_relu6_quantized_4_bits] Epoch: 029 Train Loss: 1.2242 Train Acc: 0.5632 Eval Loss: 1.1282 Eval Acc: 0.5943 (LR: 0.001000)
+[2025-05-06 08:03:18,413]: [LeNet5_relu6_quantized_4_bits] Epoch: 030 Train Loss: 1.2212 Train Acc: 0.5632 Eval Loss: 1.1222 Eval Acc: 0.5978 (LR: 0.000250)
+[2025-05-06 08:03:53,250]: [LeNet5_relu6_quantized_4_bits] Epoch: 031 Train Loss: 1.1845 Train Acc: 0.5759 Eval Loss: 1.1001 Eval Acc: 0.6095 (LR: 0.000250)
+[2025-05-06 08:04:27,949]: [LeNet5_relu6_quantized_4_bits] Epoch: 032 Train Loss: 1.1904 Train Acc: 0.5759 Eval Loss: 1.0973 Eval Acc: 0.6087 (LR: 0.000250)
+[2025-05-06 08:05:02,640]: [LeNet5_relu6_quantized_4_bits] Epoch: 033 Train Loss: 1.1866 Train Acc: 0.5768 Eval Loss: 1.0983 Eval Acc: 0.6079 (LR: 0.000250)
+[2025-05-06 08:05:37,240]: [LeNet5_relu6_quantized_4_bits] Epoch: 034 Train Loss: 1.1861 Train Acc: 0.5763 Eval Loss: 1.0941 Eval Acc: 0.6076 (LR: 0.000250)
+[2025-05-06 08:06:11,921]: [LeNet5_relu6_quantized_4_bits] Epoch: 035 Train Loss: 1.1817 Train Acc: 0.5794 Eval Loss: 1.0928 Eval Acc: 0.6104 (LR: 0.000250)
+[2025-05-06 08:06:46,769]: [LeNet5_relu6_quantized_4_bits] Epoch: 036 Train Loss: 1.1801 Train Acc: 0.5780 Eval Loss: 1.1002 Eval Acc: 0.6091 (LR: 0.000250)
+[2025-05-06 08:07:21,390]: [LeNet5_relu6_quantized_4_bits] Epoch: 037 Train Loss: 1.1826 Train Acc: 0.5775 Eval Loss: 1.0854 Eval Acc: 0.6110 (LR: 0.000250)
+[2025-05-06 08:07:56,044]: [LeNet5_relu6_quantized_4_bits] Epoch: 038 Train Loss: 1.1806 Train Acc: 0.5790 Eval Loss: 1.0972 Eval Acc: 0.6085 (LR: 0.000250)
+[2025-05-06 08:08:30,790]: [LeNet5_relu6_quantized_4_bits] Epoch: 039 Train Loss: 1.1825 Train Acc: 0.5786 Eval Loss: 1.0952 Eval Acc: 0.6066 (LR: 0.000250)
+[2025-05-06 08:09:05,600]: [LeNet5_relu6_quantized_4_bits] Epoch: 040 Train Loss: 1.1774 Train Acc: 0.5779 Eval Loss: 1.0839 Eval Acc: 0.6130 (LR: 0.000250)
+[2025-05-06 08:09:40,422]: [LeNet5_relu6_quantized_4_bits] Epoch: 041 Train Loss: 1.1780 Train Acc: 0.5814 Eval Loss: 1.0801 Eval Acc: 0.6130 (LR: 0.000250)
+[2025-05-06 08:10:14,960]: [LeNet5_relu6_quantized_4_bits] Epoch: 042 Train Loss: 1.1729 Train Acc: 0.5812 Eval Loss: 1.0905 Eval Acc: 0.6104 (LR: 0.000250)
+[2025-05-06 08:10:51,962]: [LeNet5_relu6_quantized_4_bits] Epoch: 043 Train Loss: 1.1815 Train Acc: 0.5780 Eval Loss: 1.0889 Eval Acc: 0.6091 (LR: 0.000250)
+[2025-05-06 08:11:28,565]: [LeNet5_relu6_quantized_4_bits] Epoch: 044 Train Loss: 1.1728 Train Acc: 0.5803 Eval Loss: 1.0820 Eval Acc: 0.6112 (LR: 0.000250)
+[2025-05-06 08:12:05,321]: [LeNet5_relu6_quantized_4_bits] Epoch: 045 Train Loss: 1.1758 Train Acc: 0.5795 Eval Loss: 1.0768 Eval Acc: 0.6151 (LR: 0.000063)
