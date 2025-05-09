@@ -17,13 +17,13 @@ def conv1x1(in_channels: int, out_channels: int, stride: int = 1) -> nn.Conv2d:
 
 class ResidualBlock(nn.Module):
     def __init__(
-        self, in_channels, out_channels, stride=1, downsample=None, activation="relu", quantize=False
+        self, in_channels, out_channels, stride=1, downsample=None, activation="relu", quantize=False, block_name=""
     ):
         super(ResidualBlock, self).__init__()
 
         self.conv1 = conv3x3(in_channels, out_channels, stride=stride)
         self.bn1 = nn.BatchNorm2d(out_channels)
-        self.act_fn1 = get_activation_function(activation, quantize=quantize)
+        self.act_fn1 = get_activation_function(activation, quantize=quantize, layer_name=f"{block_name}.act1")
 
         self.conv2 = conv3x3(out_channels, out_channels)
         self.bn2 = nn.BatchNorm2d(out_channels)
@@ -31,7 +31,7 @@ class ResidualBlock(nn.Module):
         self.downsample = downsample
         self.skip_add = nn.quantized.FloatFunctional()
 
-        self.act_fn2 = get_activation_function(activation, quantize=quantize)
+        self.act_fn2 = get_activation_function(activation, quantize=quantize, layer_name=f"{block_name}.act2")
 
     def forward(self, x):
         residual = x
@@ -73,21 +73,21 @@ class ResNet(nn.Module):
             conv3x3(3, initial_channels),
             nn.BatchNorm2d(initial_channels),
             # Never quantize first activation func
-            get_activation_function(activation, quantize=False)
+            get_activation_function(activation, quantize=False,layer_name="initial_layer.act")
         )
 
         self.layer1 = self.make_layer(
-            block, initial_channels, layers[0], activation=activation
+            block, initial_channels, layers[0], activation=activation, layer_name_prefix="layer1"
         )
         self.layer2 = self.make_layer(
-            block, initial_channels * 2, layers[1], stride=2, activation=activation, 
+            block, initial_channels * 2, layers[1], stride=2, activation=activation, layer_name_prefix="layer2"
         )
         self.layer3 = self.make_layer(
-            block, initial_channels * 4, layers[2], stride=2, activation=activation
+            block, initial_channels * 4, layers[2], stride=2, activation=activation, layer_name_prefix="layer3"
         )
         if len(layers) == 4:
             self.layer4 = self.make_layer(
-                block, initial_channels * 8, layers[3], stride=2, activation=activation
+                block, initial_channels * 8, layers[3], stride=2, activation=activation, layer_name_prefix="layer4"
             )
         else:
             self.layer4 = None
@@ -99,7 +99,7 @@ class ResNet(nn.Module):
         self.avg_pool = nn.AvgPool2d(pool_size)
         self.fc = nn.Linear(fc_in_features, num_classes)
 
-    def make_layer(self, block, out_channels, blocks, stride=1, activation="relu"):
+    def make_layer(self, block, out_channels, blocks, stride=1, activation="relu", layer_name_prefix=""):
         downsample = None
         if stride != 1 or self.in_channels != out_channels:
             downsample = nn.Sequential(
@@ -109,11 +109,19 @@ class ResNet(nn.Module):
 
         layers = []
         layers.append(
-            block(self.in_channels, out_channels, stride, downsample, activation, quantize=self.quantize)
+            block(
+                self.in_channels, out_channels, stride, downsample, activation, 
+                quantize=self.quantize, block_name=f"{layer_name_prefix}.block1"
+            )
         )
         self.in_channels = out_channels
-        for _ in range(1, blocks):
-            layers.append(block(out_channels, out_channels, activation=activation, quantize=self.quantize))
+        for i in range(1, blocks):
+            layers.append(
+                block(
+                    out_channels, out_channels, activation=activation,
+                    quantize=self.quantize, block_name=f"{layer_name_prefix}.block{i + 1}"
+                )
+            )
         return nn.Sequential(*layers)
     
     def forward(self, x):

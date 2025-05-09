@@ -20,6 +20,8 @@ import os
 import atexit
 import queue
 
+import numpy as np
+
 def terminate_children():
     for p in mp.active_children():
         p.terminate()
@@ -76,13 +78,12 @@ def prepare_dataloader():
     return (train_loader, test_loader)
 
 
-def print_model_with_weights(model, max_sample_size=16):
+def print_model_with_weights(model, max_sample_size=25):
     # Print the model architecture
     print("Model Architecture:")
     print(model)
     print("\nModel Weights:")
 
-   
     for name, module in model.named_modules():
         if not hasattr(module, 'weight'):
             continue
@@ -108,9 +109,9 @@ def print_model_with_weights(model, max_sample_size=16):
         print(f"Sample Values ({sample_size} elements): {sample_values}")
 
         # Print summary statistics
-        print(f"Mean: {weights.mean().item():.4f}")
-        print(f"Min: {weights.min().item():.4f}")
-        print(f"Max: {weights.max().item():.4f}")
+        print(f"Mean: {weights.mean().item():.8f}")
+        print(f"Min: {weights.min().item():.8f}")
+        print(f"Max: {weights.max().item():.8f}")
 
 
 def evaluate_model(model, device, test_loader, criterion=None):
@@ -173,8 +174,17 @@ def train_model(
         last_epoch=-1,
     )
 
+    activation_fn.set_model_name(model, model_name)
+
+    train_losses = []
+    train_accuracies = []
+    eval_losses = []
+    eval_accuracies = []
+    learning_rates = []
+
     best_eval_acc = 0
     for epoch in range(num_epochs):
+        activation_fn.set_epoch(model, epoch)
         model.train()
 
         running_loss = 0
@@ -203,13 +213,20 @@ def train_model(
 
         scheduler.step()
         if writer:
-            writer.add_scalar(f"TrainLoss/{model_name}", train_loss, epoch)
-            writer.add_scalar(f"TrainAcc/{model_name}", train_accuracy, epoch)
-            writer.add_scalar(f"EvalLoss/{model_name}", eval_loss, epoch)
-            writer.add_scalar(f"EvalAcc/{model_name}", eval_accuracy, epoch)
+            writer.add_scalar(f"TrainLoss", train_loss, epoch)
+            writer.add_scalar(f"TrainAcc", train_accuracy, epoch)
+            writer.add_scalar(f"EvalLoss", eval_loss, epoch)
+            writer.add_scalar(f"EvalAcc", eval_accuracy, epoch)
             writer.add_scalar(
-                f"LearningRate/{model_name}", optimizer.param_groups[0]["lr"], epoch
+                f"LearningRate", optimizer.param_groups[0]["lr"], epoch
             )
+
+            # Append to NumPy logging lists
+            train_losses.append(train_loss)
+            train_accuracies.append(train_accuracy)
+            eval_losses.append(eval_loss)
+            eval_accuracies.append(eval_accuracy)
+            learning_rates.append(optimizer.param_groups[0]["lr"])
 
         print(
             "[{}] Epoch: {:03d} Train Loss: {:.4f} Train Acc: {:.4f} Eval Loss: {:.4f} Eval Acc: {:.4f} (LR: {:.6f})".format(
@@ -238,6 +255,19 @@ def train_model(
             best_eval_acc,
         )
     )
+
+    # Save NumPy logs
+    epochs = list(range(len(train_losses)))
+    scalars = {
+        'epoch': np.array(epochs),
+        'train_loss': np.array(train_losses),
+        'train_acc': np.array([acc.item() for acc in train_accuracies]),
+        'eval_loss': np.array(eval_losses),
+        'eval_acc': np.array([acc.item() for acc in eval_accuracies]),
+        'learning_rate': np.array(learning_rates)
+    }
+    os.makedirs(f'raw_np/{model_name}', exist_ok=True)
+    np.savez(f'raw_np/{model_name}/training_stats.npz', **scalars)
 
 
 def train_orig_model(model_class, activation, device, train_loader, test_loader):
@@ -416,6 +446,7 @@ if __name__ == "__main__":
     os.makedirs("checkpoint", exist_ok=True)
     os.makedirs("runs", exist_ok=True)
     os.makedirs("logs", exist_ok=True)
+    os.makedirs("raw_np", exist_ok=True)
 
     # All possible architectures, activations and bitwidths
     models = [LeNet5, ResNet20, ResNet18]

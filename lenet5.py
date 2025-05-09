@@ -14,19 +14,21 @@ class LeNet5(nn.Module):
         self.conv1 = nn.Sequential(
             nn.Conv2d(3, 6, kernel_size=5),
             # Never quantize first activation func
-            get_activation_function(activation, quantize=False),
+            get_activation_function(activation, quantize=False, layer_name="conv1.activation"),
             nn.MaxPool2d(2),
         )
         self.conv2 = nn.Sequential(
             nn.Conv2d(6, 16, kernel_size=5),
-            get_activation_function(activation, quantize=quantize),
+            get_activation_function(activation, quantize=quantize, layer_name="conv2.activation"),
             nn.MaxPool2d(2),
         )
         self.fc1 = nn.Sequential(
-            nn.Linear(400, 120), get_activation_function(activation, quantize=quantize)
+            nn.Linear(400, 120),
+            get_activation_function(activation, quantize=quantize, layer_name="fc1.activation")
         )
         self.fc2 = nn.Sequential(
-            nn.Linear(120, 84), get_activation_function(activation, quantize=quantize)
+            nn.Linear(120, 84),
+            get_activation_function(activation, quantize=quantize, layer_name="fc2.activation")
         )
         self.fc3 = nn.Linear(84, num_classes)
 
