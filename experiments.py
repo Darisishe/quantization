@@ -166,6 +166,7 @@ def train_model(
     optimizer = optim.SGD(
         model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=1e-4
     )
+    # L2 Regularization for Activations Parameters already applied by SGD's weight_decay 
 
     scheduler = torch.optim.lr_scheduler.MultiStepLR(
         optimizer,
@@ -198,6 +199,7 @@ def train_model(
             outputs = model(images)
             _, preds = torch.max(outputs, 1)
             loss = criterion(outputs, labels)
+
             loss.backward()
             optimizer.step()
 
@@ -268,6 +270,8 @@ def train_model(
     }
     os.makedirs(f'raw_np/{model_name}', exist_ok=True)
     np.savez(f'raw_np/{model_name}/training_stats.npz', **scalars)
+
+    activation_fn.dump_params_stat(model)
 
 
 def train_orig_model(model_class, activation, device, train_loader, test_loader):
