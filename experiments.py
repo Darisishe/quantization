@@ -157,7 +157,7 @@ def train_model(
     writer=None,
     model_name="model",
 ):
-    patience = 20
+    patience = 30
     cur_idle = 0
 
     criterion = nn.CrossEntropyLoss()
