@@ -453,13 +453,13 @@ if __name__ == "__main__":
     os.makedirs("raw_np", exist_ok=True)
 
     # All possible architectures, activations and bitwidths
-    models = [LeNet5, ResNet20, ResNet18]
+    models = [ResNet18]
     activations = activation_fn.AVAILABLE_ACTIVATIONS
     bit_widths = [4, 3, 2]
 
     tasks = [(model, act) for model in models for act in activations]
 
-    num_processes = min(len(tasks), 5)  # Limit processes to manage GPU memory
+    num_processes = min(len(tasks), 1)  # Limit processes to manage GPU memory
 
     task_queue = mp.Queue()
     for task in tasks:

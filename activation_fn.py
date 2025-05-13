@@ -100,7 +100,7 @@ def dump_params_stat(model):
 
 
 
-AVAILABLE_ACTIVATIONS = ["relu", "hardtanh", "relu6", "parametrized_relu", "parametrized_hardtanh"]
+AVAILABLE_ACTIVATIONS = ["relu", "relu6", "parametrized_relu", "hardtanh", "parametrized_hardtanh"]
 def get_activation_function(activation: str, quantize=False, layer_name=None):
     if activation == 'relu6':
         # ReLU6 is already quantizable
