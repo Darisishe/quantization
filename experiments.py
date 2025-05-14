@@ -454,7 +454,7 @@ if __name__ == "__main__":
 
     # All possible architectures, activations and bitwidths
     models = [ResNet18]
-    activations = activation_fn.AVAILABLE_ACTIVATIONS
+    activations = [ "relu6", "parametrized_relu", "hardtanh", "parametrized_hardtanh"]
     bit_widths = [4, 3, 2]
 
     tasks = [(model, act) for model in models for act in activations]
