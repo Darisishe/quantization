@@ -22,6 +22,7 @@ import queue
 
 import numpy as np
 
+
 def terminate_children():
     for p in mp.active_children():
         p.terminate()
@@ -37,8 +38,11 @@ NUM_CLASSES = 10
 QAT_EPOCHS = 60
 QAT_LR = 1e-3
 
+
 def prepare_dataloader():
-    normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+    normalize = transforms.Normalize(
+        mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]
+    )
 
     train_transform = transforms.Compose(
         [
@@ -85,14 +89,13 @@ def print_model_with_weights(model, max_sample_size=25):
     print("\nModel Weights:")
 
     for name, module in model.named_modules():
-        if not hasattr(module, 'weight'):
+        if not hasattr(module, "weight"):
             continue
         weights = module.weight
-        if hasattr(module, 'weight_fake_quant'):
+        if hasattr(module, "weight_fake_quant"):
             weights = module.weight_fake_quant(weights)
 
         print(f"\nLayer: {name}\nLayer Shape: {weights.shape}")
-
 
         # Flatten the parameter tensor for sampling
         flat_param = weights.flatten()
@@ -166,7 +169,7 @@ def train_model(
     optimizer = optim.SGD(
         model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=1e-4
     )
-    # L2 Regularization for Activations Parameters already applied by SGD's weight_decay 
+    # L2 Regularization for Activations Parameters already applied by SGD's weight_decay
 
     scheduler = torch.optim.lr_scheduler.MultiStepLR(
         optimizer,
@@ -219,9 +222,7 @@ def train_model(
             writer.add_scalar(f"TrainAcc", train_accuracy, epoch)
             writer.add_scalar(f"EvalLoss", eval_loss, epoch)
             writer.add_scalar(f"EvalAcc", eval_accuracy, epoch)
-            writer.add_scalar(
-                f"LearningRate", optimizer.param_groups[0]["lr"], epoch
-            )
+            writer.add_scalar(f"LearningRate", optimizer.param_groups[0]["lr"], epoch)
 
             # Append to NumPy logging lists
             train_losses.append(train_loss)
@@ -261,15 +262,15 @@ def train_model(
     # Save NumPy logs
     epochs = list(range(len(train_losses)))
     scalars = {
-        'epoch': np.array(epochs),
-        'train_loss': np.array(train_losses),
-        'train_acc': np.array([acc.item() for acc in train_accuracies]),
-        'eval_loss': np.array(eval_losses),
-        'eval_acc': np.array([acc.item() for acc in eval_accuracies]),
-        'learning_rate': np.array(learning_rates)
+        "epoch": np.array(epochs),
+        "train_loss": np.array(train_losses),
+        "train_acc": np.array([acc.item() for acc in train_accuracies]),
+        "eval_loss": np.array(eval_losses),
+        "eval_acc": np.array([acc.item() for acc in eval_accuracies]),
+        "learning_rate": np.array(learning_rates),
     }
-    os.makedirs(f'raw_np/{model_name}', exist_ok=True)
-    np.savez(f'raw_np/{model_name}/training_stats.npz', **scalars)
+    os.makedirs(f"raw_np/{model_name}", exist_ok=True)
+    np.savez(f"raw_np/{model_name}/training_stats.npz", **scalars)
 
     activation_fn.dump_params_stat(model)
 
@@ -335,14 +336,17 @@ def configure_qat(model, activation_bitwidth=4, weight_bitwidth=4):
         if isinstance(
             module,
             (
-                nn.Hardtanh,
                 nn.ReLU6,
-                nn.ReLU,
                 torch.quantization.QuantStub,
                 torch.quantization.DeQuantStub,
             ),
         ):
             module.qconfig = activation_qconfig
+        elif isinstance(
+            module,
+            (activation_fn.ParameterizedHardtanh, activation_fn.ParametrizedReLU),
+        ):
+            module.set_num_bits(activation_bitwidth)
         else:
             module.qconfig = weight_only_qconfig
 
@@ -368,9 +372,11 @@ def train_quantized_model(
 ):
     model_name = f"{model_class.__name__}_{activation}_quantized_{bits}_bits"
     model = model_class(activation=activation, quantize=True).to(device)
-    model.load_state_dict(torch.load(ckpt_path, map_location=device))
+    # 'strict=False' to load, for example, ReLU6 model as ParametrizedReLU
+    model.load_state_dict(torch.load(ckpt_path, map_location=device), strict=False)
 
     model.train()
+    model.to(device)
     configure_qat(model, activation_bitwidth=bits, weight_bitwidth=bits)
 
     print(f"[{model_name}] after configure_qat:", model)
@@ -405,18 +411,25 @@ def parallel_train(model_class, activation):
     # Redirect prints to logfile
     sys.stdout = LoggerStream(logger)
 
-    print(f"\nTraining {model_class.__name__} with {activation}")
-    fp_model = train_orig_model(
-        model_class,
-        activation,
-        device=cuda_device,
-        train_loader=train_loader,
-        test_loader=test_loader,
-    )
-    print(f"\nTraining of full-precision model finished!")
-    print_model_with_weights(fp_model)
+    if activation not in ["parametrized_relu", "parametrized_hardtanh"]:
+        print(f"\nTraining {model_class.__name__} with {activation}")
+        fp_model = train_orig_model(
+            model_class,
+            activation,
+            device=cuda_device,
+            train_loader=train_loader,
+            test_loader=test_loader,
+        )
+        print(f"\nTraining of full-precision model finished!")
+        print_model_with_weights(fp_model)
 
-    fp_ckpt_path = f"checkpoint/{model_class.__name__}_{activation}.ckpt"
+        fp_ckpt_path = f"checkpoint/{model_class.__name__}_{activation}.ckpt"
+    else:
+        # Reuse already trained models for parametrized activations models
+        fp_ckpt_path = f"checkpoint/{model_class.__name__}_{"relu6" if activation == "parametrized_relu" else "hardtanh"}.ckpt"
+    print(f"Checkpoint of model at path [{fp_ckpt_path}] will be used for QAT")
+
+
     quantized_models = dict()
     for bits in bit_widths:
         print(
@@ -453,13 +466,13 @@ if __name__ == "__main__":
     os.makedirs("raw_np", exist_ok=True)
 
     # All possible architectures, activations and bitwidths
-    models = [ResNet18]
-    activations = [ "relu6", "parametrized_relu", "hardtanh", "parametrized_hardtanh"]
+    models = [LeNet5, ResNet20]
+    activations = ["parametrized_relu", "parametrized_hardtanh"]
     bit_widths = [4, 3, 2]
 
     tasks = [(model, act) for model in models for act in activations]
 
-    num_processes = min(len(tasks), 1)  # Limit processes to manage GPU memory
+    num_processes = min(len(tasks), 4)  # Limit processes to manage GPU memory
 
     task_queue = mp.Queue()
     for task in tasks:
