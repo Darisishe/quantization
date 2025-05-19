@@ -41,10 +41,9 @@ class ParametrizedReLU(nn.Module):
 
 
 class ParameterizedHardtanh(nn.Module):
-    def __init__(self, num_bits=4, init_min=-1.0, init_max=1.0):
+    def __init__(self, num_bits=4, init_alpha=1.0):
         super().__init__()
-        self.beta = nn.Parameter(torch.tensor(init_min))
-        self.alpha = nn.Parameter(torch.tensor(init_max))
+        self.alpha = nn.Parameter(torch.tensor(init_alpha))
         self.num_bits = num_bits
 
         self.set_num_bits(num_bits=num_bits)
@@ -63,10 +62,10 @@ class ParameterizedHardtanh(nn.Module):
 
     def forward(self, x):
         # 1. Apply learnable clamping
-        x_clamped = torch.clamp(x, self.beta, self.alpha)
+        x_clamped = torch.clamp(x, -self.alpha, self.alpha)
 
         # 2. Calculate dynamic quantization parameters
-        current_min = self.beta.detach()
+        current_min = -self.alpha.detach()
         current_max = self.alpha.detach()
         quant_min = -(2 ** (self.num_bits - 1))
         quant_max = 2 ** (self.num_bits - 1) - 1
@@ -126,7 +125,7 @@ class LoggingActivation(nn.Module):
     def get_params(self):
         for _, module in self.named_modules():
             if isinstance(module, ParameterizedHardtanh):
-                return [module.beta, module.alpha]
+                return [module.alpha]
             elif isinstance(module, ParametrizedReLU):
                 return [module.alpha]
 
