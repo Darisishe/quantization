@@ -36,7 +36,7 @@ BATCH_SIZE = 128
 LR = 1e-3
 NUM_CLASSES = 10
 QAT_EPOCHS = 60
-QAT_LR = 1e-3
+QAT_LR = 1e-2
 
 
 def prepare_dataloader():
@@ -173,8 +173,8 @@ def train_model(
 
     scheduler = torch.optim.lr_scheduler.MultiStepLR(
         optimizer,
-        milestones=[30, 45] if "quantized" in model_name else [70, 100, 130],
-        gamma=0.25 if "quantized" in model_name else 0.1,
+        milestones=[15, 30, 45] if "quantized" in model_name else [70, 100, 130],
+        gamma=0.1,
         last_epoch=-1,
     )
 
@@ -405,7 +405,7 @@ def parallel_train(model_class, activation):
     cuda_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     train_loader, test_loader = prepare_dataloader()
 
-    bit_widths = [4, 3, 2]
+    bit_widths = [2, 3, 4]
 
     logger = setup_logging(f"{model_class.__name__}_{activation}")
     # Redirect prints to logfile
@@ -428,7 +428,6 @@ def parallel_train(model_class, activation):
         # Reuse already trained models for parametrized activations models
         fp_ckpt_path = f"checkpoint/{model_class.__name__}_{"relu6" if activation == "parametrized_relu" else "hardtanh"}.ckpt"
     print(f"Checkpoint of model at path [{fp_ckpt_path}] will be used for QAT")
-
 
     quantized_models = dict()
     for bits in bit_widths:
@@ -466,7 +465,7 @@ if __name__ == "__main__":
     os.makedirs("raw_np", exist_ok=True)
 
     # All possible architectures, activations and bitwidths
-    models = [LeNet5, ResNet20]
+    models = [LeNet5]
     activations = ["parametrized_relu", "parametrized_hardtanh"]
     bit_widths = [4, 3, 2]
 
