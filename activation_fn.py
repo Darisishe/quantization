@@ -55,7 +55,7 @@ class ParameterizedHardtanh(nn.Module):
     def _update_quantizer(self, scale, zero_point):
         self.quant = FakeQuantize(
             observer=FixedQParamsObserver.with_args(scale=scale, zero_point=zero_point),
-            quant_min=-(2 ** (self.num_bits - 1)),
+            quant_min=-(2 ** (self.num_bits - 1) - 1),
             quant_max=2 ** (self.num_bits - 1) - 1,
             dtype=torch.qint8,
         ).to(self.alpha.device)
@@ -67,7 +67,7 @@ class ParameterizedHardtanh(nn.Module):
         # 2. Calculate dynamic quantization parameters
         current_min = -self.alpha.detach()
         current_max = self.alpha.detach()
-        quant_min = -(2 ** (self.num_bits - 1))
+        quant_min = -(2 ** (self.num_bits - 1) - 1)
         quant_max = 2 ** (self.num_bits - 1) - 1
         scale = (current_max - current_min) / (quant_max - quant_min)
 
