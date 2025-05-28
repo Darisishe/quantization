@@ -36,7 +36,7 @@ BATCH_SIZE = 128
 LR = 1e-3
 NUM_CLASSES = 10
 QAT_EPOCHS = 60
-QAT_LR = 1e-2
+QAT_LR = 1e-3
 
 
 def prepare_dataloader():
@@ -156,26 +156,27 @@ def train_model(
     device,
     train_loader,
     test_loader,
+    scheduler_patience,
     num_epochs=NUM_EPOCHS,
     writer=None,
     model_name="model",
 ):
-    patience = 30
+    patience = 20
     cur_idle = 0
 
     criterion = nn.CrossEntropyLoss()
 
     model.to(device)
-    optimizer = optim.SGD(
-        model.parameters(), lr=learning_rate, momentum=0.9, weight_decay=1e-4
-    )
-    # L2 Regularization for Activations Parameters already applied by SGD's weight_decay
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-4)
+    # L2 Regularization for Activations Parameters already applied by Adam's weight_decay
 
-    scheduler = torch.optim.lr_scheduler.MultiStepLR(
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
         optimizer,
-        milestones=[15, 30, 45] if "quantized" in model_name else [70, 100, 130],
-        gamma=0.1,
-        last_epoch=-1,
+        mode="min",
+        factor=0.1,
+        patience=scheduler_patience,
+        threshold=0.0001,
+        min_lr=1e-7,
     )
 
     activation_fn.set_model_name(model, model_name)
@@ -216,7 +217,7 @@ def train_model(
             model=model, device=device, test_loader=test_loader, criterion=criterion
         )
 
-        scheduler.step()
+        scheduler.step(eval_loss)
         if writer:
             writer.add_scalar(f"TrainLoss", train_loss, epoch)
             writer.add_scalar(f"TrainAcc", train_accuracy, epoch)
@@ -232,7 +233,7 @@ def train_model(
             learning_rates.append(optimizer.param_groups[0]["lr"])
 
         print(
-            "[{}] Epoch: {:03d} Train Loss: {:.4f} Train Acc: {:.4f} Eval Loss: {:.4f} Eval Acc: {:.4f} (LR: {:.6f})".format(
+            "[{}] Epoch: {:03d} Train Loss: {:.4f} Train Acc: {:.4f} Eval Loss: {:.4f} Eval Acc: {:.4f} (LR: {:.8f})".format(
                 model_name,
                 epoch + 1,
                 train_loss,
@@ -248,7 +249,7 @@ def train_model(
             best_eval_acc = eval_accuracy
             torch.save(model.state_dict(), f"checkpoint/best_{model_name}.ckpt")
             cur_idle = 0
-        elif cur_idle >= patience:
+        elif cur_idle >= patience and optimizer.param_groups[0]["lr"] <= 1e-7:
             print("Early stopping was triggered!")
             break
 
@@ -286,7 +287,8 @@ def train_orig_model(model_class, activation, device, train_loader, test_loader)
         train_loader=train_loader,
         test_loader=test_loader,
         learning_rate=LR,
-        num_epochs=NUM_EPOCHS,
+        scheduler_patience=10 if model_class == LeNet5 else 5,
+        num_epochs=200 if model_class == LeNet5 else 100,
         writer=writer,
         model_name=model_name,
     )
@@ -297,12 +299,17 @@ def train_orig_model(model_class, activation, device, train_loader, test_loader)
     return model
 
 
-def configure_qat(model, activation_bitwidth=4, weight_bitwidth=4):
+def configure_qat(model, activation_bitwidth=4, weight_bitwidth=4, symmetric_act=False):
     # Fake quantizer for activations
+    act_quant_max = (
+        (2**activation_bitwidth - 1)
+        if not symmetric_act
+        else (2**activation_bitwidth - 2)
+    )
     fq_activation = FakeQuantize.with_args(
         observer=torch.quantization.MovingAverageMinMaxObserver.with_args(
             quant_min=0,
-            quant_max=2**activation_bitwidth - 1,
+            quant_max=act_quant_max,
             dtype=torch.quint8,
             qscheme=torch.per_tensor_affine,
             reduce_range=False,
@@ -377,7 +384,12 @@ def train_quantized_model(
 
     model.train()
     model.to(device)
-    configure_qat(model, activation_bitwidth=bits, weight_bitwidth=bits)
+    configure_qat(
+        model,
+        activation_bitwidth=bits,
+        weight_bitwidth=bits,
+        symmetric_act=True if activation == "hardtanh" else False,
+    )
 
     print(f"[{model_name}] after configure_qat:", model)
 
@@ -388,7 +400,8 @@ def train_quantized_model(
         device=device,
         train_loader=train_loader,
         test_loader=test_loader,
-        learning_rate=QAT_LR,
+        learning_rate=1e-2 if "parametrized" in activation else 1e-3,
+        scheduler_patience=5,
         num_epochs=QAT_EPOCHS,
         writer=writer,
         model_name=model_name,
@@ -405,7 +418,7 @@ def parallel_train(model_class, activation):
     cuda_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     train_loader, test_loader = prepare_dataloader()
 
-    bit_widths = [2, 3, 4]
+    bit_widths = [4, 3, 2]
 
     logger = setup_logging(f"{model_class.__name__}_{activation}")
     # Redirect prints to logfile
@@ -465,9 +478,11 @@ if __name__ == "__main__":
     os.makedirs("raw_np", exist_ok=True)
 
     # All possible architectures, activations and bitwidths
-    models = [ResNet18, LeNet5, ResNet20]
-    activations = ["parametrized_relu", "parametrized_hardtanh"]
-    bit_widths = [4, 3, 2]
+    models = [
+        ResNet18,
+    ]
+    activations = ["hardtanh"]
+    bit_widths = [3, 2]
 
     tasks = [(model, act) for model in models for act in activations]
 
