@@ -3407,12 +3407,12 @@ Layer Shape: torch.Size([10, 64])
 [2025-05-28 02:25:55,191]: Mean: -0.00658744
 [2025-05-28 02:25:55,191]: Min: -1.00892770
 [2025-05-28 02:25:55,191]: Max: 1.18766701
-[2025-05-28 02:25:55,191]: 
+[2025-06-14 03:53:54,754]: 
 
 
 QAT of ResNet20 with hardtanh down to 2 bits...
-[2025-05-28 02:25:55,306]: [ResNet20_hardtanh_quantized_2_bits] after configure_qat:
-[2025-05-28 02:25:55,355]: ResNet(
+[2025-06-14 03:53:55,148]: [ResNet20_hardtanh_quantized_2_bits] after configure_qat:
+[2025-06-14 03:53:55,325]: ResNet(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
       fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=2, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([0], device='cuda:0', dtype=torch.int32)
@@ -3925,73 +3925,73 @@ QAT of ResNet20 with hardtanh down to 2 bits...
   (avg_pool): AvgPool2d(kernel_size=8, stride=8, padding=0)
   (fc): Linear(in_features=64, out_features=10, bias=True)
 )
-[2025-05-28 02:26:47,747]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 001 Train Loss: 1.0570 Train Acc: 0.6300 Eval Loss: 1.0449 Eval Acc: 0.6474 (LR: 0.00100000)
-[2025-05-28 02:27:40,142]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 002 Train Loss: 0.8882 Train Acc: 0.6873 Eval Loss: 1.3002 Eval Acc: 0.6029 (LR: 0.00100000)
-[2025-05-28 02:28:32,717]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 003 Train Loss: 0.8440 Train Acc: 0.7015 Eval Loss: 1.0149 Eval Acc: 0.6665 (LR: 0.00100000)
-[2025-05-28 02:29:27,664]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 004 Train Loss: 0.8309 Train Acc: 0.7076 Eval Loss: 1.0107 Eval Acc: 0.6617 (LR: 0.00100000)
-[2025-05-28 02:30:23,186]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 005 Train Loss: 0.8204 Train Acc: 0.7124 Eval Loss: 0.8725 Eval Acc: 0.7081 (LR: 0.00100000)
-[2025-05-28 02:31:15,565]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 006 Train Loss: 0.8131 Train Acc: 0.7147 Eval Loss: 1.0346 Eval Acc: 0.6657 (LR: 0.00100000)
-[2025-05-28 02:32:07,930]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 007 Train Loss: 0.8003 Train Acc: 0.7195 Eval Loss: 0.9620 Eval Acc: 0.6712 (LR: 0.00100000)
-[2025-05-28 02:33:00,307]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 008 Train Loss: 0.7953 Train Acc: 0.7213 Eval Loss: 0.9718 Eval Acc: 0.6744 (LR: 0.00100000)
-[2025-05-28 02:33:52,821]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 009 Train Loss: 0.7891 Train Acc: 0.7209 Eval Loss: 1.0783 Eval Acc: 0.6485 (LR: 0.00100000)
-[2025-05-28 02:34:45,206]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 010 Train Loss: 0.7863 Train Acc: 0.7266 Eval Loss: 0.9467 Eval Acc: 0.6793 (LR: 0.00100000)
-[2025-05-28 02:35:37,535]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 011 Train Loss: 0.7843 Train Acc: 0.7250 Eval Loss: 1.0066 Eval Acc: 0.6643 (LR: 0.00010000)
-[2025-05-28 02:36:29,743]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 012 Train Loss: 0.6869 Train Acc: 0.7605 Eval Loss: 0.7047 Eval Acc: 0.7601 (LR: 0.00010000)
-[2025-05-28 02:37:22,102]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 013 Train Loss: 0.6589 Train Acc: 0.7710 Eval Loss: 0.7016 Eval Acc: 0.7671 (LR: 0.00010000)
-[2025-05-28 02:38:14,466]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 014 Train Loss: 0.6557 Train Acc: 0.7708 Eval Loss: 0.6835 Eval Acc: 0.7649 (LR: 0.00010000)
-[2025-05-28 02:39:06,802]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 015 Train Loss: 0.6494 Train Acc: 0.7734 Eval Loss: 0.6451 Eval Acc: 0.7783 (LR: 0.00010000)
-[2025-05-28 02:39:59,177]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 016 Train Loss: 0.6474 Train Acc: 0.7730 Eval Loss: 0.6982 Eval Acc: 0.7579 (LR: 0.00010000)
-[2025-05-28 02:40:58,117]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 017 Train Loss: 0.6451 Train Acc: 0.7758 Eval Loss: 0.6664 Eval Acc: 0.7719 (LR: 0.00010000)
-[2025-05-28 02:41:55,636]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 018 Train Loss: 0.6502 Train Acc: 0.7743 Eval Loss: 0.6918 Eval Acc: 0.7631 (LR: 0.00010000)
-[2025-05-28 02:42:50,241]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 019 Train Loss: 0.6438 Train Acc: 0.7741 Eval Loss: 0.6437 Eval Acc: 0.7794 (LR: 0.00010000)
-[2025-05-28 02:43:45,302]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 020 Train Loss: 0.6477 Train Acc: 0.7728 Eval Loss: 0.6778 Eval Acc: 0.7711 (LR: 0.00010000)
-[2025-05-28 02:44:37,924]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 021 Train Loss: 0.6485 Train Acc: 0.7734 Eval Loss: 0.7192 Eval Acc: 0.7610 (LR: 0.00010000)
-[2025-05-28 02:45:30,466]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 022 Train Loss: 0.6432 Train Acc: 0.7767 Eval Loss: 0.7029 Eval Acc: 0.7621 (LR: 0.00010000)
-[2025-05-28 02:46:23,004]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 023 Train Loss: 0.6448 Train Acc: 0.7744 Eval Loss: 0.7012 Eval Acc: 0.7663 (LR: 0.00010000)
-[2025-05-28 02:47:15,583]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 024 Train Loss: 0.6449 Train Acc: 0.7747 Eval Loss: 0.6637 Eval Acc: 0.7749 (LR: 0.00010000)
-[2025-05-28 02:48:08,145]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 025 Train Loss: 0.6446 Train Acc: 0.7755 Eval Loss: 0.6782 Eval Acc: 0.7672 (LR: 0.00001000)
-[2025-05-28 02:49:00,725]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 026 Train Loss: 0.6124 Train Acc: 0.7858 Eval Loss: 0.6056 Eval Acc: 0.7915 (LR: 0.00001000)
-[2025-05-28 02:49:53,334]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 027 Train Loss: 0.5998 Train Acc: 0.7920 Eval Loss: 0.6066 Eval Acc: 0.7866 (LR: 0.00001000)
-[2025-05-28 02:50:45,839]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 028 Train Loss: 0.5973 Train Acc: 0.7911 Eval Loss: 0.6020 Eval Acc: 0.7947 (LR: 0.00001000)
-[2025-05-28 02:51:38,201]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 029 Train Loss: 0.5986 Train Acc: 0.7905 Eval Loss: 0.6108 Eval Acc: 0.7923 (LR: 0.00001000)
-[2025-05-28 02:52:30,395]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 030 Train Loss: 0.5949 Train Acc: 0.7937 Eval Loss: 0.6122 Eval Acc: 0.7881 (LR: 0.00001000)
-[2025-05-28 02:53:22,530]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 031 Train Loss: 0.6016 Train Acc: 0.7898 Eval Loss: 0.5965 Eval Acc: 0.7938 (LR: 0.00001000)
-[2025-05-28 02:54:14,874]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 032 Train Loss: 0.5972 Train Acc: 0.7924 Eval Loss: 0.6545 Eval Acc: 0.7806 (LR: 0.00001000)
-[2025-05-28 02:55:07,321]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 033 Train Loss: 0.5976 Train Acc: 0.7929 Eval Loss: 0.5987 Eval Acc: 0.7936 (LR: 0.00001000)
-[2025-05-28 02:55:59,634]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 034 Train Loss: 0.5956 Train Acc: 0.7928 Eval Loss: 0.6137 Eval Acc: 0.7894 (LR: 0.00001000)
-[2025-05-28 02:56:52,009]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 035 Train Loss: 0.5985 Train Acc: 0.7909 Eval Loss: 0.6133 Eval Acc: 0.7888 (LR: 0.00001000)
-[2025-05-28 02:57:44,327]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 036 Train Loss: 0.5988 Train Acc: 0.7906 Eval Loss: 0.5951 Eval Acc: 0.7929 (LR: 0.00001000)
-[2025-05-28 02:58:36,735]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 037 Train Loss: 0.6038 Train Acc: 0.7877 Eval Loss: 0.6508 Eval Acc: 0.7777 (LR: 0.00001000)
-[2025-05-28 02:59:32,331]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 038 Train Loss: 0.5970 Train Acc: 0.7906 Eval Loss: 0.6165 Eval Acc: 0.7886 (LR: 0.00001000)
-[2025-05-28 03:00:28,577]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 039 Train Loss: 0.5995 Train Acc: 0.7912 Eval Loss: 0.6310 Eval Acc: 0.7828 (LR: 0.00001000)
-[2025-05-28 03:01:24,148]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 040 Train Loss: 0.6025 Train Acc: 0.7893 Eval Loss: 0.6211 Eval Acc: 0.7872 (LR: 0.00001000)
-[2025-05-28 03:02:17,435]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 041 Train Loss: 0.6025 Train Acc: 0.7895 Eval Loss: 0.6229 Eval Acc: 0.7864 (LR: 0.00001000)
-[2025-05-28 03:03:11,510]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 042 Train Loss: 0.6002 Train Acc: 0.7918 Eval Loss: 0.6047 Eval Acc: 0.7935 (LR: 0.00000100)
-[2025-05-28 03:04:05,890]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 043 Train Loss: 0.5853 Train Acc: 0.7956 Eval Loss: 0.5870 Eval Acc: 0.7969 (LR: 0.00000100)
-[2025-05-28 03:05:01,833]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 044 Train Loss: 0.5804 Train Acc: 0.7988 Eval Loss: 0.5882 Eval Acc: 0.7966 (LR: 0.00000100)
-[2025-05-28 03:05:56,448]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 045 Train Loss: 0.5823 Train Acc: 0.7967 Eval Loss: 0.6117 Eval Acc: 0.7921 (LR: 0.00000100)
-[2025-05-28 03:06:56,859]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 046 Train Loss: 0.5845 Train Acc: 0.7953 Eval Loss: 0.5992 Eval Acc: 0.7963 (LR: 0.00000100)
-[2025-05-28 03:07:54,402]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 047 Train Loss: 0.5830 Train Acc: 0.7967 Eval Loss: 0.5840 Eval Acc: 0.7974 (LR: 0.00000100)
-[2025-05-28 03:09:01,122]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 048 Train Loss: 0.5797 Train Acc: 0.7981 Eval Loss: 0.5831 Eval Acc: 0.7939 (LR: 0.00000100)
-[2025-05-28 03:10:01,448]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 049 Train Loss: 0.5821 Train Acc: 0.7959 Eval Loss: 0.6006 Eval Acc: 0.7926 (LR: 0.00000100)
-[2025-05-28 03:10:56,347]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 050 Train Loss: 0.5811 Train Acc: 0.7968 Eval Loss: 0.5863 Eval Acc: 0.7991 (LR: 0.00000100)
-[2025-05-28 03:11:50,366]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 051 Train Loss: 0.5882 Train Acc: 0.7948 Eval Loss: 0.5912 Eval Acc: 0.7980 (LR: 0.00000100)
-[2025-05-28 03:12:47,154]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 052 Train Loss: 0.5840 Train Acc: 0.7961 Eval Loss: 0.5858 Eval Acc: 0.8011 (LR: 0.00000100)
-[2025-05-28 03:13:45,283]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 053 Train Loss: 0.5879 Train Acc: 0.7944 Eval Loss: 0.6005 Eval Acc: 0.7928 (LR: 0.00000100)
-[2025-05-28 03:14:41,349]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 054 Train Loss: 0.5843 Train Acc: 0.7949 Eval Loss: 0.5939 Eval Acc: 0.7968 (LR: 0.00000010)
-[2025-05-28 03:15:35,414]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 055 Train Loss: 0.5779 Train Acc: 0.7985 Eval Loss: 0.5817 Eval Acc: 0.8029 (LR: 0.00000010)
-[2025-05-28 03:16:31,501]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 056 Train Loss: 0.5681 Train Acc: 0.8017 Eval Loss: 0.5784 Eval Acc: 0.8057 (LR: 0.00000010)
-[2025-05-28 03:17:25,985]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 057 Train Loss: 0.5805 Train Acc: 0.7977 Eval Loss: 0.5764 Eval Acc: 0.8022 (LR: 0.00000010)
-[2025-05-28 03:18:20,671]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 058 Train Loss: 0.5718 Train Acc: 0.8009 Eval Loss: 0.5978 Eval Acc: 0.7987 (LR: 0.00000010)
-[2025-05-28 03:19:17,065]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 059 Train Loss: 0.5716 Train Acc: 0.7997 Eval Loss: 0.5837 Eval Acc: 0.7964 (LR: 0.00000010)
-[2025-05-28 03:20:17,585]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 060 Train Loss: 0.5755 Train Acc: 0.7991 Eval Loss: 0.5815 Eval Acc: 0.7997 (LR: 0.00000010)
-[2025-05-28 03:20:17,585]: [ResNet20_hardtanh_quantized_2_bits] Best Eval Accuracy: 0.8057
-[2025-05-28 03:20:17,633]: 
+[2025-06-14 03:55:20,245]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 001 Train Loss: 1.0662 Train Acc: 0.6265 Eval Loss: 1.0626 Eval Acc: 0.6473 (LR: 0.00100000)
+[2025-06-14 03:56:40,840]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 002 Train Loss: 0.8718 Train Acc: 0.6940 Eval Loss: 1.0411 Eval Acc: 0.6489 (LR: 0.00100000)
+[2025-06-14 03:57:57,378]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 003 Train Loss: 0.8380 Train Acc: 0.7055 Eval Loss: 0.9533 Eval Acc: 0.6730 (LR: 0.00100000)
+[2025-06-14 03:59:20,162]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 004 Train Loss: 0.8245 Train Acc: 0.7120 Eval Loss: 0.8649 Eval Acc: 0.7011 (LR: 0.00100000)
+[2025-06-14 04:00:40,183]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 005 Train Loss: 0.8191 Train Acc: 0.7126 Eval Loss: 0.9384 Eval Acc: 0.6823 (LR: 0.00100000)
+[2025-06-14 04:01:54,461]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 006 Train Loss: 0.8141 Train Acc: 0.7141 Eval Loss: 1.0203 Eval Acc: 0.6592 (LR: 0.00100000)
+[2025-06-14 04:03:05,572]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 007 Train Loss: 0.8105 Train Acc: 0.7164 Eval Loss: 0.9706 Eval Acc: 0.6808 (LR: 0.00100000)
+[2025-06-14 04:04:11,654]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 008 Train Loss: 0.7989 Train Acc: 0.7203 Eval Loss: 0.8485 Eval Acc: 0.7079 (LR: 0.00100000)
+[2025-06-14 04:05:19,255]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 009 Train Loss: 0.7941 Train Acc: 0.7227 Eval Loss: 0.9924 Eval Acc: 0.6839 (LR: 0.00100000)
+[2025-06-14 04:06:29,728]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 010 Train Loss: 0.7900 Train Acc: 0.7226 Eval Loss: 0.7572 Eval Acc: 0.7401 (LR: 0.00100000)
+[2025-06-14 04:07:37,325]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 011 Train Loss: 0.7772 Train Acc: 0.7285 Eval Loss: 0.8811 Eval Acc: 0.6961 (LR: 0.00100000)
+[2025-06-14 04:08:50,648]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 012 Train Loss: 0.7750 Train Acc: 0.7285 Eval Loss: 0.8537 Eval Acc: 0.7032 (LR: 0.00100000)
+[2025-06-14 04:10:05,401]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 013 Train Loss: 0.7725 Train Acc: 0.7278 Eval Loss: 0.9448 Eval Acc: 0.6818 (LR: 0.00100000)
+[2025-06-14 04:11:16,814]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 014 Train Loss: 0.7633 Train Acc: 0.7325 Eval Loss: 0.8327 Eval Acc: 0.7194 (LR: 0.00100000)
+[2025-06-14 04:12:29,963]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 015 Train Loss: 0.7653 Train Acc: 0.7333 Eval Loss: 0.9237 Eval Acc: 0.6932 (LR: 0.00100000)
+[2025-06-14 04:13:46,895]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 016 Train Loss: 0.7649 Train Acc: 0.7304 Eval Loss: 0.9575 Eval Acc: 0.6860 (LR: 0.00010000)
+[2025-06-14 04:15:04,700]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 017 Train Loss: 0.6607 Train Acc: 0.7704 Eval Loss: 0.6266 Eval Acc: 0.7871 (LR: 0.00010000)
+[2025-06-14 04:16:21,926]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 018 Train Loss: 0.6454 Train Acc: 0.7756 Eval Loss: 0.6773 Eval Acc: 0.7706 (LR: 0.00010000)
+[2025-06-14 04:17:38,258]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 019 Train Loss: 0.6301 Train Acc: 0.7811 Eval Loss: 0.6636 Eval Acc: 0.7774 (LR: 0.00010000)
+[2025-06-14 04:18:55,348]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 020 Train Loss: 0.6299 Train Acc: 0.7786 Eval Loss: 0.6871 Eval Acc: 0.7660 (LR: 0.00010000)
+[2025-06-14 04:20:11,839]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 021 Train Loss: 0.6278 Train Acc: 0.7823 Eval Loss: 0.7418 Eval Acc: 0.7578 (LR: 0.00010000)
+[2025-06-14 04:21:22,420]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 022 Train Loss: 0.6289 Train Acc: 0.7817 Eval Loss: 0.6322 Eval Acc: 0.7837 (LR: 0.00010000)
+[2025-06-14 04:22:32,664]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 023 Train Loss: 0.6291 Train Acc: 0.7805 Eval Loss: 0.6568 Eval Acc: 0.7740 (LR: 0.00001000)
+[2025-06-14 04:23:39,831]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 024 Train Loss: 0.5992 Train Acc: 0.7923 Eval Loss: 0.6011 Eval Acc: 0.7900 (LR: 0.00001000)
+[2025-06-14 04:24:45,851]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 025 Train Loss: 0.5926 Train Acc: 0.7941 Eval Loss: 0.5909 Eval Acc: 0.7940 (LR: 0.00001000)
+[2025-06-14 04:25:53,468]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 026 Train Loss: 0.5940 Train Acc: 0.7920 Eval Loss: 0.5923 Eval Acc: 0.7963 (LR: 0.00001000)
+[2025-06-14 04:27:00,589]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 027 Train Loss: 0.5901 Train Acc: 0.7929 Eval Loss: 0.6079 Eval Acc: 0.7920 (LR: 0.00001000)
+[2025-06-14 04:28:10,617]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 028 Train Loss: 0.5857 Train Acc: 0.7941 Eval Loss: 0.5913 Eval Acc: 0.7968 (LR: 0.00001000)
+[2025-06-14 04:29:23,562]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 029 Train Loss: 0.5913 Train Acc: 0.7922 Eval Loss: 0.6031 Eval Acc: 0.7924 (LR: 0.00001000)
+[2025-06-14 04:30:36,218]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 030 Train Loss: 0.5930 Train Acc: 0.7940 Eval Loss: 0.6241 Eval Acc: 0.7887 (LR: 0.00001000)
+[2025-06-14 04:31:50,908]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 031 Train Loss: 0.5927 Train Acc: 0.7939 Eval Loss: 0.5912 Eval Acc: 0.7943 (LR: 0.00000100)
+[2025-06-14 04:33:07,484]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 032 Train Loss: 0.5821 Train Acc: 0.7980 Eval Loss: 0.5833 Eval Acc: 0.8008 (LR: 0.00000100)
+[2025-06-14 04:34:25,467]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 033 Train Loss: 0.5795 Train Acc: 0.7972 Eval Loss: 0.5889 Eval Acc: 0.7965 (LR: 0.00000100)
+[2025-06-14 04:35:43,244]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 034 Train Loss: 0.5792 Train Acc: 0.7983 Eval Loss: 0.5835 Eval Acc: 0.7994 (LR: 0.00000100)
+[2025-06-14 04:36:57,564]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 035 Train Loss: 0.5809 Train Acc: 0.7978 Eval Loss: 0.5790 Eval Acc: 0.8028 (LR: 0.00000100)
+[2025-06-14 04:38:17,918]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 036 Train Loss: 0.5802 Train Acc: 0.7984 Eval Loss: 0.5809 Eval Acc: 0.7981 (LR: 0.00000100)
+[2025-06-14 04:39:33,325]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 037 Train Loss: 0.5794 Train Acc: 0.7987 Eval Loss: 0.5767 Eval Acc: 0.8027 (LR: 0.00000100)
+[2025-06-14 04:40:53,675]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 038 Train Loss: 0.5827 Train Acc: 0.7961 Eval Loss: 0.5906 Eval Acc: 0.7937 (LR: 0.00000100)
+[2025-06-14 04:42:03,291]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 039 Train Loss: 0.5766 Train Acc: 0.7998 Eval Loss: 0.5993 Eval Acc: 0.7936 (LR: 0.00000100)
+[2025-06-14 04:43:16,320]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 040 Train Loss: 0.5785 Train Acc: 0.7992 Eval Loss: 0.5922 Eval Acc: 0.7974 (LR: 0.00000100)
+[2025-06-14 04:44:30,106]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 041 Train Loss: 0.5754 Train Acc: 0.8002 Eval Loss: 0.5770 Eval Acc: 0.8026 (LR: 0.00000100)
+[2025-06-14 04:45:42,455]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 042 Train Loss: 0.5835 Train Acc: 0.7985 Eval Loss: 0.5711 Eval Acc: 0.8031 (LR: 0.00000100)
+[2025-06-14 04:46:54,400]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 043 Train Loss: 0.5757 Train Acc: 0.8000 Eval Loss: 0.5781 Eval Acc: 0.8004 (LR: 0.00000100)
+[2025-06-14 04:48:09,370]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 044 Train Loss: 0.5776 Train Acc: 0.7992 Eval Loss: 0.5911 Eval Acc: 0.7959 (LR: 0.00000100)
+[2025-06-14 04:49:26,025]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 045 Train Loss: 0.5803 Train Acc: 0.7997 Eval Loss: 0.5986 Eval Acc: 0.7928 (LR: 0.00000100)
+[2025-06-14 04:50:44,554]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 046 Train Loss: 0.5820 Train Acc: 0.7962 Eval Loss: 0.5903 Eval Acc: 0.7986 (LR: 0.00000100)
+[2025-06-14 04:52:05,218]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 047 Train Loss: 0.5788 Train Acc: 0.7986 Eval Loss: 0.5728 Eval Acc: 0.8042 (LR: 0.00000100)
+[2025-06-14 04:53:25,936]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 048 Train Loss: 0.5816 Train Acc: 0.7967 Eval Loss: 0.5931 Eval Acc: 0.7977 (LR: 0.00000010)
+[2025-06-14 04:54:50,305]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 049 Train Loss: 0.5749 Train Acc: 0.7992 Eval Loss: 0.5816 Eval Acc: 0.8026 (LR: 0.00000010)
+[2025-06-14 04:56:10,044]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 050 Train Loss: 0.5777 Train Acc: 0.8004 Eval Loss: 0.5747 Eval Acc: 0.7990 (LR: 0.00000010)
+[2025-06-14 04:57:27,758]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 051 Train Loss: 0.5675 Train Acc: 0.8021 Eval Loss: 0.5874 Eval Acc: 0.7995 (LR: 0.00000010)
+[2025-06-14 04:58:46,018]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 052 Train Loss: 0.5756 Train Acc: 0.8005 Eval Loss: 0.5782 Eval Acc: 0.8035 (LR: 0.00000010)
+[2025-06-14 05:00:00,867]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 053 Train Loss: 0.5743 Train Acc: 0.8001 Eval Loss: 0.5829 Eval Acc: 0.7974 (LR: 0.00000010)
+[2025-06-14 05:01:12,531]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 054 Train Loss: 0.5728 Train Acc: 0.7987 Eval Loss: 0.5755 Eval Acc: 0.8026 (LR: 0.00000010)
+[2025-06-14 05:02:24,833]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 055 Train Loss: 0.5802 Train Acc: 0.7994 Eval Loss: 0.5786 Eval Acc: 0.8010 (LR: 0.00000010)
+[2025-06-14 05:03:36,314]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 056 Train Loss: 0.5766 Train Acc: 0.7985 Eval Loss: 0.5762 Eval Acc: 0.8023 (LR: 0.00000010)
+[2025-06-14 05:04:46,941]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 057 Train Loss: 0.5758 Train Acc: 0.7983 Eval Loss: 0.5817 Eval Acc: 0.8008 (LR: 0.00000010)
+[2025-06-14 05:05:58,108]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 058 Train Loss: 0.5756 Train Acc: 0.7991 Eval Loss: 0.5821 Eval Acc: 0.7998 (LR: 0.00000010)
+[2025-06-14 05:07:10,554]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 059 Train Loss: 0.5745 Train Acc: 0.7992 Eval Loss: 0.5803 Eval Acc: 0.8018 (LR: 0.00000010)
+[2025-06-14 05:08:24,647]: [ResNet20_hardtanh_quantized_2_bits] Epoch: 060 Train Loss: 0.5759 Train Acc: 0.7993 Eval Loss: 0.5916 Eval Acc: 0.7960 (LR: 0.00000010)
+[2025-06-14 05:08:24,647]: [ResNet20_hardtanh_quantized_2_bits] Best Eval Accuracy: 0.8042
+[2025-06-14 05:08:25,138]: 
 
 
 Quantization of model down to 2 bits finished
-[2025-05-28 03:20:17,633]: Model Architecture:
-[2025-05-28 03:20:17,689]: ResNet(
+[2025-06-14 05:08:25,138]: Model Architecture:
+[2025-06-14 05:08:25,538]: ResNet(
   (quant): QuantStub(
     (activation_post_process): FakeQuantize(
       fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=2, dtype=torch.quint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([1.], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
@@ -4013,8 +4013,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4851], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.7205580472946167, max_val=0.734716534614563)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4949], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.7468885183334351, max_val=0.7376726865768433)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4036,8 +4036,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3761], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5641546249389648, max_val=0.56415855884552)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4426], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.6484586000442505, max_val=0.6793054342269897)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4064,8 +4064,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3553], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5524898767471313, max_val=0.5133013725280762)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3548], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5625348091125488, max_val=0.5017943382263184)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4087,8 +4087,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3613], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5033931732177734, max_val=0.5805621147155762)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3546], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.508441686630249, max_val=0.5554141998291016)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4115,8 +4115,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4159], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.6896791458129883, max_val=0.5579859018325806)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.5227], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.7946845293045044, max_val=0.7734229564666748)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4138,8 +4138,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         16, 16, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4119], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5354851484298706, max_val=0.7001368999481201)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4156], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5554101467132568, max_val=0.6913797855377197)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4168,8 +4168,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         16, 32, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3441], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5161285400390625, max_val=0.5161341428756714)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3743], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5613628625869751, max_val=0.5614045858383179)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4191,8 +4191,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3198], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.48208779096603394, max_val=0.4773271679878235)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3394], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5038492679595947, max_val=0.5143837928771973)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4204,8 +4204,8 @@ Quantization of model down to 2 bits finished
         (0): Conv2d(
           16, 32, kernel_size=(1, 1), stride=(2, 2), bias=False
           (weight_fake_quant): FakeQuantize(
-            fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3792], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-            (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5687311887741089, max_val=0.5687358379364014)
+            fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.4568], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+            (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.6734845042228699, max_val=0.6969301700592041)
           )
           (activation_post_process): NoopObserver()
         )
@@ -4233,8 +4233,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2763], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4143645763397217, max_val=0.4143887758255005)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2814], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.42145246267318726, max_val=0.42280954122543335)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4256,8 +4256,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2827], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4226089119911194, max_val=0.42536211013793945)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3086], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.46013742685317993, max_val=0.4657513499259949)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4284,8 +4284,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2863], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.43009859323501587, max_val=0.42883139848709106)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2941], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.43456411361694336, max_val=0.4478462338447571)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4307,8 +4307,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2892], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.43375295400619507, max_val=0.433752179145813)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2952], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4492412507534027, max_val=0.43621766567230225)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4337,8 +4337,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2713], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.40710073709487915, max_val=0.4068604111671448)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2817], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.42286860942840576, max_val=0.4221113324165344)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4360,8 +4360,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3138], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4671328663825989, max_val=0.47417473793029785)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3039], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4558134078979492, max_val=0.45581233501434326)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4373,8 +4373,8 @@ Quantization of model down to 2 bits finished
         (0): Conv2d(
           32, 64, kernel_size=(1, 1), stride=(2, 2), bias=False
           (weight_fake_quant): FakeQuantize(
-            fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3358], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-            (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5037088394165039, max_val=0.5037050247192383)
+            fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.3556], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+            (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.5334939956665039, max_val=0.5332163572311401)
           )
           (activation_post_process): NoopObserver()
         )
@@ -4402,8 +4402,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2929], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4650043249130249, max_val=0.41377002000808716)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2931], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4534584879875183, max_val=0.4257628917694092)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4425,8 +4425,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2414], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.37476640939712524, max_val=0.3495364785194397)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2598], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.4070698022842407, max_val=0.37240004539489746)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4453,8 +4453,8 @@ Quantization of model down to 2 bits finished
       (conv1): Conv2d(
         64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2410], device='cuda:0'), zero_point=tensor([2], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.3689987063407898, max_val=0.35411983728408813)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2592], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.38855934143066406, max_val=0.38889676332473755)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4476,8 +4476,8 @@ Quantization of model down to 2 bits finished
       (conv2): Conv2d(
         64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False
         (weight_fake_quant): FakeQuantize(
-          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.1918], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
-          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.28538620471954346, max_val=0.2899147868156433)
+          fake_quant_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), observer_enabled=tensor([1], device='cuda:0', dtype=torch.uint8), quant_min=0, quant_max=3, dtype=torch.qint8, qscheme=torch.per_tensor_affine, ch_axis=-1, scale=tensor([0.2083], device='cuda:0'), zero_point=tensor([1], device='cuda:0', dtype=torch.int32)
+          (activation_post_process): MovingAverageMinMaxObserver(min_val=-0.2927323579788208, max_val=0.33203136920928955)
         )
         (activation_post_process): NoopObserver()
       )
@@ -4504,306 +4504,306 @@ Quantization of model down to 2 bits finished
   (avg_pool): AvgPool2d(kernel_size=8, stride=8, padding=0)
   (fc): Linear(in_features=64, out_features=10, bias=True)
 )
-[2025-05-28 03:20:17,689]: 
+[2025-06-14 05:08:25,550]: 
 Model Weights:
-[2025-05-28 03:20:17,689]: 
+[2025-06-14 05:08:25,551]: 
 Layer: initial_layer.0
 Layer Shape: torch.Size([16, 3, 3, 3])
-[2025-05-28 03:20:17,690]: Sample Values (25 elements): [0.26088252663612366, -0.018119078129529953, -0.07160340249538422, 0.1019570380449295, -0.22229944169521332, -0.06831502169370651, -0.2891807556152344, -0.008580866269767284, -0.14420408010482788, 0.12773102521896362, -0.16464143991470337, -0.06430812925100327, 0.02213216759264469, -0.3375847637653351, 0.015473133884370327, 0.0658787190914154, 0.07014276832342148, -0.24969349801540375, 0.020067935809493065, -0.049569450318813324, -0.20269101858139038, -0.03743064031004906, -0.06896166503429413, -0.1963791847229004, 0.09982821345329285]
-[2025-05-28 03:20:17,690]: Mean: 0.00060594
-[2025-05-28 03:20:17,690]: Min: -0.53880769
-[2025-05-28 03:20:17,690]: Max: 0.41461828
-[2025-05-28 03:20:17,690]: 
+[2025-06-14 05:08:25,575]: Sample Values (25 elements): [-0.0868280902504921, -0.01151516754180193, 0.26437535881996155, 0.011203584261238575, -0.15837804973125458, 0.07688041776418686, 0.16721703112125397, 0.010770564898848534, -0.1567240208387375, -0.16382178664207458, -0.27330562472343445, 0.13460999727249146, 0.184380441904068, 0.07615406066179276, -0.1451188027858734, -0.007398751564323902, 0.06627582758665085, -0.14973613619804382, -0.09682565182447433, -0.06767010688781738, -0.15324723720550537, 0.3504316210746765, -0.17881324887275696, -0.037165310233831406, -0.07817159593105316]
+[2025-06-14 05:08:25,633]: Mean: 0.00079805
+[2025-06-14 05:08:25,648]: Min: -0.53605998
+[2025-06-14 05:08:25,649]: Max: 0.44115266
+[2025-06-14 05:08:25,649]: 
 Layer: initial_layer.1
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,691]: Sample Values (16 elements): [0.9742780923843384, 1.3543182611465454, 1.025742530822754, 1.0738520622253418, 2.0337352752685547, 1.0459359884262085, 1.0260727405548096, 1.2618181705474854, 1.0639171600341797, 1.2116073369979858, 1.1903884410858154, 1.0183357000350952, 1.1216580867767334, 1.1581043004989624, 1.2351171970367432, 1.3250654935836792]
-[2025-05-28 03:20:17,691]: Mean: 1.19499660
-[2025-05-28 03:20:17,691]: Min: 0.97427809
-[2025-05-28 03:20:17,691]: Max: 2.03373528
-[2025-05-28 03:20:17,693]: 
+[2025-06-14 05:08:25,649]: Sample Values (16 elements): [1.023728847503662, 1.110766053199768, 1.2515305280685425, 1.0907936096191406, 1.0808537006378174, 1.299539566040039, 1.1794922351837158, 1.1716669797897339, 1.076856255531311, 1.4366016387939453, 1.3666009902954102, 1.0245997905731201, 1.3033568859100342, 1.0634558200836182, 1.2739230394363403, 2.2178187370300293]
+[2025-06-14 05:08:25,650]: Mean: 1.24822402
+[2025-06-14 05:08:25,650]: Min: 1.02372885
+[2025-06-14 05:08:25,650]: Max: 2.21781874
+[2025-06-14 05:08:25,675]: 
 Layer: layer1.0.conv1
 Layer Shape: torch.Size([16, 16, 3, 3])
-[2025-05-28 03:20:17,693]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, -0.48509153723716736, 0.0, 0.0, 0.0, 0.0, 0.48509153723716736, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.48509153723716736, 0.0]
-[2025-05-28 03:20:17,693]: Mean: 0.00042109
-[2025-05-28 03:20:17,694]: Min: -0.48509154
-[2025-05-28 03:20:17,694]: Max: 0.97018307
-[2025-05-28 03:20:17,694]: 
+[2025-06-14 05:08:25,683]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4948537349700928, 0.4948537349700928, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,688]: Mean: -0.00279214
+[2025-06-14 05:08:25,698]: Min: -0.98970747
+[2025-06-14 05:08:25,705]: Max: 0.49485373
+[2025-06-14 05:08:25,705]: 
 Layer: layer1.0.bn1
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,694]: Sample Values (16 elements): [1.1530884504318237, 0.8512058258056641, 0.7918034195899963, 0.6777244210243225, 0.9279040694236755, 0.7360314726829529, 0.9701733589172363, 0.8940212726593018, 0.5928334593772888, 0.8900293707847595, 0.7999462485313416, 0.9877285957336426, 0.8929016590118408, 1.0097923278808594, 0.8467249870300293, 1.0097805261611938]
-[2025-05-28 03:20:17,694]: Mean: 0.87698054
-[2025-05-28 03:20:17,695]: Min: 0.59283346
-[2025-05-28 03:20:17,695]: Max: 1.15308845
-[2025-05-28 03:20:17,696]: 
+[2025-06-14 05:08:25,710]: Sample Values (16 elements): [0.7141536474227905, 1.0027259588241577, 0.8880336880683899, 0.7862979769706726, 0.8527214527130127, 0.8676786422729492, 1.110858678817749, 1.0302109718322754, 0.9673991203308105, 0.9373953342437744, 0.8414098620414734, 0.6415853500366211, 0.834802508354187, 0.8220701217651367, 0.7888700366020203, 0.5925614833831787]
+[2025-06-14 05:08:25,710]: Mean: 0.85492337
+[2025-06-14 05:08:25,710]: Min: 0.59256148
+[2025-06-14 05:08:25,710]: Max: 1.11085868
+[2025-06-14 05:08:25,712]: 
 Layer: layer1.0.conv2
 Layer Shape: torch.Size([16, 16, 3, 3])
-[2025-05-28 03:20:17,696]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.3761044144630432, 0.0, 0.0, 0.0, 0.0, -0.3761044144630432, 0.0, 0.0, 0.3761044144630432, 0.0, 0.0, 0.0, 0.0, 0.3761044144630432, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,697]: Mean: 0.00603987
-[2025-05-28 03:20:17,697]: Min: -0.37610441
-[2025-05-28 03:20:17,697]: Max: 0.75220883
-[2025-05-28 03:20:17,697]: 
+[2025-06-14 05:08:25,712]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, -0.44258803129196167, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.44258803129196167, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.44258803129196167, 0.0, -0.44258803129196167, 0.0]
+[2025-06-14 05:08:25,713]: Mean: 0.00537867
+[2025-06-14 05:08:25,713]: Min: -0.44258803
+[2025-06-14 05:08:25,713]: Max: 0.88517606
+[2025-06-14 05:08:25,713]: 
 Layer: layer1.0.bn2
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,697]: Sample Values (16 elements): [0.6565384864807129, 0.8345956206321716, 0.5147429704666138, 0.7390639185905457, 0.6601319909095764, 0.8557490110397339, 0.44435128569602966, 0.7237035632133484, 0.7888414263725281, 0.527068555355072, 0.872574508190155, 0.5002356171607971, 1.0854774713516235, 0.6340820789337158, 0.7112991809844971, 0.771996021270752]
-[2025-05-28 03:20:17,698]: Mean: 0.70752823
-[2025-05-28 03:20:17,698]: Min: 0.44435129
-[2025-05-28 03:20:17,698]: Max: 1.08547747
-[2025-05-28 03:20:17,700]: 
+[2025-06-14 05:08:25,714]: Sample Values (16 elements): [0.6552256345748901, 0.7728078365325928, 1.1163058280944824, 0.7143163681030273, 0.5299275517463684, 0.6152218580245972, 0.49824121594429016, 0.8711109161376953, 0.6857548952102661, 0.5356698632240295, 0.7080726027488708, 0.8453676104545593, 0.6965333819389343, 0.8192397952079773, 0.4370291531085968, 0.45390480756759644]
+[2025-06-14 05:08:25,714]: Mean: 0.68467057
+[2025-06-14 05:08:25,715]: Min: 0.43702915
+[2025-06-14 05:08:25,715]: Max: 1.11630583
+[2025-06-14 05:08:25,717]: 
 Layer: layer1.1.conv1
 Layer Shape: torch.Size([16, 16, 3, 3])
-[2025-05-28 03:20:17,700]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, -0.35526376962661743, 0.0, 0.0, 0.35526376962661743, 0.0, 0.0, 0.0, 0.0, 0.0, -0.35526376962661743, 0.0, -0.35526376962661743, -0.35526376962661743, 0.0, 0.0, 0.0, 0.0, 0.35526376962661743, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,700]: Mean: -0.00632197
-[2025-05-28 03:20:17,701]: Min: -0.71052754
-[2025-05-28 03:20:17,701]: Max: 0.35526377
-[2025-05-28 03:20:17,701]: 
+[2025-06-14 05:08:25,717]: Sample Values (25 elements): [0.0, 0.0, 0.0, -0.35477638244628906, -0.35477638244628906, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.35477638244628906, -0.35477638244628906, 0.0, 0.0, 0.0, 0.0, 0.35477638244628906, 0.0, 0.0, 0.0, 0.0, -0.35477638244628906, 0.0]
+[2025-06-14 05:08:25,717]: Mean: -0.00338762
+[2025-06-14 05:08:25,718]: Min: -0.70955276
+[2025-06-14 05:08:25,718]: Max: 0.35477638
+[2025-06-14 05:08:25,718]: 
 Layer: layer1.1.bn1
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,701]: Sample Values (16 elements): [0.7836899757385254, 0.737565815448761, 1.0552210807800293, 0.9587256908416748, 0.8453034162521362, 0.9538276791572571, 0.8613192439079285, 0.7061148881912231, 0.7935039401054382, 0.9383644461631775, 1.0529086589813232, 1.0359035730361938, 0.6897061467170715, 0.9440649151802063, 0.9684206247329712, 0.8328909277915955]
-[2025-05-28 03:20:17,701]: Mean: 0.88484573
-[2025-05-28 03:20:17,702]: Min: 0.68970615
-[2025-05-28 03:20:17,702]: Max: 1.05522108
-[2025-05-28 03:20:17,703]: 
+[2025-06-14 05:08:25,718]: Sample Values (16 elements): [1.0601872205734253, 0.6648522615432739, 0.9454123377799988, 0.81315016746521, 0.7922411561012268, 1.061141014099121, 1.0760990381240845, 0.8599693775177002, 0.7203349471092224, 0.9354889392852783, 1.019463300704956, 1.0181233882904053, 0.758392333984375, 0.7014033198356628, 1.0015156269073486, 0.8605901002883911]
+[2025-06-14 05:08:25,719]: Mean: 0.89302284
+[2025-06-14 05:08:25,719]: Min: 0.66485226
+[2025-06-14 05:08:25,720]: Max: 1.07609904
+[2025-06-14 05:08:25,722]: 
 Layer: layer1.1.conv2
 Layer Shape: torch.Size([16, 16, 3, 3])
-[2025-05-28 03:20:17,703]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.361318439245224, -0.361318439245224, 0.361318439245224, 0.0, -0.361318439245224, 0.0, 0.0, 0.0, -0.361318439245224, -0.361318439245224, 0.0, 0.0, 0.0, 0.0, 0.0, -0.361318439245224, 0.0, 0.0, 0.0, 0.361318439245224, 0.361318439245224, 0.0]
-[2025-05-28 03:20:17,704]: Mean: -0.00109776
-[2025-05-28 03:20:17,704]: Min: -0.36131844
-[2025-05-28 03:20:17,704]: Max: 0.72263688
-[2025-05-28 03:20:17,704]: 
+[2025-06-14 05:08:25,722]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.354618638753891, -0.354618638753891, 0.0, 0.0, 0.0, 0.0, -0.354618638753891, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.354618638753891, 0.0, 0.0, -0.354618638753891, 0.0, 0.0, -0.354618638753891, 0.354618638753891]
+[2025-06-14 05:08:25,723]: Mean: -0.00446352
+[2025-06-14 05:08:25,724]: Min: -0.35461864
+[2025-06-14 05:08:25,724]: Max: 0.70923728
+[2025-06-14 05:08:25,724]: 
 Layer: layer1.1.bn2
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,704]: Sample Values (16 elements): [0.6160545945167542, 0.5102027058601379, 0.7752965688705444, 0.687491238117218, 0.40038982033729553, 1.1780447959899902, 0.8188787698745728, 0.5789657831192017, 0.5677548050880432, 0.7000464200973511, 0.662180483341217, 0.6808182597160339, 0.3875318169593811, 0.4731864929199219, 0.8460072875022888, 0.7032327055931091]
-[2025-05-28 03:20:17,705]: Mean: 0.66163015
-[2025-05-28 03:20:17,705]: Min: 0.38753182
-[2025-05-28 03:20:17,705]: Max: 1.17804480
-[2025-05-28 03:20:17,706]: 
+[2025-06-14 05:08:25,724]: Sample Values (16 elements): [0.6647890210151672, 0.5665342211723328, 0.6706914305686951, 0.5147724747657776, 0.5190882682800293, 0.8604453206062317, 1.1955726146697998, 0.531450092792511, 0.7694381475448608, 0.4052470922470093, 0.8835986852645874, 0.5617225766181946, 0.3588792383670807, 0.7335296273231506, 0.8192620277404785, 0.6179795861244202]
+[2025-06-14 05:08:25,725]: Mean: 0.66706252
+[2025-06-14 05:08:25,725]: Min: 0.35887924
+[2025-06-14 05:08:25,725]: Max: 1.19557261
+[2025-06-14 05:08:25,728]: 
 Layer: layer1.2.conv1
 Layer Shape: torch.Size([16, 16, 3, 3])
-[2025-05-28 03:20:17,707]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, -0.41588836908340454, -0.41588836908340454, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.41588836908340454, -0.41588836908340454, 0.0, 0.0, -0.41588836908340454, 0.0, 0.0, 0.0, 0.0, 0.0, 0.41588836908340454]
-[2025-05-28 03:20:17,707]: Mean: -0.00451268
-[2025-05-28 03:20:17,707]: Min: -0.83177674
-[2025-05-28 03:20:17,707]: Max: 0.41588837
-[2025-05-28 03:20:17,708]: 
+[2025-06-14 05:08:25,729]: Sample Values (25 elements): [0.0, 0.0, 0.0, -0.5227025151252747, -0.5227025151252747, 0.0, 0.0, 0.5227025151252747, 0.0, 0.0, 0.0, 0.0, 0.5227025151252747, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.5227025151252747, 0.5227025151252747, 0.0, 0.0, 0.0, -1.0454050302505493]
+[2025-06-14 05:08:25,729]: Mean: -0.00476422
+[2025-06-14 05:08:25,729]: Min: -1.04540503
+[2025-06-14 05:08:25,730]: Max: 0.52270252
+[2025-06-14 05:08:25,730]: 
 Layer: layer1.2.bn1
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,708]: Sample Values (16 elements): [1.1205817461013794, 0.8605762124061584, 0.963782548904419, 0.8802133798599243, 0.8490746021270752, 1.007507562637329, 0.7782711386680603, 0.8722544312477112, 0.8089200258255005, 0.82266765832901, 0.8370177745819092, 0.7536553144454956, 0.7653711438179016, 1.0823407173156738, 0.9427277445793152, 0.7968989014625549]
-[2025-05-28 03:20:17,708]: Mean: 0.88386631
-[2025-05-28 03:20:17,708]: Min: 0.75365531
-[2025-05-28 03:20:17,708]: Max: 1.12058175
-[2025-05-28 03:20:17,709]: 
+[2025-06-14 05:08:25,730]: Sample Values (16 elements): [0.8448569774627686, 0.8650465607643127, 1.1427620649337769, 0.8730652332305908, 0.7713615298271179, 0.9729657173156738, 0.7957523465156555, 0.9780883193016052, 0.6738845705986023, 0.7920522689819336, 1.0978171825408936, 0.8052639365196228, 0.8822391033172607, 0.5490831732749939, 0.8064063787460327, 0.7981708645820618]
+[2025-06-14 05:08:25,731]: Mean: 0.85305101
+[2025-06-14 05:08:25,731]: Min: 0.54908317
+[2025-06-14 05:08:25,731]: Max: 1.14276206
+[2025-06-14 05:08:25,733]: 
 Layer: layer1.2.conv2
 Layer Shape: torch.Size([16, 16, 3, 3])
-[2025-05-28 03:20:17,710]: Sample Values (25 elements): [0.41187402606010437, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.41187402606010437, 0.41187402606010437, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.41187402606010437, -0.41187402606010437, -0.41187402606010437, 0.0, 0.41187402606010437, 0.0, 0.0]
-[2025-05-28 03:20:17,710]: Mean: 0.00107259
-[2025-05-28 03:20:17,710]: Min: -0.41187403
-[2025-05-28 03:20:17,710]: Max: 0.82374805
-[2025-05-28 03:20:17,710]: 
+[2025-06-14 05:08:25,734]: Sample Values (25 elements): [-0.4155966639518738, 0.0, 0.0, 0.4155966639518738, 0.0, 0.0, 0.0, -0.4155966639518738, 0.0, 0.0, 0.0, 0.0, 0.0, 0.4155966639518738, 0.0, 0.0, 0.0, 0.0, 0.4155966639518738, 0.0, 0.0, 0.0, -0.4155966639518738, 0.0, 0.0]
+[2025-06-14 05:08:25,735]: Mean: -0.00162342
+[2025-06-14 05:08:25,735]: Min: -0.41559666
+[2025-06-14 05:08:25,736]: Max: 0.83119333
+[2025-06-14 05:08:25,736]: 
 Layer: layer1.2.bn2
 Layer Shape: torch.Size([16])
-[2025-05-28 03:20:17,711]: Sample Values (16 elements): [0.7086930274963379, 0.9833898544311523, 0.7123962640762329, 0.5810571312904358, 0.5817826390266418, 0.4634619355201721, 0.6789636611938477, 0.8097521066665649, 0.43765750527381897, 0.6623520851135254, 0.6886700987815857, 0.8390066623687744, 0.8413040041923523, 0.7479035258293152, 0.4168068766593933, 0.7683112621307373]
-[2025-05-28 03:20:17,711]: Mean: 0.68259430
-[2025-05-28 03:20:17,711]: Min: 0.41680688
-[2025-05-28 03:20:17,711]: Max: 0.98338985
-[2025-05-28 03:20:17,712]: 
+[2025-06-14 05:08:25,736]: Sample Values (16 elements): [0.743703305721283, 0.8974912166595459, 0.783356249332428, 0.7140354514122009, 0.4924573004245758, 0.35412269830703735, 0.712173581123352, 0.6162813901901245, 0.5932444930076599, 0.46183642745018005, 0.8747903108596802, 0.8407893180847168, 0.6481239199638367, 0.39552509784698486, 0.6084945797920227, 0.6115015149116516]
+[2025-06-14 05:08:25,737]: Mean: 0.64674544
+[2025-06-14 05:08:25,737]: Min: 0.35412270
+[2025-06-14 05:08:25,737]: Max: 0.89749122
+[2025-06-14 05:08:25,739]: 
 Layer: layer2.0.conv1
 Layer Shape: torch.Size([32, 16, 3, 3])
-[2025-05-28 03:20:17,713]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.3440875709056854, 0.0, 0.3440875709056854, -0.3440875709056854, 0.3440875709056854, 0.0, 0.0, 0.0, 0.3440875709056854, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,713]: Mean: 0.00403228
-[2025-05-28 03:20:17,713]: Min: -0.34408757
-[2025-05-28 03:20:17,713]: Max: 0.68817514
-[2025-05-28 03:20:17,713]: 
+[2025-06-14 05:08:25,740]: Sample Values (25 elements): [0.0, 0.0, -0.37425583600997925, 0.0, 0.0, 0.0, 0.37425583600997925, -0.37425583600997925, 0.0, 0.0, 0.37425583600997925, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.37425583600997925, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,740]: Mean: 0.00406093
+[2025-06-14 05:08:25,741]: Min: -0.37425584
+[2025-06-14 05:08:25,741]: Max: 0.74851167
+[2025-06-14 05:08:25,741]: 
 Layer: layer2.0.bn1
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,714]: Sample Values (25 elements): [0.6942645907402039, 0.7977513670921326, 0.9759038686752319, 0.8046412467956543, 0.701641321182251, 0.7990477085113525, 0.8446565270423889, 0.8184966444969177, 0.6974496245384216, 0.9024884700775146, 0.9595326781272888, 0.8501246571540833, 0.7419718503952026, 0.9543066620826721, 0.8078853487968445, 0.8121962547302246, 0.6977166533470154, 0.9846393465995789, 0.7115758061408997, 0.7706501483917236, 0.7616389393806458, 0.7031654119491577, 0.8221858143806458, 0.8860979676246643, 0.802191972732544]
-[2025-05-28 03:20:17,714]: Mean: 0.80957568
-[2025-05-28 03:20:17,714]: Min: 0.68893868
-[2025-05-28 03:20:17,714]: Max: 0.98463935
-[2025-05-28 03:20:17,715]: 
+[2025-06-14 05:08:25,742]: Sample Values (25 elements): [0.835552453994751, 0.818679928779602, 0.7656418085098267, 0.9938370585441589, 0.7964612245559692, 0.7549654841423035, 0.7638548016548157, 0.7494333982467651, 0.9114128947257996, 0.6476247310638428, 0.7096834778785706, 0.8534451723098755, 0.7460725903511047, 0.8502819538116455, 0.6939634680747986, 0.9634549021720886, 0.8358489871025085, 0.9049587249755859, 0.8114597797393799, 0.7985670566558838, 0.7430838942527771, 0.7522293329238892, 0.7815536260604858, 0.6571047306060791, 0.7564283013343811]
+[2025-06-14 05:08:25,742]: Mean: 0.80632865
+[2025-06-14 05:08:25,742]: Min: 0.59628195
+[2025-06-14 05:08:25,742]: Max: 0.99383706
+[2025-06-14 05:08:25,744]: 
 Layer: layer2.0.conv2
 Layer Shape: torch.Size([32, 32, 3, 3])
-[2025-05-28 03:20:17,716]: Sample Values (25 elements): [0.0, 0.31980499625205994, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.31980499625205994, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.31980499625205994, 0.0, 0.31980499625205994, 0.0, 0.31980499625205994, -0.31980499625205994]
-[2025-05-28 03:20:17,716]: Mean: 0.00156155
-[2025-05-28 03:20:17,716]: Min: -0.63960999
-[2025-05-28 03:20:17,716]: Max: 0.31980500
-[2025-05-28 03:20:17,716]: 
+[2025-06-14 05:08:25,744]: Sample Values (25 elements): [0.0, 0.33941102027893066, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,744]: Mean: 0.00128900
+[2025-06-14 05:08:25,745]: Min: -0.33941102
+[2025-06-14 05:08:25,745]: Max: 0.67882204
+[2025-06-14 05:08:25,745]: 
 Layer: layer2.0.bn2
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,716]: Sample Values (25 elements): [0.9111282825469971, 0.7324476838111877, 0.8131417036056519, 0.7094683647155762, 0.8540157675743103, 0.7917959094047546, 0.7332010865211487, 0.7222696542739868, 0.828619122505188, 0.9015600085258484, 0.7079848051071167, 0.6763367056846619, 0.7927482724189758, 0.7401716113090515, 0.8975740671157837, 0.6056933999061584, 0.8368151187896729, 0.8247376680374146, 0.7030626535415649, 0.8519348502159119, 0.7449027299880981, 0.723422110080719, 0.7199428081512451, 0.7403810024261475, 0.6772724390029907]
-[2025-05-28 03:20:17,717]: Mean: 0.77040541
-[2025-05-28 03:20:17,717]: Min: 0.59589946
-[2025-05-28 03:20:17,717]: Max: 1.03243077
-[2025-05-28 03:20:17,718]: 
+[2025-06-14 05:08:25,745]: Sample Values (25 elements): [0.9337868094444275, 0.7729042768478394, 1.0204133987426758, 0.9228571653366089, 0.6810354590415955, 0.8135755658149719, 0.888823390007019, 0.7734600901603699, 0.8262020349502563, 0.8619433045387268, 0.7312158942222595, 0.7097587585449219, 0.8811724781990051, 0.8595209121704102, 0.6813563704490662, 0.7059803009033203, 0.698096513748169, 0.6956320405006409, 0.7594549059867859, 0.8174620270729065, 0.8014227151870728, 0.6788743734359741, 0.7769289612770081, 0.6567721366882324, 0.7309260964393616]
+[2025-06-14 05:08:25,746]: Mean: 0.77598000
+[2025-06-14 05:08:25,746]: Min: 0.58035970
+[2025-06-14 05:08:25,746]: Max: 1.02041340
+[2025-06-14 05:08:25,749]: 
 Layer: layer2.0.downsample.0
 Layer Shape: torch.Size([32, 16, 1, 1])
-[2025-05-28 03:20:17,718]: Sample Values (25 elements): [0.379155695438385, 0.0, 0.0, 0.0, 0.379155695438385, 0.0, 0.0, 0.0, 0.0, 0.75831139087677, 0.379155695438385, 0.0, -0.379155695438385, 0.0, 0.379155695438385, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.379155695438385, 0.379155695438385]
-[2025-05-28 03:20:17,719]: Mean: 0.01555131
-[2025-05-28 03:20:17,719]: Min: -0.37915570
-[2025-05-28 03:20:17,719]: Max: 0.75831139
-[2025-05-28 03:20:17,719]: 
+[2025-06-14 05:08:25,750]: Sample Values (25 elements): [0.45680493116378784, 0.45680493116378784, 0.0, 0.0, 0.45680493116378784, 0.45680493116378784, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.45680493116378784, 0.45680493116378784, 0.0]
+[2025-06-14 05:08:25,750]: Mean: 0.01605955
+[2025-06-14 05:08:25,750]: Min: -0.45680493
+[2025-06-14 05:08:25,751]: Max: 0.91360986
+[2025-06-14 05:08:25,751]: 
 Layer: layer2.0.downsample.1
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,720]: Sample Values (25 elements): [0.2952617406845093, 0.43068814277648926, 0.38970646262168884, 0.400372177362442, 0.4452435076236725, 0.3906525671482086, 0.4051908254623413, 0.16025148332118988, 0.4604950249195099, 0.584598958492279, 0.37497052550315857, 0.39637094736099243, 0.4448961615562439, 0.3684294819831848, 0.4305439293384552, 0.5749386548995972, 0.487113893032074, 0.2629838287830353, 0.35767409205436707, 0.24957165122032166, 0.4664318859577179, 0.25571832060813904, 0.26845017075538635, 0.22157996892929077, 0.5017665028572083]
-[2025-05-28 03:20:17,720]: Mean: 0.38774222
-[2025-05-28 03:20:17,720]: Min: 0.16025148
-[2025-05-28 03:20:17,721]: Max: 0.58459896
-[2025-05-28 03:20:17,722]: 
+[2025-06-14 05:08:25,751]: Sample Values (25 elements): [0.43658649921417236, 0.49287840723991394, 0.4056954085826874, 0.39359480142593384, 0.42523419857025146, 0.25677743554115295, 0.4666961133480072, 0.3151613771915436, 0.4192078709602356, 0.4276994466781616, 0.24057281017303467, 0.35132458806037903, 0.4199655055999756, 0.2293483018875122, 0.40515702962875366, 0.31263574957847595, 0.398576945066452, 0.2652706801891327, 0.22316063940525055, 0.5318840742111206, 0.574854850769043, 0.3988571763038635, 0.3833862841129303, 0.34718772768974304, 0.4224686324596405]
+[2025-06-14 05:08:25,752]: Mean: 0.36883596
+[2025-06-14 05:08:25,752]: Min: 0.11749669
+[2025-06-14 05:08:25,753]: Max: 0.57485485
+[2025-06-14 05:08:25,755]: 
 Layer: layer2.1.conv1
 Layer Shape: torch.Size([32, 32, 3, 3])
-[2025-05-28 03:20:17,722]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2762511372566223, 0.0, 0.0, 0.0, 0.2762511372566223, 0.0, 0.0, 0.0, 0.0, -0.2762511372566223, 0.0, -0.2762511372566223, 0.2762511372566223, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,723]: Mean: 0.00368695
-[2025-05-28 03:20:17,723]: Min: -0.27625114
-[2025-05-28 03:20:17,723]: Max: 0.55250227
-[2025-05-28 03:20:17,723]: 
+[2025-06-14 05:08:25,756]: Sample Values (25 elements): [0.0, -0.28142067790031433, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.28142067790031433, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,756]: Mean: 0.00305361
+[2025-06-14 05:08:25,757]: Min: -0.28142068
+[2025-06-14 05:08:25,757]: Max: 0.56284136
+[2025-06-14 05:08:25,757]: 
 Layer: layer2.1.bn1
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,724]: Sample Values (25 elements): [0.9278214573860168, 0.751173198223114, 0.749713122844696, 0.8931928277015686, 0.983524739742279, 0.8612440228462219, 1.0149457454681396, 0.9675891399383545, 0.7648167610168457, 0.8019767999649048, 0.7266814708709717, 0.8209233283996582, 1.1154392957687378, 0.793950080871582, 0.7532897591590881, 0.954493522644043, 0.9362090826034546, 0.8095797896385193, 0.8760526776313782, 0.8042587637901306, 0.8749783635139465, 0.8283088207244873, 0.7525383234024048, 0.8535431027412415, 0.6822329163551331]
-[2025-05-28 03:20:17,724]: Mean: 0.84875774
-[2025-05-28 03:20:17,724]: Min: 0.68223292
-[2025-05-28 03:20:17,725]: Max: 1.11543930
-[2025-05-28 03:20:17,726]: 
+[2025-06-14 05:08:25,757]: Sample Values (25 elements): [1.0498117208480835, 0.7691176533699036, 0.7214062213897705, 0.8095459342002869, 0.6759598851203918, 0.8425496220588684, 0.6434594392776489, 0.8363685011863708, 0.8267990350723267, 0.7311328053474426, 0.8767680525779724, 0.7030274271965027, 0.811049222946167, 0.8582617044448853, 0.948458731174469, 0.9564011693000793, 0.768580973148346, 0.7117146849632263, 1.0363632440567017, 0.8348422050476074, 0.9554997086524963, 0.9816489219665527, 0.9252180457115173, 0.7102826237678528, 0.8682378530502319]
+[2025-06-14 05:08:25,758]: Mean: 0.84134543
+[2025-06-14 05:08:25,758]: Min: 0.64345944
+[2025-06-14 05:08:25,758]: Max: 1.04981172
+[2025-06-14 05:08:25,759]: 
 Layer: layer2.1.conv2
 Layer Shape: torch.Size([32, 32, 3, 3])
-[2025-05-28 03:20:17,727]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.28265702724456787, 0.0, 0.0, 0.0, 0.0, 0.28265702724456787, -0.28265702724456787, 0.0, 0.0, 0.28265702724456787, 0.0, 0.28265702724456787, 0.0, 0.0, -0.28265702724456787, 0.0, 0.0, 0.28265702724456787, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,727]: Mean: 0.00144150
-[2025-05-28 03:20:17,728]: Min: -0.28265703
-[2025-05-28 03:20:17,728]: Max: 0.56531405
-[2025-05-28 03:20:17,728]: 
+[2025-06-14 05:08:25,760]: Sample Values (25 elements): [0.0, 0.0, -0.3086296021938324, 0.0, 0.0, 0.0, 0.0, -0.3086296021938324, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.3086296021938324, 0.0, 0.0, 0.0, 0.3086296021938324, 0.0, 0.0, 0.3086296021938324, 0.0]
+[2025-06-14 05:08:25,760]: Mean: 0.00271256
+[2025-06-14 05:08:25,761]: Min: -0.30862960
+[2025-06-14 05:08:25,761]: Max: 0.61725920
+[2025-06-14 05:08:25,761]: 
 Layer: layer2.1.bn2
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,729]: Sample Values (25 elements): [0.7635889053344727, 0.727310836315155, 0.7557267546653748, 0.547036349773407, 0.7999176979064941, 0.28158947825431824, 0.6685187220573425, 0.7392148375511169, 0.7683736085891724, 0.7386782765388489, 0.870373547077179, 0.6206279993057251, 0.6323264241218567, 0.5898392200469971, 0.6303021907806396, 0.7690261006355286, 0.7468978762626648, 0.7400938868522644, 0.7947078943252563, 0.6221864223480225, 0.6868722438812256, 0.543245255947113, 0.6110413670539856, 0.9033419489860535, 0.7337372303009033]
-[2025-05-28 03:20:17,729]: Mean: 0.70434737
-[2025-05-28 03:20:17,729]: Min: 0.28158948
-[2025-05-28 03:20:17,729]: Max: 0.96325213
-[2025-05-28 03:20:17,730]: 
+[2025-06-14 05:08:25,762]: Sample Values (25 elements): [0.6529008746147156, 0.9510505795478821, 0.7815940976142883, 0.6765440702438354, 0.7433018088340759, 0.5488685369491577, 0.5414865612983704, 0.7574984431266785, 0.6381670236587524, 0.5956264734268188, 0.7721691727638245, 0.7549513578414917, 0.6852902173995972, 0.7538092136383057, 0.6750994324684143, 0.7461153864860535, 0.5863045454025269, 0.711397647857666, 0.8947746157646179, 0.6526278853416443, 0.7721806764602661, 0.63954758644104, 0.5534440875053406, 0.8559975028038025, 0.254312127828598]
+[2025-06-14 05:08:25,762]: Mean: 0.69619936
+[2025-06-14 05:08:25,762]: Min: 0.25431213
+[2025-06-14 05:08:25,763]: Max: 0.95105058
+[2025-06-14 05:08:25,764]: 
 Layer: layer2.2.conv1
 Layer Shape: torch.Size([32, 32, 3, 3])
-[2025-05-28 03:20:17,731]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.28631001710891724, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.28631001710891724, 0.0, -0.28631001710891724]
-[2025-05-28 03:20:17,731]: Mean: -0.00133586
-[2025-05-28 03:20:17,731]: Min: -0.57262003
-[2025-05-28 03:20:17,731]: Max: 0.28631002
-[2025-05-28 03:20:17,731]: 
+[2025-06-14 05:08:25,764]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.29413679242134094, 0.0, 0.0, -0.29413679242134094, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.29413679242134094, 0.0, 0.0, 0.29413679242134094, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,765]: Mean: -0.00197878
+[2025-06-14 05:08:25,765]: Min: -0.29413679
+[2025-06-14 05:08:25,765]: Max: 0.58827358
+[2025-06-14 05:08:25,765]: 
 Layer: layer2.2.bn1
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,732]: Sample Values (25 elements): [1.0991138219833374, 0.9880059957504272, 1.1909985542297363, 0.9778245091438293, 1.1989487409591675, 0.7888019680976868, 0.8738195300102234, 0.9824878573417664, 1.0057724714279175, 0.7678120136260986, 0.8709720373153687, 0.8492860198020935, 1.1764487028121948, 0.8932703733444214, 0.9286688566207886, 0.9935970902442932, 0.6628158092498779, 0.9360024333000183, 0.9357982277870178, 0.9597386121749878, 1.0116034746170044, 0.7997187376022339, 0.9166990518569946, 0.9811529517173767, 0.9422853589057922]
-[2025-05-28 03:20:17,732]: Mean: 0.95049953
-[2025-05-28 03:20:17,732]: Min: 0.66281581
-[2025-05-28 03:20:17,732]: Max: 1.19894874
-[2025-05-28 03:20:17,734]: 
+[2025-06-14 05:08:25,766]: Sample Values (25 elements): [0.9728924036026001, 0.7275185585021973, 1.2402253150939941, 1.1384674310684204, 0.9243077039718628, 1.0605908632278442, 0.9316977262496948, 0.84088534116745, 0.7970213294029236, 0.8111931681632996, 0.8453801870346069, 0.8191510438919067, 1.145963430404663, 0.9301076531410217, 0.9782876968383789, 0.9883743524551392, 0.8600721955299377, 0.8329496383666992, 1.0356287956237793, 0.9835573434829712, 0.8574367165565491, 0.9628431797027588, 0.8919820189476013, 0.826531171798706, 0.9431531429290771]
+[2025-06-14 05:08:25,766]: Mean: 0.94100255
+[2025-06-14 05:08:25,766]: Min: 0.66677243
+[2025-06-14 05:08:25,766]: Max: 1.24022532
+[2025-06-14 05:08:25,768]: 
 Layer: layer2.2.conv2
 Layer Shape: torch.Size([32, 32, 3, 3])
-[2025-05-28 03:20:17,735]: Sample Values (25 elements): [0.0, -0.2891683876514435, 0.0, 0.0, 0.0, -0.2891683876514435, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2891683876514435, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2891683876514435, -0.2891683876514435, -0.2891683876514435]
-[2025-05-28 03:20:17,735]: Mean: -0.00423587
-[2025-05-28 03:20:17,735]: Min: -0.28916839
-[2025-05-28 03:20:17,735]: Max: 0.28916839
-[2025-05-28 03:20:17,735]: 
+[2025-06-14 05:08:25,769]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2951529622077942, 0.0, 0.0, 0.0, -0.2951529622077942, 0.0, 0.2951529622077942, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2951529622077942, 0.0, 0.2951529622077942, 0.0, 0.0, 0.0, -0.2951529622077942]
+[2025-06-14 05:08:25,769]: Mean: -0.00384314
+[2025-06-14 05:08:25,769]: Min: -0.59030592
+[2025-06-14 05:08:25,769]: Max: 0.29515296
+[2025-06-14 05:08:25,769]: 
 Layer: layer2.2.bn2
 Layer Shape: torch.Size([32])
-[2025-05-28 03:20:17,735]: Sample Values (25 elements): [0.7680487036705017, 0.8458757996559143, 0.7715505957603455, 0.7911171913146973, 0.6199227571487427, 0.6728548407554626, 0.6813622117042542, 0.7106121778488159, 0.8729782104492188, 0.772200882434845, 0.5981513857841492, 0.6612172722816467, 0.8129412531852722, 0.8923853039741516, 0.7307056188583374, 0.7146726250648499, 0.6412687301635742, 0.8829347491264343, 0.5900352597236633, 0.7449188828468323, 0.6713544130325317, 0.8071072101593018, 0.6909164786338806, 0.726120114326477, 0.7155565023422241]
-[2025-05-28 03:20:17,736]: Mean: 0.72163689
-[2025-05-28 03:20:17,736]: Min: 0.55714256
-[2025-05-28 03:20:17,736]: Max: 0.94480634
-[2025-05-28 03:20:17,737]: 
+[2025-06-14 05:08:25,770]: Sample Values (25 elements): [0.9456573128700256, 0.6382811665534973, 0.7760231494903564, 0.6796079277992249, 0.8533015251159668, 0.5918254852294922, 0.7217796444892883, 0.8376355767250061, 0.786574125289917, 0.651450514793396, 0.665681779384613, 0.5957130193710327, 0.683367908000946, 0.904900074005127, 0.5624012351036072, 0.7982361316680908, 0.7327771186828613, 0.6829991340637207, 0.8327722549438477, 0.6416969895362854, 0.8657934665679932, 0.6888361573219299, 0.5981255769729614, 0.542899489402771, 0.7545824646949768]
+[2025-06-14 05:08:25,770]: Mean: 0.70541203
+[2025-06-14 05:08:25,770]: Min: 0.50604194
+[2025-06-14 05:08:25,770]: Max: 0.94565731
+[2025-06-14 05:08:25,772]: 
 Layer: layer3.0.conv1
 Layer Shape: torch.Size([64, 32, 3, 3])
-[2025-05-28 03:20:17,738]: Sample Values (25 elements): [0.0, 0.0, 0.0, -0.2713204026222229, -0.2713204026222229, 0.0, 0.0, 0.0, 0.0, -0.2713204026222229, 0.0, 0.0, 0.0, 0.2713204026222229, 0.0, 0.2713204026222229, -0.2713204026222229, 0.0, 0.0, 0.0, 0.0, 0.2713204026222229, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,738]: Mean: -0.00111873
-[2025-05-28 03:20:17,738]: Min: -0.54264081
-[2025-05-28 03:20:17,738]: Max: 0.27132040
-[2025-05-28 03:20:17,738]: 
+[2025-06-14 05:08:25,772]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.2816599905490875, 0.0, -0.2816599905490875, 0.0, 0.2816599905490875, 0.0, 0.0, 0.2816599905490875, 0.0, -0.2816599905490875, 0.0, 0.0, 0.2816599905490875, 0.0, 0.0, 0.0, 0.0, 0.2816599905490875, 0.0, -0.2816599905490875, 0.0]
+[2025-06-14 05:08:25,773]: Mean: -0.00215463
+[2025-06-14 05:08:25,773]: Min: -0.56331998
+[2025-06-14 05:08:25,773]: Max: 0.28165999
+[2025-06-14 05:08:25,773]: 
 Layer: layer3.0.bn1
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,738]: Sample Values (25 elements): [0.8674991130828857, 0.7187908291816711, 0.849435567855835, 0.8297317624092102, 0.6996648907661438, 0.8110858798027039, 0.8559404611587524, 0.9520589113235474, 1.0200583934783936, 0.8271054029464722, 0.7734571695327759, 0.8123235702514648, 0.9193576574325562, -5.016087982897115e-41, 1.030789852142334, 0.8497825264930725, 0.7904304265975952, 0.8021615743637085, 0.8807435035705566, 0.5237835645675659, 0.5597469806671143, 0.8885607123374939, 0.9136165380477905, 0.6314594745635986, 0.8033458590507507]
-[2025-05-28 03:20:17,739]: Mean: 0.79458445
-[2025-05-28 03:20:17,739]: Min: -0.00000000
-[2025-05-28 03:20:17,739]: Max: 1.07199383
-[2025-05-28 03:20:17,741]: 
+[2025-06-14 05:08:25,773]: Sample Values (25 elements): [0.8251391053199768, -5.016087982897115e-41, 0.7903017997741699, 0.6642799377441406, 0.9685570001602173, 0.8724868893623352, 0.8997163772583008, 0.9699243903160095, 0.9248055219650269, 0.6757973432540894, 0.8399428129196167, 0.7818006873130798, 0.8813377022743225, 0.8620889186859131, 0.7170672416687012, 0.6503422260284424, 0.7598015666007996, 0.993704617023468, 0.9323667287826538, 0.9139484763145447, 0.9543588161468506, 0.6812275052070618, 0.5655501484870911, 0.8313404321670532, 1.0671409368515015]
+[2025-06-14 05:08:25,774]: Mean: 0.79719102
+[2025-06-14 05:08:25,774]: Min: -0.00000000
+[2025-06-14 05:08:25,774]: Max: 1.06714094
+[2025-06-14 05:08:25,776]: 
 Layer: layer3.0.conv2
 Layer Shape: torch.Size([64, 64, 3, 3])
-[2025-05-28 03:20:17,742]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.31376922130584717, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.31376922130584717]
-[2025-05-28 03:20:17,743]: Mean: -0.00062985
-[2025-05-28 03:20:17,743]: Min: -0.31376922
-[2025-05-28 03:20:17,743]: Max: 0.62753844
-[2025-05-28 03:20:17,743]: 
+[2025-06-14 05:08:25,777]: Sample Values (25 elements): [0.0, 0.0, -0.30387526750564575, 0.0, 0.0, 0.0, 0.0, -0.30387526750564575, 0.0, 0.0, 0.0, -0.30387526750564575, 0.0, 0.0, 0.0, 0.30387526750564575, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,777]: Mean: 0.00027202
+[2025-06-14 05:08:25,778]: Min: -0.60775054
+[2025-06-14 05:08:25,778]: Max: 0.30387527
+[2025-06-14 05:08:25,778]: 
 Layer: layer3.0.bn2
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,744]: Sample Values (25 elements): [0.765037477016449, 0.7970475554466248, 0.8083771467208862, 0.7962774038314819, 0.7792121767997742, 0.8084792494773865, 0.90000319480896, 0.6933847665786743, 0.6204037070274353, 0.7449374198913574, 0.6802950501441956, 0.7943242788314819, 0.82566237449646, 0.7337960004806519, 0.8757035136222839, 0.6938302516937256, 0.8884010910987854, 0.7250521779060364, 0.6770308017730713, 0.8318043351173401, 0.6242954730987549, 0.6810304522514343, 0.6949785947799683, 0.8660507202148438, 0.8417463898658752]
-[2025-05-28 03:20:17,744]: Mean: 0.76966906
-[2025-05-28 03:20:17,744]: Min: 0.55862498
-[2025-05-28 03:20:17,744]: Max: 0.99816942
-[2025-05-28 03:20:17,746]: 
+[2025-06-14 05:08:25,778]: Sample Values (25 elements): [0.738052248954773, 0.767132580280304, 0.7368828058242798, 0.7250796556472778, 0.6718116998672485, 0.8974910378456116, 0.8397248983383179, 0.6725105047225952, 0.9432893395423889, 0.803577721118927, 0.6930550336837769, 0.7722604274749756, 0.8243170380592346, 0.7805882692337036, 1.075180172920227, 0.7281912565231323, 0.8545249104499817, 0.7344145178794861, 0.918416440486908, 0.7181100249290466, 0.7786543965339661, 0.5684372186660767, 0.7267439961433411, 0.6612228751182556, 0.8205295205116272]
+[2025-06-14 05:08:25,778]: Mean: 0.77082574
+[2025-06-14 05:08:25,779]: Min: 0.56843722
+[2025-06-14 05:08:25,779]: Max: 1.07518017
+[2025-06-14 05:08:25,783]: 
 Layer: layer3.0.downsample.0
 Layer Shape: torch.Size([64, 32, 1, 1])
-[2025-05-28 03:20:17,746]: Sample Values (25 elements): [0.33580464124679565, 0.0, 0.0, 0.0, 0.33580464124679565, 0.0, 0.0, 0.0, 0.0, 0.33580464124679565, 0.0, 0.33580464124679565, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.33580464124679565, 0.0, 0.0, 0.33580464124679565, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,747]: Mean: 0.00245951
-[2025-05-28 03:20:17,747]: Min: -0.33580464
-[2025-05-28 03:20:17,747]: Max: 0.33580464
-[2025-05-28 03:20:17,748]: 
+[2025-06-14 05:08:25,785]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.35557013750076294, 0.0, 0.0, 0.0, 0.0, -0.35557013750076294, 0.0, 0.0, 0.0, 0.35557013750076294, 0.0, 0.35557013750076294, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.35557013750076294, -0.35557013750076294, 0.35557013750076294, 0.0]
+[2025-06-14 05:08:25,787]: Mean: 0.00069447
+[2025-06-14 05:08:25,789]: Min: -0.71114028
+[2025-06-14 05:08:25,791]: Max: 0.35557014
+[2025-06-14 05:08:25,792]: 
 Layer: layer3.0.downsample.1
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,748]: Sample Values (25 elements): [0.4998289942741394, 0.6072049140930176, 0.34505629539489746, 0.5046223998069763, 0.3012200593948364, 0.44608381390571594, 0.5121236443519592, 0.48196718096733093, 0.41021642088890076, 0.333130419254303, 0.3974948227405548, 0.5552773475646973, 0.727526843547821, 0.4200174808502197, 0.622869610786438, 0.6294432282447815, 0.46364665031433105, 0.5656529664993286, 0.31079205870628357, 0.456903338432312, 0.5887514352798462, 0.5348052978515625, 0.42630553245544434, 0.4493049085140228, 0.39472952485084534]
-[2025-05-28 03:20:17,748]: Mean: 0.46284240
-[2025-05-28 03:20:17,749]: Min: 0.23484439
-[2025-05-28 03:20:17,749]: Max: 0.72752684
-[2025-05-28 03:20:17,750]: 
+[2025-06-14 05:08:25,796]: Sample Values (25 elements): [0.4378693401813507, 0.22905535995960236, 0.610373318195343, 0.55431067943573, 0.49141982197761536, 0.4695582091808319, 0.4695345461368561, 0.602746844291687, 0.30177125334739685, 0.6103589534759521, 0.501633882522583, 0.44274383783340454, 0.4033888578414917, 0.2988662123680115, 0.4387776255607605, 0.3075351119041443, 0.6249171495437622, 0.30229949951171875, 0.19590353965759277, 0.44382062554359436, 0.504342257976532, 0.4493124783039093, 0.3708772659301758, 0.3130171597003937, 0.4804496169090271]
+[2025-06-14 05:08:25,799]: Mean: 0.42754591
+[2025-06-14 05:08:25,802]: Min: 0.12570596
+[2025-06-14 05:08:25,807]: Max: 0.63993281
+[2025-06-14 05:08:25,833]: 
 Layer: layer3.1.conv1
 Layer Shape: torch.Size([64, 64, 3, 3])
-[2025-05-28 03:20:17,751]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.29292479157447815, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,751]: Mean: -0.00039730
-[2025-05-28 03:20:17,752]: Min: -0.58584958
-[2025-05-28 03:20:17,752]: Max: 0.29292479
-[2025-05-28 03:20:17,752]: 
+[2025-06-14 05:08:25,834]: Sample Values (25 elements): [0.0, 0.0, 0.2930738031864166, 0.2930738031864166, 0.2930738031864166, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.2930738031864166, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2930738031864166, 0.0]
+[2025-06-14 05:08:25,834]: Mean: -0.00079501
+[2025-06-14 05:08:25,834]: Min: -0.58614761
+[2025-06-14 05:08:25,835]: Max: 0.29307380
+[2025-06-14 05:08:25,835]: 
 Layer: layer3.1.bn1
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,752]: Sample Values (25 elements): [1.0674470663070679, 1.004652500152588, 0.8210289478302002, 1.0017006397247314, 0.9276474118232727, 0.9268904328346252, 1.1315054893493652, 0.49874037504196167, 0.9766461253166199, 0.7575670480728149, 1.0646721124649048, 0.9497199654579163, 0.7747195959091187, 1.0778799057006836, 0.7651938796043396, 0.24370482563972473, 0.8148209452629089, 1.0678552389144897, 1.0231959819793701, 1.0341746807098389, 1.1553786993026733, 0.8138130307197571, 0.9409525990486145, 4.925564102101732e-41, 1.1876513957977295]
-[2025-05-28 03:20:17,753]: Mean: 0.88694310
-[2025-05-28 03:20:17,753]: Min: 0.00000000
-[2025-05-28 03:20:17,753]: Max: 1.23067379
-[2025-05-28 03:20:17,755]: 
+[2025-06-14 05:08:25,835]: Sample Values (25 elements): [1.1420087814331055, 0.7272406816482544, 0.7185344696044922, 0.802574098110199, 1.0326826572418213, 0.9861966967582703, 0.8506768345832825, 0.8088820576667786, 0.9962435364723206, 0.8580555319786072, 0.7326541543006897, 0.013957030139863491, 0.9270759224891663, 1.1362899541854858, 0.8058208227157593, 0.9038814306259155, 0.7752618789672852, 0.6521975994110107, 1.0276556015014648, 1.003941297531128, 0.7955006957054138, 1.0033435821533203, 0.9705198407173157, 1.1418461799621582, 0.943377673625946]
+[2025-06-14 05:08:25,836]: Mean: 0.87703866
+[2025-06-14 05:08:25,836]: Min: 0.00000000
+[2025-06-14 05:08:25,836]: Max: 1.17777324
+[2025-06-14 05:08:25,837]: 
 Layer: layer3.1.conv2
 Layer Shape: torch.Size([64, 64, 3, 3])
-[2025-05-28 03:20:17,756]: Sample Values (25 elements): [0.0, -0.24143430590629578, 0.0, 0.0, 0.0, 0.0, 0.24143430590629578, 0.0, 0.0, 0.0, 0.24143430590629578, 0.0, 0.0, 0.0, -0.24143430590629578, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,756]: Mean: 0.00039951
-[2025-05-28 03:20:17,756]: Min: -0.48286861
-[2025-05-28 03:20:17,756]: Max: 0.24143431
-[2025-05-28 03:20:17,757]: 
+[2025-06-14 05:08:25,840]: Sample Values (25 elements): [0.0, 0.0, 0.0, -0.2598232924938202, 0.2598232924938202, -0.2598232924938202, 0.0, 0.0, 0.0, 0.2598232924938202, 0.0, 0.0, 0.0, 0.2598232924938202, 0.0, 0.0, 0.0, 0.0, 0.0, -0.2598232924938202, 0.0, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,840]: Mean: 0.00075415
+[2025-06-14 05:08:25,840]: Min: -0.51964658
+[2025-06-14 05:08:25,840]: Max: 0.25982329
+[2025-06-14 05:08:25,841]: 
 Layer: layer3.1.bn2
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,757]: Sample Values (25 elements): [0.8201987147331238, 0.8949007391929626, 0.7241681814193726, 0.7944005727767944, 1.092560052871704, 0.8951107859611511, 0.7256624102592468, 0.8393974900245667, 0.4967222511768341, 0.6439622044563293, 0.8273346424102783, 0.8958738446235657, 0.967459499835968, 0.8591598272323608, 0.8470463752746582, 0.8535400032997131, 0.8881548047065735, 0.7919098734855652, 1.0800542831420898, 0.925597071647644, 0.8566142916679382, 1.029543399810791, 0.8280571103096008, 0.8060069680213928, 0.42999184131622314]
-[2025-05-28 03:20:17,757]: Mean: 0.85963941
-[2025-05-28 03:20:17,757]: Min: 0.42999184
-[2025-05-28 03:20:17,758]: Max: 1.18170309
-[2025-05-28 03:20:17,759]: 
+[2025-06-14 05:08:25,841]: Sample Values (25 elements): [0.8774110674858093, 0.8946287035942078, 0.7930731177330017, 0.9293408393859863, 0.8377625942230225, 0.8459003567695618, 0.740405261516571, 1.1186083555221558, 0.7853603363037109, 0.8540632724761963, 0.8667955994606018, 0.49728912115097046, 0.8713002800941467, 0.9681668281555176, 1.056843876838684, 0.8536065220832825, 0.6518045663833618, 0.8224246501922607, 0.8977831602096558, 0.712017297744751, 0.9107881784439087, 0.9208199977874756, 0.7242178916931152, 0.9178805947303772, 0.9011223912239075]
+[2025-06-14 05:08:25,841]: Mean: 0.86052227
+[2025-06-14 05:08:25,841]: Min: 0.38024178
+[2025-06-14 05:08:25,842]: Max: 1.18726778
+[2025-06-14 05:08:25,843]: 
 Layer: layer3.2.conv1
 Layer Shape: torch.Size([64, 64, 3, 3])
-[2025-05-28 03:20:17,760]: Sample Values (25 elements): [-0.24103951454162598, 0.0, 0.0, -0.24103951454162598, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.24103951454162598, 0.0, 0.0, 0.0, -0.24103951454162598, 0.0, -0.24103951454162598]
-[2025-05-28 03:20:17,760]: Mean: -0.00098079
-[2025-05-28 03:20:17,760]: Min: -0.48207903
-[2025-05-28 03:20:17,761]: Max: 0.24103951
-[2025-05-28 03:20:17,761]: 
+[2025-06-14 05:08:25,844]: Sample Values (25 elements): [0.0, 0.0, 0.25915202498435974, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.25915202498435974]
+[2025-06-14 05:08:25,845]: Mean: -0.00127945
+[2025-06-14 05:08:25,845]: Min: -0.25915202
+[2025-06-14 05:08:25,845]: Max: 0.51830405
+[2025-06-14 05:08:25,845]: 
 Layer: layer3.2.bn1
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,761]: Sample Values (25 elements): [0.9900476336479187, 1.257172703742981, 0.7570404410362244, 0.8578441739082336, 0.33941054344177246, 0.9723919034004211, 0.996931254863739, 0.8122145533561707, 0.6789882183074951, 0.7561990022659302, 0.9054875373840332, 0.794812798500061, 0.7572816610336304, 0.9243310689926147, 0.9693729281425476, 1.0395395755767822, 0.8644344210624695, 0.9412987232208252, 0.7835652828216553, 0.8791770935058594, 0.7529282569885254, 0.9723745584487915, 0.7277759313583374, 0.9963737726211548, 0.9692572355270386]
-[2025-05-28 03:20:17,762]: Mean: 0.82970226
-[2025-05-28 03:20:17,762]: Min: -0.00000000
-[2025-05-28 03:20:17,762]: Max: 1.35998082
-[2025-05-28 03:20:17,764]: 
+[2025-06-14 05:08:25,846]: Sample Values (25 elements): [0.7425389885902405, 0.8320014476776123, 0.7749935984611511, 1.0703068971633911, 1.3068228960037231, 0.8347991704940796, 0.7956835031509399, 0.7238859534263611, 0.9160106778144836, 0.9569909572601318, 1.0942389965057373, 0.899067759513855, 1.013637661933899, 1.163357138633728, 1.0429086685180664, 0.930575430393219, -5.416999473540445e-41, 1.014910340309143, 0.6739298701286316, 4.94406124183082e-41, 0.7591232657432556, 0.8659958243370056, 1.0841701030731201, 0.9523146748542786, 0.5900200605392456]
+[2025-06-14 05:08:25,846]: Mean: 0.82002056
+[2025-06-14 05:08:25,846]: Min: -0.00000000
+[2025-06-14 05:08:25,846]: Max: 1.39403796
+[2025-06-14 05:08:25,848]: 
 Layer: layer3.2.conv2
 Layer Shape: torch.Size([64, 64, 3, 3])
-[2025-05-28 03:20:17,765]: Sample Values (25 elements): [0.0, 0.0, 0.0, 0.19176700711250305, -0.19176700711250305, 0.0, 0.0, 0.0, 0.0, 0.19176700711250305, 0.0, 0.0, 0.0, 0.0, 0.0, -0.19176700711250305, 0.0, 0.0, -0.19176700711250305, 0.19176700711250305, 0.0, 0.0, 0.0, 0.0, 0.0]
-[2025-05-28 03:20:17,765]: Mean: -0.00029651
-[2025-05-28 03:20:17,765]: Min: -0.19176701
-[2025-05-28 03:20:17,765]: Max: 0.38353401
-[2025-05-28 03:20:17,765]: 
+[2025-06-14 05:08:25,849]: Sample Values (25 elements): [-0.20825457572937012, 0.0, 0.0, -0.20825457572937012, 0.0, 0.0, 0.0, 0.20825457572937012, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[2025-06-14 05:08:25,849]: Mean: -0.00053103
+[2025-06-14 05:08:25,849]: Min: -0.20825458
+[2025-06-14 05:08:25,850]: Max: 0.41650915
+[2025-06-14 05:08:25,850]: 
 Layer: layer3.2.bn2
 Layer Shape: torch.Size([64])
-[2025-05-28 03:20:17,766]: Sample Values (25 elements): [0.787352442741394, 0.9453858137130737, 0.9601491689682007, 1.0455894470214844, 0.9319577217102051, 1.0175708532333374, 1.1015946865081787, 0.9371146559715271, 0.9453375935554504, 0.8875648379325867, 0.9611401557922363, 0.88960862159729, 0.9075896739959717, 0.9547771215438843, 0.9859797358512878, 1.022555947303772, 0.9950098395347595, 0.9984300136566162, 0.9211510419845581, 0.9276853203773499, 1.0022451877593994, 1.06003999710083, 0.9428962469100952, 0.9134469032287598, 1.0539377927780151]
-[2025-05-28 03:20:17,766]: Mean: 0.96834922
-[2025-05-28 03:20:17,766]: Min: 0.75063533
-[2025-05-28 03:20:17,766]: Max: 1.15200162
-[2025-05-28 03:20:17,766]: 
+[2025-06-14 05:08:25,851]: Sample Values (25 elements): [0.9812209606170654, 0.8720225691795349, 0.8310456871986389, 0.94205242395401, 0.993895411491394, 1.0474292039871216, 0.9487813711166382, 0.9299154877662659, 0.9841781854629517, 1.0376487970352173, 1.0105347633361816, 0.840880811214447, 0.9363568425178528, 0.9566482901573181, 0.86102294921875, 0.9824052453041077, 0.8930319547653198, 0.982406497001648, 0.8845740556716919, 0.9726747870445251, 1.006623387336731, 1.0631909370422363, 1.0104316473007202, 1.0352261066436768, 0.9544402360916138]
+[2025-06-14 05:08:25,851]: Mean: 0.95764506
+[2025-06-14 05:08:25,851]: Min: 0.71657348
+[2025-06-14 05:08:25,851]: Max: 1.17842925
+[2025-06-14 05:08:25,852]: 
 Layer: fc
 Layer Shape: torch.Size([10, 64])
-[2025-05-28 03:20:17,767]: Sample Values (25 elements): [0.08214631676673889, -0.40295183658599854, -0.15942329168319702, -0.38705092668533325, 0.45077216625213623, -0.4333467185497284, -0.2518016993999481, -0.02349221706390381, -0.1806660145521164, 0.268943190574646, 0.37146830558776855, -0.7513157725334167, -0.4607301950454712, 0.30538424849510193, 0.36402010917663574, 0.08173222839832306, -0.5694994926452637, -0.33825770020484924, -0.6392268538475037, -0.02898864820599556, 0.2681536078453064, 0.21554380655288696, 0.33396390080451965, -0.07664477080106735, -0.24070245027542114]
-[2025-05-28 03:20:17,767]: Mean: -0.00720717
-[2025-05-28 03:20:17,767]: Min: -0.97507918
-[2025-05-28 03:20:17,767]: Max: 1.04101646
+[2025-06-14 05:08:25,852]: Sample Values (25 elements): [0.1065187007188797, 0.10512714833021164, -0.4033235013484955, 0.21556442975997925, -0.46345511078834534, -0.23491869866847992, -0.025865301489830017, -0.2447369247674942, 0.12224147468805313, -0.19903385639190674, -0.3225955069065094, 0.05205156281590462, -0.3346249759197235, 0.010852556675672531, -0.3912717401981354, -0.3491954803466797, 0.6193011403083801, -0.11141227185726166, 0.04813302680850029, -0.5552132725715637, 0.3634687066078186, 0.13650639355182648, 0.032473403960466385, 0.5982195734977722, -0.41991889476776123]
+[2025-06-14 05:08:25,852]: Mean: -0.00690672
+[2025-06-14 05:08:25,853]: Min: -0.97420478
+[2025-06-14 05:08:25,853]: Max: 1.02382255

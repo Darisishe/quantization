@@ -400,7 +400,7 @@ def train_quantized_model(
         device=device,
         train_loader=train_loader,
         test_loader=test_loader,
-        learning_rate=1e-2 if "parametrized" in activation else 1e-3,
+        learning_rate=1e-3,
         scheduler_patience=5,
         num_epochs=QAT_EPOCHS,
         writer=writer,
@@ -424,22 +424,19 @@ def parallel_train(model_class, activation):
     # Redirect prints to logfile
     sys.stdout = LoggerStream(logger)
 
-    if activation not in ["parametrized_relu", "parametrized_hardtanh"]:
-        print(f"\nTraining {model_class.__name__} with {activation}")
-        fp_model = train_orig_model(
-            model_class,
-            activation,
-            device=cuda_device,
-            train_loader=train_loader,
-            test_loader=test_loader,
-        )
-        print(f"\nTraining of full-precision model finished!")
-        print_model_with_weights(fp_model)
+    print(f"\nTraining {model_class.__name__} with {activation}")
+    fp_model = train_orig_model(
+        model_class,
+        activation,
+        device=cuda_device,
+        train_loader=train_loader,
+        test_loader=test_loader,
+    )
+    print(f"\nTraining of full-precision model finished!")
+    print_model_with_weights(fp_model)
 
-        fp_ckpt_path = f"checkpoint/{model_class.__name__}_{activation}.ckpt"
-    else:
-        # Reuse already trained models for parametrized activations models
-        fp_ckpt_path = f"checkpoint/{model_class.__name__}_{"relu6" if activation == "parametrized_relu" else "hardtanh"}.ckpt"
+    fp_ckpt_path = f"checkpoint/{model_class.__name__}_{activation}.ckpt"
+
     print(f"Checkpoint of model at path [{fp_ckpt_path}] will be used for QAT")
 
     quantized_models = dict()
@@ -479,10 +476,12 @@ if __name__ == "__main__":
 
     # All possible architectures, activations and bitwidths
     models = [
+        LeNet5,
+        ResNet20,
         ResNet18,
     ]
-    activations = ["hardtanh"]
-    bit_widths = [3, 2]
+    activations = activation_fn.AVAILABLE_ACTIVATIONS
+    bit_widths = [4, 3, 2]
 
     tasks = [(model, act) for model in models for act in activations]
 
@@ -502,40 +501,3 @@ if __name__ == "__main__":
     # Wait for all processes to finish
     for p in processes:
         p.join()
-
-    # results = {}
-    # for model_class in models:
-    #     for activation in activations:
-
-    #         key = (model_class.__name__, activation)
-    #         orig_model = model_class(activation=activation).to(cuda_device)
-    #         quant_model = model_class(activation=activation, quantize=True).to(
-    #             cuda_device
-    #         )
-    #         configure_qat(quant_model)
-
-    #         orig_model.eval()
-    #         quant_model.eval()
-    #         orig_model.load_state_dict(
-    #             torch.load(f"checkpoint/best_{model_class.__name__}_{activation}.ckpt")
-    #         )
-    #         quant_model.load_state_dict(
-    #             torch.load(
-    #                 f"checkpoint/best_{model_class.__name__}_{activation}_quantized.ckpt"
-    #             ),
-    #             strict=True,
-    #         )
-
-    #         print(quant_model)
-    #         _, orig_acc = evaluate_model(orig_model)
-    #         _, quant_acc = evaluate_model(quant_model)
-
-    #         results[key] = {
-    #             "orig_acc": orig_acc,
-    #             "quant_acc": quant_acc,
-    #         }
-
-    # for key, result in results.items():
-    #     print(f"\nModel: {key[0]} with {key[1]}")
-    #     print(f"Original Accuracy: {result['orig_acc']:.4f}%")
-    #     print(f"Quantized Accuracy: {result['quant_acc']:.4f}%")

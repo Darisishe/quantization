@@ -7,9 +7,12 @@ from torch.ao.quantization.observer import FixedQParamsObserver
 
 
 class ParametrizedReLU(nn.Module):
-    def __init__(self, num_bits=4, init_alpha=6.0):
+    def __init__(self, quantize, num_bits=4, init_alpha=6.0):
         super().__init__()
         self.alpha = nn.Parameter(torch.tensor(init_alpha))
+        
+        self.quantize = quantize
+
         self.num_bits = num_bits
 
         self.set_num_bits(num_bits=num_bits)
@@ -30,6 +33,9 @@ class ParametrizedReLU(nn.Module):
         min_val = torch.tensor(0.0, dtype=self.alpha.dtype, device=self.alpha.device)
         x = torch.clamp(x, min=min_val, max=self.alpha)
 
+        if not self.quantize:
+            return x
+
         # 2. Calculate dynamic scale based on current alpha
         scale = self.alpha.detach() / (2**self.num_bits - 1)
 
@@ -41,10 +47,12 @@ class ParametrizedReLU(nn.Module):
 
 
 class ParameterizedHardtanh(nn.Module):
-    def __init__(self, num_bits=4, init_alpha=1.0):
+    def __init__(self, quantize, num_bits=4, init_alpha=1.0):
         super().__init__()
         self.alpha = nn.Parameter(torch.tensor(init_alpha))
         self.num_bits = num_bits
+        
+        self.quantize = quantize
 
         self.set_num_bits(num_bits=num_bits)
 
@@ -63,7 +71,9 @@ class ParameterizedHardtanh(nn.Module):
     def forward(self, x):
         # 1. Apply learnable clamping
         x_clamped = torch.clamp(x, -self.alpha, self.alpha)
-
+        if not self.quantize:
+            return x_clamped
+        
         # 2. Calculate dynamic quantization parameters
         current_min = -self.alpha.detach()
         current_max = self.alpha.detach()
@@ -178,17 +188,9 @@ def get_activation_function(activation: str, quantize=False, layer_name=None):
     elif activation == "hardtanh":
         act = nn.Hardtanh(inplace=True)
     elif activation == "parametrized_relu":
-        # Hack to skip quantization of first/last layers
-        if quantize:
-            act = ParametrizedReLU()
-        else:
-            act = nn.ReLU6(inplace=True)
+        act = ParametrizedReLU(quantize=quantize)
     elif activation == "parametrized_hardtanh":
-        # Hack to skip quantization of first/last layers
-        if quantize:
-            act = ParameterizedHardtanh()
-        else:
-            act = nn.Hardtanh(inplace=True)
+        act = ParameterizedHardtanh(quantize=quantize)
     else:
         raise ValueError("Unsupported activation: %s" % activation)
 
